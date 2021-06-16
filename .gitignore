@@ -272,5 +272,8 @@ TSWLatexianTemp*
 # standalone packages
 *.sta
 
+
 # Makeindex log files
 *.lpz
+
+Thesis.pdf
