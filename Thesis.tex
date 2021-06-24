@@ -98,11 +98,18 @@ In this section references were omitted on purpose, for the interested reader so
 
 The present thesis is based on the works \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt} published during the course of my doctoral studies at TU Wien under the supervision of Timm Wrase. {\bf Scale Separation?}
 
-\chapter{The Basics}
+%\chapter{The Basics} As of now I think I will put everything in the corresponding sections and leave "real" basics out of the thesis.
 %\section{String Theory}
 %\section{Supergravity}
 %\section{Flux Compactifications}
 %\section{de Sitter Space in String theory}
+%\section{The Swampland Program} Maybe only include in the swampland chapter.
+
+\chapter{de Sitter from classical Type IIA Compactifications} 
+Scaling limits paper. Can this go somewhere else?
+
+\chapter{KKLT-like Constructions} %All papers with Renata and Andrei
+
 \section{KKL(MM)T}
 \label{sec:kklt}%Could be in chapter "KKLT-like Constructions"
 The KKLT-scenario is a possible way to obtain meta-stable de Sitter spaces from String Theory. The initial setup is based on a simple type IIB model with 3 moduli. $S$ is the axio-dilaton, $T$ the Kähler-modulus and $U$ the complex structure modulus. Note that the moduli $T$ and $U$ can split into three independet scalars each. In the simplest model these are taken to be the same and the model simplifies. Such an $STU$-model has the following Kähler- and Superpotential in IIB supergravity:
@@ -133,108 +140,6 @@ at the minimum. The idea is that one can tune the amount of uplift in order to, 
 This model has been investigated thoroughly since its inception and many questions have been raised. A main concern regards the nature of the non-perturbative corrections. These can arise in 4d supergravity from gaugino condensation on O7-planes. However, this is a 4d effect and lacks and the description in 10 dimensions is not immediately clear. Recently it has been shown that one can indeed match these effects to fermionic coupling terms in 10d \cite{Kachru:2019dvo}. Another, more recent, issue regards the sizes of the bulk of the internal manifold and the warped throat. It has been claimed \cite{} that the warped throat needs to be bigger than the rest of the bulk in order for the model to work.\\
 Nevertheless, the KKLT scenario remains one of the more promising candidates for constructions of dS space from string theory.
 
-\section{Non-linear Supersymmetry and constrained Superfields}%Could be in Chapter "D-Branesin 4 dimensional Supergravity"
-When supersymmetry is broken spontaneously, it is still realized in a non-linear manner on the multiplets in supergravity. This means, that there is still an identification of fields, however, this identification now follows a non-linear transformation. A simple example is the Volkov-Akulov (VA) action \cite{Volkov:1972jx}:
-\bea
-S_{\text{VA}} &= -M^4 \int E^0 \wedge E^1 \wedge E^2 \wedge E^3\qquad \text{with}\,,\\
-E^\mu &= d\sigma^\mu + \sum_{I=0}^3 \bar{\lambda}^I \gamma^\mu d\lambda^I\,.
-\label{eq:VAorigin}
-\eea
-In this case the $\lambda^I$ are the $4d$ goldstinos associated with the breaking of $\mathcal{N}=4$ supersymmetry. This action is still invariant under a non-linear transformation
-\be 
-\delta_\epsilon = \epsilon^I + \sum_{J=0}^3 \left(\bar{\lambda}^J \gamma^\mu \epsilon^J\right) \partial_\mu \lambda^I\,.
-\ee
-However, this can be re-written in a way that looks linear by the use of constrained superfields\cite{Rocek:1978nb,Lindstrom:1979kq,Samuel:1982uh,Komargodski:2009rz}. The principles of constrained superfields were investigated in these earlier works but only rather recently they have been re-discovered and applied in modern model building, for some examples see: \cite{Kallosh:2016aep,Vercnocke:2016fbt,GarciadelMoral:2017vnz,Kallosh:2018nrk,Kallosh:2019apq,Cribiori:2019hod,Cribiori:2019bfx,Kallosh:2019zgd,Cribiori:2020zoh,Cribiori:2020bgt}. Here, we can use a nilpotent chiral field in order to re-write the VA-action. A chiral superfield $X$ has an expansion in superspace that is written as:
-\be 
-X = x + \sqrt{2} \psi \theta + F \theta^2\,.
-\ee
-$x$ is a scalar field, $\psi$ a spinor and $F$ an auxiliary field. Note, that the $\psi \neq \lambda$ and that there is not a one-to-one identification between the here and the fermion of th VA-action $\lambda^I$. Finally, the superspace coordinates are $\theta$ and due to their grassmannian nature this expansion is exact. Now, if we impose the nilpotency constraint
-\be 
-X^2 = 0\,,
-\ee
-we find that the only remaining degree of freedom will be the fermion $\psi$, as the scalar is fixed to be 
-\be 
-x = \frac{\psi^2}{2 F}\,.
-\ee 
-Using $X$ we can then write \eqref{eq:VAorigin} as:
-\be 
-S_{\text{VA}} = \int d^4x \int d^2 \theta \int d^2 \bar{\theta} X \bar{X} + M^2 \left( \int d^4 x \int d^2\theta X + h.c.\,\right)
-\ee
-After employing the nilpotentcy condition and performing the superspace integral we can recover the original Volkov-Akulov action after the correct field redefinition \cite{Bergshoeff:2015jxa}, relating $\psi$ to $\lambda^I$.\\
-If we decide to add the secondary constraint 
-\be 
--\frac{1}{4} X \bar{D}^2 \bar{X} = M^2 X \qquad \Rightarrow \qquad F = M^2 + \text{fermions}\,
-\label{eq:secconst}
-\ee
-to this it is possible to write an equivalent action to the VA-action either as a pure $F$- or pure $D$-term:
-\bea 
-S_{\text{VA},F} &= \int d^4x \int d^2 \theta \int d^2 \bar{\theta} X \bar{X} \\
-S_{\text{VA},D} &=  M^2 \left( \int d^4 x \int d^2\theta X + h.c.\,\right)\,.
-\eea
-The equivalence of the two formulations is implied by the secondary constraint \eqref{eq:secconst}.
-Importantly, the choice of constrained multiplet is not unique. Many different options are available\cite{Bandos:2016xyu,GarciadelMoral:2017vnz}. Not limiting ourselves to their applicability to the VA theory we mention the following options:
-\begin{itemize}
-\item The nilpotent chiral field $X = x + \sqrt{2} \chi \theta + F \theta^2$ with $X^2=0$ gives:
-\be 
-X = \frac{\psi^2}{2F} + \sqrt{2}\theta \psi + \theta^2 F\,.
-\ee
-\item A chiral superfield $Y = y + \sqrt{2} \psi \theta + G^2 \theta^2$ satisfying $XY=0$ yields: 
-\be
-Y = \frac{\psi \chi}{F} - \frac{\psi^2}{2F^2} G + \sqrt{2}\theta \chi + \theta^2 G\,.
-\ee
-\item One can remove the fermion from a chiral superfield $Z = z + \sqrt{2} \theta \omega + \theta^2 H$ by the condition $X \bar{D}_{\dot{\alpha}} \bar{Z}=0$. Then both the fermion and the auxiliary field are determined:
-\bea 
-\omega &= \rmi \sigma^\mu \left(\frac{\bar{\psi}}{\bar{F}}\right) \partial_\mu z\,,\\
-H &= -\partial_\mu \left(\frac{\bar{\psi}}{\bar{F}}\right) \bar{\sigma}^\nu \sigma^\mu \left(\frac{\bar{\psi}}{\bar{F}}\right) \partial_\nu z + \left(\frac{\bar{\psi}^2}{2\bar{F}^2}\right) \square z\,.
-\eea
-\item The constraint that removes the gaugino $\Lambda_\alpha$ from a real vector field $V$ is $X W_\alpha = 0$, where we used the field strength chiral superfield
-\be 
-W_\alpha = -\frac{1}{4} \bar{D}^2 D_\alpha V = - \rmi \Lambda_\alpha + L^\beta_\alpha \theta_\beta + \sigma^\mu_{\alpha\dot{\alpha}} \partial_\mu \bar{\Lambda}^{\dot{\alpha}} \theta^2\,,
-\ee
-with
-\be 
-L_\alpha^\beta = \delta^\beta_\alpha D - \frac{\rmi}{2} (\sigma^\mu \sigma^\nu)^\beta_\alpha F_{\mu\nu}\,.
-\ee
-The gaugino $\Lambda_\alpha$ can then be expressed as:
-\bea
-\Lambda_\alpha = & + \frac{\rmi}{\sqrt{2}}\frac{1}{F} L_\alpha^\beta \psi_\beta - \frac{\psi^2}{2F^2} \partial_\mu  \left( \frac{\bar{G}_{\bar{\dot{\alpha}}} \bar{L}^{\dot{\alpha}}_{\dot{\beta}}}{\sqrt{2} \bar{F}} \right) \bar{\sigma}^{\mu \dot{\beta}\gamma} \epsilon_{\gamma\alpha}\\
-& - \frac{\rmi}{2} \frac{\psi^2}{F^2} \sigma^\mu_{\alpha \dot{\beta}} \bar{\sigma}^{\nu\dot{\beta}\gamma} \partial_\mu \left[ \frac{\bar{\psi}^2}{2 \bar{F}^2} \partial_\nu \left(\frac{L^\delta_\gamma \psi_\delta}{\sqrt{2} F}\right)\right]\\
-& - \frac{1}{2} \frac{\psi^2}{F^2} \frac{\bar{\psi}^2}{\bar{F}^2} \left[\partial \left(\frac{\psi}{\sqrt{2}F}\right)\right]^2\partial_\mu \left(\frac{\bar{\psi}_{\dot{\alpha}} \bar{L}^{\dot{\alpha}}_{\dot{\beta}}}{\sqrt{2} \bar{F}}\right) \bar{\sigma}^{\mu\dot{\beta}\gamma} \epsilon_{\gamma \alpha}\,.
-\eea
-\end{itemize}
-These expressions are valid for supersymmetry using the superspace formalism. How constrained multiplets can be use for supergravity was discussed in \cite{DallAgata:2015zxp} and we will review what we nee for the action of the anti-$D3$-brane in the KKLT setup in the following section.
-
-\section{Supergravity and Constrained Multiplets}%Could be in Chapter "D-Branesin 4 dimensional Supergravity"
-In this section we will focus on the explicit constrained multiplets we are going to use in order to describe the anti-$D3$-brane in the KKLT setup. This set is not unique but based on convenience and it is possible to find a different description. Here we work in the conventions of \cite{Freedman:2012zz}, as opposed to the last section. $4d$ fermions are described using four-component Majorana spinors and they are related to the spinors from before like:
-\be 
-\Omega = \begin{pmatrix} \psi \\ \bar{\psi}\end{pmatrix}\,.
-\ee
-In order to bridge the gap between the notation of the previous section on constrained superfields in the superspace formulation we quickly re-write the VA-model in the notation of this chapter. The chiral multiplet we consider here is called $X$ and consists of the scalar we call $X$ as well, a fermion $P_L \Omega$ and the auxiliary field $F$. We impose the same nilpotency condition $X^2=0$ as before in order to remove the scalar and find that the scalar is given as:
-\be 
-X = \frac{\bar{\Omega} P_L \Omega}{2F}\,.
-\ee
-Coming to the action we finally see significant differences in the notation. In the notation of \cite{Freedman:2012zz} we can write an invariant action for the chiral multiplet $X$ as:
-\bea 
-S &= [X\bar{X}]_D + M^2 [X]_F\\
-  &= \int d^4 x \left( - \bar{\Omega} P_L \slashed{\partial}\Omega + \frac{\bar{\Omega}P_L\Omega}{2F} \square \frac{\bar{\Omega}P_R\Omega}{2\bar{F}} + F \bar{F} + M^2 (F+\bar{F})\right)\,.
-\eea
-Immediately it is evident that the equation of motion for the auxiliary field changes as now it also appears as part of the composite expression replacing the supersymmetric partner of the Goldstino. Due to this fact one has the be careful when going on-shell if supersymmetry is realized non-linearly. The equation of motion for the auxiliary field is:
-\bea 
-F = &-M^2 - \frac{1}{4 M^6} \left(\bar{\Omega}P_R  \Omega\right) \square \left(\bar{\Omega}P_L\Omega \right) \\
-&+ \frac{3}{16 M^{14}} \left(\bar{\Omega}P_R  \Omega\right)  \left(\bar{\Omega}P_L\Omega \right) \square \left(\bar{\Omega}P_R  \Omega\right) \square \left(\bar{\Omega}P_L\Omega \right)\,,
-\eea
-which yields the on-shell action that reproduces the Volkov-Akulov action \eqref{eq:VAorigin} up to a field redefinition \cite{Kuzenko:2011tj}:
-\bea 
-S = \int d^4 x \bigg( &- M^2 - \bar{\Omega}P_L \slashed{\partial} \Omega + \frac{1}{4M^4} \left(\bar{\Omega}P_L\Omega \right) \square \left(\bar{\Omega}P_R\Omega\right)\\
-&- \frac{1}{16 M^{12}} \left(\bar{\Omega}P_R\Omega\right)\left(\bar{\Omega}P_L\Omega \right) \square \left(\bar{\Omega}P_R\Omega\right)\square \left(\bar{\Omega}P_L\Omega \right) \bigg)\,.
-\eea
-
-\section{The Swampland Program}
-{\bf Maybe only include in the swampland chapter.}
-\chapter{de Sitter from classical Type IIA Compactifications}
-{\bf Scaling limits paper}
-
-\chapter{KKLT-like Constructions} %All papers with Renata and Andrei
 \section{Uplifting in Type  IIA}
 \label{sec:IIAuplift}
 The KKLT-scenario \cite{Kachru:2003aw,Kachru:2003sx}, as described in section \ref{sec:kklt}, gives a possible way of constructing dS vacua from type IIB string theory using an uplifting anti-D3-brane. One may wonder if something similar is possible in type IIA as well. First off, only anti-D6-branes can appear in IIA because Dp-branes wrap $p-3$ cycles in the internal manifold and no non-trivial 1- or 5-cycles exist. This leaves us with an unique choice for the uplifting brane. An anti-D6-brane in a similar setup was used first in order to stabilize an existing but unstable vacuum in \cite{Kallosh:2018nrk}. The present section is based on \cite{Cribiori:2019bfx} where we instead were interested in uplifting a stable AdS point with the contribution from the anti-D6-brane, just like in the KKLT model.
@@ -1268,6 +1173,176 @@ The extension of the KKLT scenario to type IIA and the development of the mass p
 \chapter{D-Branes in 4 dimensional Supergravity}
 \label{sec:antiD3}
 
+\section{Non-linear Supersymmetry and Supergravity}%Could be in Chapter "D-Branesin 4 dimensional Supergravity"
+\label{sec:multiplets}
+Before we can come to the two main topics of this chapter, the complete action of the anti-D3-brane in the KKLT setup \cite{Cribiori:2019hod} and non-supersymmetric branes \cite{Cribiori:2020bgt}, we have to review some tools that we will be using that might be not as well known as necessary. These are non-linear supersymmetry and its description via constrained multiplets. We dedicate this section to this purpose.
+\subsection{Constrained Superfields in local Supersymmetry}
+When supersymmetry is broken spontaneously, it is still realized in a non-linear manner on the multiplets in supergravity. This means, that there is still an identification of fields, however, this identification now follows a non-linear transformation. A simple example is the Volkov-Akulov (VA) action \cite{Volkov:1972jx}:
+\bea
+S_{\text{VA}} &= -M^4 \int E^0 \wedge E^1 \wedge E^2 \wedge E^3\qquad \text{with}\,,\\
+E^\mu &= d\sigma^\mu + \sum_{I=0}^3 \bar{\lambda}^I \gamma^\mu d\lambda^I\,.
+\label{eq:VAorigin}
+\eea
+In this case the $\lambda^I$ are the $4d$ goldstinos associated with the breaking of $\mathcal{N}=4$ supersymmetry. This action is still invariant under a non-linear transformation
+\be 
+\delta_\epsilon = \epsilon^I + \sum_{J=0}^3 \left(\bar{\lambda}^J \gamma^\mu \epsilon^J\right) \partial_\mu \lambda^I\,.
+\ee
+However, this can be re-written in a way that looks linear by the use of constrained superfields\cite{Rocek:1978nb,Lindstrom:1979kq,Samuel:1982uh,Komargodski:2009rz}. The principles of constrained superfields were investigated in these earlier works but only rather recently they have been re-discovered and applied in modern model building, for some examples see: \cite{Kallosh:2016aep,Vercnocke:2016fbt,GarciadelMoral:2017vnz,Kallosh:2018nrk,Kallosh:2019apq,Cribiori:2019hod,Cribiori:2019bfx,Kallosh:2019zgd,Cribiori:2020zoh,Cribiori:2020bgt}. Here, we can use a nilpotent chiral field in order to re-write the VA-action. A chiral superfield $X$ has an expansion in superspace that is written as:
+\be 
+X = x + \sqrt{2} \psi \theta + F \theta^2\,.
+\ee
+$x$ is a scalar field, $\psi$ a spinor and $F$ an auxiliary field. Note, that the $\psi \neq \lambda$ and that there is not a one-to-one identification between the here and the fermion of th VA-action $\lambda^I$. Finally, the superspace coordinates are $\theta$ and due to their grassmannian nature this expansion is exact. Now, if we impose the nilpotency constraint
+\be 
+X^2 = 0\,,
+\ee
+we find that the only remaining degree of freedom will be the fermion $\psi$, as the scalar is fixed to be 
+\be 
+x = \frac{\psi^2}{2 F}\,.
+\ee 
+Using $X$ we can then write \eqref{eq:VAorigin} as:
+\be 
+S_{\text{VA}} = \int d^4x \int d^2 \theta \int d^2 \bar{\theta} X \bar{X} + M^2 \left( \int d^4 x \int d^2\theta X + h.c.\,\right)
+\ee
+After employing the nilpotentcy condition and performing the superspace integral we can recover the original Volkov-Akulov action after the correct field redefinition \cite{Bergshoeff:2015jxa}, relating $\psi$ to $\lambda^I$.\\
+If we decide to add the secondary constraint 
+\be 
+-\frac{1}{4} X \bar{D}^2 \bar{X} = M^2 X \qquad \Rightarrow \qquad F = M^2 + \text{fermions}\,
+\label{eq:secconst}
+\ee
+to this it is possible to write an equivalent action to the VA-action either as a pure $F$- or pure $D$-term:
+\bea 
+S_{\text{VA},F} &= \int d^4x \int d^2 \theta \int d^2 \bar{\theta} X \bar{X} \\
+S_{\text{VA},D} &=  M^2 \left( \int d^4 x \int d^2\theta X + h.c.\,\right)\,.
+\eea
+The equivalence of the two formulations is implied by the secondary constraint \eqref{eq:secconst}.
+Importantly, the choice of constrained multiplet is not unique. Many different options are available\cite{Bandos:2016xyu,GarciadelMoral:2017vnz}. Not limiting ourselves to their applicability to the VA theory we mention the following options:
+\begin{itemize}
+\item The nilpotent chiral field $X = x + \sqrt{2} \chi \theta + F \theta^2$ with $X^2=0$ gives:
+\be 
+X = \frac{\psi^2}{2F} + \sqrt{2}\theta \psi + \theta^2 F\,.
+\ee
+\item A chiral superfield $Y = y + \sqrt{2} \psi \theta + G^2 \theta^2$ satisfying $XY=0$ yields: 
+\be
+Y = \frac{\psi \chi}{F} - \frac{\psi^2}{2F^2} G + \sqrt{2}\theta \chi + \theta^2 G\,.
+\ee
+\item One can remove the fermion from a chiral superfield $Z = z + \sqrt{2} \theta \omega + \theta^2 H$ by the condition $X \bar{D}_{\dot{\alpha}} \bar{Z}=0$. Then both the fermion and the auxiliary field are determined:
+\bea 
+\omega &= \rmi \sigma^\mu \left(\frac{\bar{\psi}}{\bar{F}}\right) \partial_\mu z\,,\\
+H &= -\partial_\mu \left(\frac{\bar{\psi}}{\bar{F}}\right) \bar{\sigma}^\nu \sigma^\mu \left(\frac{\bar{\psi}}{\bar{F}}\right) \partial_\nu z + \left(\frac{\bar{\psi}^2}{2\bar{F}^2}\right) \square z\,.
+\eea
+\item The constraint that removes the gaugino $\Lambda_\alpha$ from a real vector field $V$ is $X W_\alpha = 0$, where we used the field strength chiral superfield
+\be 
+W_\alpha = -\frac{1}{4} \bar{D}^2 D_\alpha V = - \rmi \Lambda_\alpha + L^\beta_\alpha \theta_\beta + \sigma^\mu_{\alpha\dot{\alpha}} \partial_\mu \bar{\Lambda}^{\dot{\alpha}} \theta^2\,,
+\ee
+with
+\be 
+L_\alpha^\beta = \delta^\beta_\alpha D - \frac{\rmi}{2} (\sigma^\mu \sigma^\nu)^\beta_\alpha F_{\mu\nu}\,.
+\ee
+The gaugino $\Lambda_\alpha$ can then be expressed as:
+\bea
+\Lambda_\alpha = & + \frac{\rmi}{\sqrt{2}}\frac{1}{F} L_\alpha^\beta \psi_\beta - \frac{\psi^2}{2F^2} \partial_\mu  \left( \frac{\bar{G}_{\bar{\dot{\alpha}}} \bar{L}^{\dot{\alpha}}_{\dot{\beta}}}{\sqrt{2} \bar{F}} \right) \bar{\sigma}^{\mu \dot{\beta}\gamma} \epsilon_{\gamma\alpha}\\
+& - \frac{\rmi}{2} \frac{\psi^2}{F^2} \sigma^\mu_{\alpha \dot{\beta}} \bar{\sigma}^{\nu\dot{\beta}\gamma} \partial_\mu \left[ \frac{\bar{\psi}^2}{2 \bar{F}^2} \partial_\nu \left(\frac{L^\delta_\gamma \psi_\delta}{\sqrt{2} F}\right)\right]\\
+& - \frac{1}{2} \frac{\psi^2}{F^2} \frac{\bar{\psi}^2}{\bar{F}^2} \left[\partial \left(\frac{\psi}{\sqrt{2}F}\right)\right]^2\partial_\mu \left(\frac{\bar{\psi}_{\dot{\alpha}} \bar{L}^{\dot{\alpha}}_{\dot{\beta}}}{\sqrt{2} \bar{F}}\right) \bar{\sigma}^{\mu\dot{\beta}\gamma} \epsilon_{\gamma \alpha}\,.
+\eea
+\end{itemize}
+These expressions are valid for supersymmetry using the superspace formalism. How constrained multiplets can be use for supergravity was discussed in \cite{DallAgata:2015zxp} and we will review what we nee for the action of the anti-$D3$-brane in the KKLT setup in the following section.
+
+\subsection{Supergravity and Constrained Multiplets}%Could be in Chapter "D-Branesin 4 dimensional Supergravity"
+In this section we will focus on the explicit constrained multiplets we are going to use in order to describe the anti-$D3$-brane in the KKLT setup. This set is not unique but based on convenience and it is possible to find a different description. Here we work in the conventions of \cite{Freedman:2012zz}, as opposed to the last section. $4d$ fermions are described using four-component Majorana spinors and they are related to the spinors from before like:
+\be 
+\Omega = \begin{pmatrix} \psi \\ \bar{\psi}\end{pmatrix}\,.
+\ee
+In order to bridge the gap between the notation of the previous section on constrained superfields in the superspace formulation we quickly re-write the VA-model in the notation of this chapter. The chiral multiplet we consider here is called $X$ and consists of the scalar we call $X$ as well, a fermion $P_L \Omega$ and the auxiliary field $F$. We impose the same nilpotency condition $X^2=0$ as before in order to remove the scalar and find that the scalar is given as:
+\be 
+X = \frac{\bar{\Omega} P_L \Omega}{2F}\,.
+\ee
+Coming to the action we finally see significant differences in the notation. In the notation of \cite{Freedman:2012zz} we can write an invariant action for the chiral multiplet $X$ as:
+\bea 
+S &= [X\bar{X}]_D + M^2 [X]_F\\
+  &= \int d^4 x \left( - \bar{\Omega} P_L \slashed{\partial}\Omega + \frac{\bar{\Omega}P_L\Omega}{2F} \square \frac{\bar{\Omega}P_R\Omega}{2\bar{F}} + F \bar{F} + M^2 (F+\bar{F})\right)\,.
+\label{eq:VAsusy}
+\eea
+Immediately it is evident that the equation of motion for the auxiliary field changes as now it also appears as part of the composite expression replacing the supersymmetric partner of the Goldstino. Due to this fact one has the be careful when going on-shell if supersymmetry is realized non-linearly. The equation of motion for the auxiliary field is:
+\bea 
+F = &-M^2 - \frac{1}{4 M^6} \left(\bar{\Omega}P_R  \Omega\right) \square \left(\bar{\Omega}P_L\Omega \right) \\
+&+ \frac{3}{16 M^{14}} \left(\bar{\Omega}P_R  \Omega\right)  \left(\bar{\Omega}P_L\Omega \right) \square \left(\bar{\Omega}P_R  \Omega\right) \square \left(\bar{\Omega}P_L\Omega \right)\,,
+\eea
+which yields the on-shell action that reproduces the Volkov-Akulov action \eqref{eq:VAorigin} up to a field redefinition \cite{Kuzenko:2011tj}:
+\bea 
+S = \int d^4 x \bigg( &- M^2 - \bar{\Omega}P_L \slashed{\partial} \Omega + \frac{1}{4M^4} \left(\bar{\Omega}P_L\Omega \right) \square \left(\bar{\Omega}P_R\Omega\right)\\
+&- \frac{1}{16 M^{12}} \left(\bar{\Omega}P_R\Omega\right)\left(\bar{\Omega}P_L\Omega \right) \square \left(\bar{\Omega}P_R\Omega\right)\square \left(\bar{\Omega}P_L\Omega \right) \bigg)\,.
+\eea
+
+\subsection{Coupling to Gravity}
+Since we are interested in a supergravity action, where our constrained multiplets couple to gravity, we will employ the superconformal approach of \cite{Freedman:2012zz}. The superconformal symmetry is very useful for computations but not realized in nature, hence it will be broken in order to recover the typical Poincar\'{e} symmetry of spacetime. In this superconformal approach it will not be necessary to do field redefinitions when going to Einstein frame. The type of action that will be used here is of the following form:
+\be
+S = \left[-3 X^0 \bar{X}^0 \rme^{-\frac{K(X,\bar{X})}{3}}\right]_D + \left[(X^0)^3 W (X)\right]_F + \left[f_{AB}(X) \bar{\Lambda}^A P_L \Lambda^B \right]_F\,,
+\label{eq:suconfact}
+\ee
+with a set of chiral multiplets $\{X^I\}$, $I = 0, \cdots , n$ and $\{\Lambda^A\}$, $A=1,\cdots , m$ a set of vector multiplets. $X^0$ plays the special role of the compensator field with Weyl weight $1$, as opposed to the other chiral multiplets with weight $0$. As is usual $K$ is the Kähler potential, $W$ the superpotential and $f_{AB}$ the gauge kinetic function. In order go from the superconformal theory to Poincar\'{e} supergravity the compensator is fixed to
+\be 
+X^0 = \frac{1}{\kappa} \rme^{\frac{K}{6}}\,,
+\ee
+and thus the Planck scale appears in the theory.\\
+The supergravity equivalent to the local supersymmetry Volkov-Akulov model \eqref{eq:VAsusy} can be obtained by choosing the potentials
+\bea 
+K &= X\bar{X}\,,\\
+W &= W_0 + M^2 X\,,
+\eea
+with a nilpotent chiral multiplet $X$ that contains the Goldstino. Applying the superconformal action to this example with just one chiral multiplet we find:
+\be 
+S = \left[-3 X^0 \bar{X}^0 + X^0 \bar{X}^0 X\bar{X}\right]_D + \left[ (X^0)^3\, (W_0 + M^2 X) \right]_F\,.
+\ee
+In solving this model one has to keep in mind to go to break the superconformal symmetry and use the constraint coming from the nilpotency before going on-shell. The obtained theory is the generalization of the supersymmetric Volkov-Akulov theory \eqref{eq:VAsusy} and is called pure de Sitter supergravity \cite{Farakos:2013ih,Dudas:2015eha,Bergshoeff:2015tra,Hasegawa:2015bza,Ferrara:2015gta} as it only has the graviton and its supersymmetric partner as degrees of freedom. The Goldstino is a pure gauge mode.
+\subsection{Constrained Multiplets in Supergravity}
+In this section we will review all constrained multiplets that we will need for the description of the anti-D3-brane action in the KKLT setup. It has been shown that there are ways to remove any component from a supersymmetry multiplet in \cite{DallAgata:2016syy}. It is even possible to have off-shell linear supersymmetry by the use of Lagrange multipliers \cite{Ferrara:2016een}. 
+\paragraph{For completeness, we start with the nilpotent chiral field $X$ one final time.} It has the components $X = {X,P_L \Omega, F}$ and the constraint
+\be 
+X^2 = 0
+\ee
+gives the scalar in terms of the fermion in the following way:
+\be 
+X = \frac{\bar{\Omega}P_L \Omega}{2F}\,.
+\ee
+\paragraph{Constraining chiral multiplets $Y^i$} with $Y^i = \{Y^i, P_L \Omega^i,F^i\}$ by the conditions
+\be 
+X Y^i =0\,,
+\ee
+where here and in the following $X$ will be the nilpotent chiral field from above, gives the scalar of the multiplet as \cite{Brignole:1997pe,DallAgata:2015pdd}:
+\be 
+Y^i=\frac{\bar{\Omega}P_L\Omega}{F}-\frac{\bar{\Omega}P_L \Omega}{2F^2}F^i\,.
+\ee
+Once more we have removed the scalar and the remaining degrees of freedom are thus fermionic in nature. These multiplets have been successfully used in order to describe the world volume spinors of the anti-D3-brane \cite{Vercnocke:2016fbt,Kallosh:2016aep} which will be very useful for our work here.
+\paragraph{The chiral multiplets $H^a$} with $H^a =\{H^a,P_L \Omega^a,F^a\}$ will be constrained such that 
+\be 
+X\bar{H}^a = \text{chiral.}
+\ee
+This removes the fermion and the auxiliary field \cite{Komargodski:2009rz}\footnote{We remind the reader that we are using the supergravity conventions of \cite{Freedman:2012zz}.}:
+\bea
+P_L\Omega^a &= \frac{\slashed{\mathcal{D}} H^a}{\bar{F}} P_R \Omega\,,\\
+F^a &= \mathcal{D}_\mu \left(\frac{\bar{\Omega}}{\bar{F}}\right) \gamma^\nu \gamma^\mu \left(\frac{P_R\Omega}{\bar{F}} \right)\mathcal{D}_\nu H^a + \frac{\bar{\Omega}P_R\Omega}{2\bar{F}^2} \square H^a\,.
+\eea
+With this we have removed all fermionic degrees of freedom from the multiplets $H^a$. A superpotential $W(H)$ will not lead to masses for the scalars in $H^a$ but instead to fermionic Goldstino interactions.
+\paragraph{Finally, we will use a  chiral field strength multiplet $P_L \Lambda_\alpha$} with components $\{P_L \Lambda_\alpha,(P_L\chi)_{\beta\alpha},F^\Lambda_\alpha\}$. We further specify the components:
+\bea 
+(P_L\chi)_{\beta\alpha} &= \sqrt{2}\left[-\frac{1}{4} (P_L \gamma^{ab} C)_{\beta \alpha}\hat{F}_{ab} + \frac{\rmi}{2} D(P_LC)_{\beta\alpha}\right]\,,\\
+\hat{F}_{ab} &= e^\mu_a e^\nu_b (2 \partial_{[\mu} A_{\nu]} + \bar{\psi}_{[\mu}\gamma_{\nu]}\lambda\,,\\
+F_\alpha^\Lambda &= (\slashed{\mathcal{D}}P_R \Lambda)_\alpha\,.
+\eea
+Here, $\hat{F}$ is the covariant vector field strength and $D$ a real auxiliary field. The matrix $C_{\alpha\beta}$ is used to raise and lower spinor indizes and satisfies $C^T = -C$. $P_L \Lambda_\alpha$ is analogous to the superfield strength $W_\alpha $ in the superspace approach. The constraint we employ removes the gaugino and is
+\be 
+X P_L \Lambda_\alpha = 0\,.
+\ee
+This will remove the lowest component of the field by setting it:
+\bea
+P_L \Lambda_\alpha = &+\frac{1}{F} (\bar{\Omega}P_L\chi)_\alpha - \frac{X}{F} \slashed{\mathcal{D}}_\alpha^{\,\beta} \left(\frac{(\bar{\Omega} P_R\chi)_\beta}{\bar{F}}\right)\\
+&+\frac{X}{F}\slashed{\mathcal{D}}_\alpha^{\,\beta} \left[ \frac{\bar{X}}{\bar{F}} \slashed{\mathcal{D}}_\beta^{\,\gamma} \left(\frac{(\bar{\Omega}P_L\chi)_\gamma}{F}\right)\right]\\
+&-\frac{X\bar{X}}{F^2\bar{F}^2} (\slashed{\mathcal{D}}\slashed{\mathcal{D}}X)_\alpha^{\,\beta} (\gamma^\mu)_\beta^{\,\delta}(\mathcal{D}_\mu\bar{\Omega}P_R\chi)_\delta\,.
+\eea
+Here $(\bar{\Omega}P_L\chi)_\alpha = \Omega^\beta(P_L)_\beta^{\,\gamma} \chi_{\gamma\alpha}$ and we have to remember to set the scalar in $X$ to $X = (\bar{\Omega} P_L \Omega)/(2F)$. With this $P_L \Lambda_\alpha$ describes an abelian gauge vector and nothing else.
+\subsection{The new D-Term}
+\chr{App B }
+
 \section{The Anti-D3-Brane in the KKLT Scenario}
 The anti-D3-brane in the KKL(MM)T scenario \cite{Kachru:2003aw,Kachru:2003sx} provides the uplifting contribution to the the scalar potential that lifts the minimum from anti-de Sitter space to de Sitter. The description of the anti-brane in terms of $4d$, $\mathcal{N}=1$ supergravity has been studied in the last couple of years. Here we extend this description by including all world volume fields in a complete effective action for the KKLT scenario. As will be shown, we find that the action breaks supersymmetry spontaneously, which might be expected as the anti-D3-branes in the KKLT model can be viewed as excited states in a supersymmetric description \cite{Kachru:2002gs}.\\
 The connection of the description of the anti-D3-brane to the uplfiting contributions included in the KKLT scalar potential has only been fully understood fairly recently \cite{Ferrara:2014kva,Kallosh:2014wsa,Bergshoeff:2015jxa,Kallosh:2015nia,Garcia-Etxebarria:2015lif}. Nevertheless, a full description of the action has not been found before our contribution. It consists of a bosonic part with three complex world volume scalars and an $U(1)$ gauge field and a fermionic contribution that contains four 4 dimensional fermions. In the context of flux compactifications the fermionic part has only been know up to quadratic terms \cite{Grana:2002tu,Grana:2003ek,Marolf:2003ye,Tripathy:2005hv,Martucci:2005rb,Bergshoeff:2013pia}. Naively, one would expect that the focus of the investigation would be on the bosonic part. The typical argument would be that the fermionic contributions the are given by supersymmetry. However, the bosonic contributions on the brane can be projected  out using an orientifold and thus, the focus has largely been on the fermionic part of the action \cite{Kallosh:2014wsa,Bergshoeff:2015jxa,Kallosh:2015nia,Garcia-Etxebarria:2015lif,Dasgupta:2016prs,GarciadelMoral:2017vnz}. The combination of the fermionic action with the bosonic uplifting contribution can be combined into a Volkov-Akulov type action \cite{Volkov:1973ix} which can be written using constrained superfields in $4d$, $\mathcal{N}=1$ supergravity. In \cite{GarciadelMoral:2017vnz} the action for all GKP background fields and the four world volume fermions has been derived. In \cite{Cribiori:2019hod} we extended the description to include the remaining contributions, namely the world volume scalars and the $U(1)$ gauge field. This will give a complete description of the uplifting anti-D3-brane in the KKLT background in terms of an effective $4d$, $\mathcal{N}=1$ supergravity action.
@@ -1483,6 +1558,7 @@ S^{\overline{D3}}
 \eea
 
 \subsection{The $D3$-Brane Action and Supergravity}
+\label{sec:susyD3}
 Even though our goal is to describe the anti-$D3$-brane action in the KKLT background it will be useful to first have a look at the supersymmetric action of the $D3$-brane. The results of this section will proof useful  for the investigation of the anti-$D3$-brane case. In particular, we will match the action with the standard $\mathcal{N}=1$ supergravity action for a single vector multiplet and three chiral multiplets because for the $D3$-brane \eqref{eq:simpbosact} reduces exactly to that. First, the ``uplift" term of the bosonic action vanishes for the supersymmetric $D3$-brane as do the fermionic mass terms. Taking into account the sign flip in the RR-fields only one vector multiplet, containing $\lambda$ and $A_\mu$, and three chiral multiplets with $H^a$ and $\chi^a := e^a_i \chi^i$ remain. The $D3$-brane action is given as:
 \bea 
 S^{D3}
@@ -1587,7 +1663,48 @@ As a final note we remark that, in order to produce the correction terms involvi
 \partial_{H^a}\partial_{\bar{H}^{\bar{b}}} k(H,\bar{H}) \approx \frac{1}{6} \rme^{\frac{4}{3} (\mathcal{A} + u )} \left(-\rmi \int \Omega \wedge \bar{\Omega} \right)^{\frac{1}{3}} g_{a\bar{b}}\,.
 \ee
 
+\subsection{The Anti-$D3$-Brane Action}
+We now move on to tackle the description of the supersymmetry breaking anti-D3-brane in the KKLT setup. This work is an extension of \cite{GarciadelMoral:2017vnz} to which we add the bosonic part of the action, the mixed terms of fermions and bosons as well as the $U(1)$ gauge sector with the vector multiplet. We will package all fields into the constrained multiplets of section \ref{sec:multiplets} which allows us to use the language of linear supergravity for a system with broken and hence non-linearly realized, supersymmetry. The fact that it is possible to do this, using constrained multiplets to write a system with broken supersymmetry in a seemingly linear way, aligns with the fact that supersymmetry is broken spontaneously.
+\paragraph{We start by considering the Goldstino $\lambda$ and the fermion triplet $\chi^i$} which we will put into a nilpotent chiral field $X$ and into constrained chiral fields $Y^i$, respectively. The correct Kähler potential coupling the bulk moduli to the world volume fermions is \cite{GarciadelMoral:2017vnz}:
+\bea 
+K = &- \log\left[\left(-\rmi(\tau-\bar{\tau})\right)\right] - 3 \log\left[\left(-\rmi(T-\bar{T})\right)f\left(U^A,\bar{U}^A\right)^{\frac{1}{3}}\right]\\
+&- 3\log \Bigg[ 1- \frac{\rme^{-4\mathcal{A}} X\bar{X}}{3\left(-\rmi (\tau-\bar{\tau})\right)\left(-\rmi(T-\bar{T})\right)f\left(U^A,\bar{U}^A\right)}\\
+&\qquad \qquad \;\,  - \frac{\rme^{-4\mathcal{A}}\delta_{i\jb}Y^i \bar{Y}^\jb}{3\left(-\rmi (\tau-\bar{\tau})\right)\left(-\rmi(T-\bar{T})\right)^2 f\left(U^A,\bar{U}^A\right)^{\frac{1}{3}}}\Bigg]\,,
+\eea
+where we used $f\left(U^A,\bar{U}^A\right) = -\rmi \int \Omega \wedge \Omega$, which we will also keep from here on out, in order to avoid confusion between the $(3,0)$ form $\Omega$ of the internal manifold and the fermions in the multiplets $X$ and $Y^i$. We now need to obtain the correct couplings of the multiplets $X$ and $Y^i$ to the bulk moduli:
+\begin{itemize}
+\item The coupling of $\tau$ is fixed by the modular invariance of the world volume action. \chr{Modular invariance here?}
+\item For the Goldstino in $X$ we have to match it using the scalar potential contribution in \eqref{eq:simpbraneact}. The kinetic term of $\lambda$ will not be matched as the couplings of a Goldstino are not physical and hence can be set to zero. It is sufficient to write:
+\be 
+P_L \Omega = P_L \lambda + \cdots\,,
+\ee
+where the dots represent higher order terms.
+\item The couplings of the fermion triplet in $Y^i$ can be fixed by comparing with the kinetic terms of the massive spin-$1/2$ fields, as we did for the supersymmetric $D3$-brane in section \ref{sec:susyD3}. One finds that the $\Omega^i$ are related to the $\chi^i$ via the field redefinition:
+\be 
+P_L \Omega^i = 2 \rmi \rme^{4\mathcal{A}-\frac{\phi}{2}} f\left(U^A ,\bar{U}^A\right)^{\frac{1}{6}} P_L \chi^i + \cdots\,,
+\ee
+with higher order terms suppressed.
+\end{itemize}
+The superpotential of our model consists of the Gukov-Vafa-Witten flux-potential, non-perturbative contributions and an uplifting contribution that breaks supersymmetry:
+\be 
+W = W_{\text{GVW}} + W_{\text{np}} + M^2 X\,.
+\ee
+$M$ is related to the scale at which SUSY breaks, the warped-down string scale. By rescaling $X$ we set $M^2 = \sqrt{2}$ and the tension of the anti-$D3$-brane to $T_{\overline{D3}} = 2 \pi = M^4 \pi$. It is evident that the superpotential breaks SUSY via the inclusion of the nilpotent chiral multiplet $X$ which, in turn, supports our choice to identify the fermion in $X$ as the Goldstino.\\
+As of now the fermions are massless in the supergravity description. A typical approach to give them masses would be to add a term $W_{\text{mass}} = h_{ij}Y^i Y^j$ to the superpotential \cite{Vercnocke:2016fbt,GarciadelMoral:2017vnz}. Unfortunately, with a dynamical axio-dilaton, this requires $h_{ij}\propto \bar{G}_3$ to be anti-holomorphic in $\tau$, which is incompatible with supersymmetry. Here, we instead choose to modify our Kähler potential in order to acquire the desired terms :
+\bea 
+K = &- \log\left[\left(-\rmi(\tau-\bar{\tau})\right)\right] - 3 \log\left[\left(-\rmi(T-\bar{T})\right)f\left(U^A,\bar{U}^A\right)^{\frac{1}{3}}\right]\\
+&- 3\log \Bigg[ 1- \frac{\rme^{-4\mathcal{A}} X\bar{X}}{3\left(-\rmi (\tau-\bar{\tau})\right)\left(-\rmi(T-\bar{T})\right)f\left(U^A,\bar{U}^A\right)}\\
+&\qquad \qquad \;\,  - \frac{\rme^{-4\mathcal{A}}\delta_{i\jb}Y^i \bar{Y}^\jb}{3\left(-\rmi (\tau-\bar{\tau})\right)\left(-\rmi(T-\bar{T})\right)^2 f\left(U^A,\bar{U}^A\right)^{\frac{1}{3}}}\\
+&\qquad \qquad \;\,  +\frac{\rme^{-8\mathcal{A}}\left( m_{ij} \bar{X} Y^i Y^j + \bar{m}_{\ib\jb}X \bar{Y}^\ib\bar{Y}^\jb\right)}{6 M^2 \left(-\rmi (\tau-\bar{\tau})\right)^\frac{3}{2} \left(-\rmi(T-\bar{T})\right)^{\frac{3}{2}} f\left(U^A,\bar{U}^A\right)^{\frac{5}{6}}}    \Bigg]\,,
+\eea
+Here, $m_{ij}$ is the fermion mass matrix that we discussed above in \eqref{eq:fermmass}. This method of including the masses for the fermion triplet is consistent and compatible with modular invariance. 
+\chr{section 5.1 of paper here/later/not at all?}
 
+\paragraph{The world-volume scalars in the $H^a$....}
+
+\paragraph{Gauge vector field}
+
+\paragraph{Fermion mass terms?}
 
 
 
