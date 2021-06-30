@@ -96,7 +96,7 @@ In this section references were omitted on purpose, for the interested reader so
 \chapter{Introduction}
 
 
-The present thesis is based on the works \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt} published during the course of my doctoral studies at TU Wien under the supervision of Timm Wrase. {\bf Scale Separation?}
+The present thesis is based on the works \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt} published during the course of my doctoral studies at TU Wien under the supervision of Timm Wrase.
 
 %\chapter{The Basics} As of now I think I will put everything in the corresponding sections and leave "real" basics out of the thesis.
 %\section{String Theory}
@@ -113,7 +113,7 @@ Scaling limits paper. Can this go somewhere else?
 
 \section{Non-linear Supersymmetry and Supergravity}%Could be in Chapter "D-Branes in 4 dimensional Supergravity"
 \label{sec:multiplets}
-Before we can come to the two main topics of this chapter, the complete action of the anti-$D3$-brane in the KKLT setup \cite{Cribiori:2019hod} and non-supersymmetric branes \cite{Cribiori:2020bgt}, we have to review some tools that we will be using that might be not as well known as necessary. These are non-linear supersymmetry, its description via constrained multiplets and the so-called new $D$-term. We dedicate this section to this purpose.
+Before we can come to the two main topics of this chapter, non-supersymmetric branes \cite{Cribiori:2020bgt} and the complete action of the anti-$D3$-brane in the KKLT setup \cite{Cribiori:2019hod}, we have to review some tools that we will be using that might be not as well known as necessary. These are non-linear supersymmetry, its description via constrained multiplets and the so-called new $D$-term. We dedicate this section to this purpose.
 \subsection{Constrained Superfields in local Supersymmetry}
 When supersymmetry is broken spontaneously, it is still realized in a non-linear manner on the multiplets in supergravity. This means that there is still an identification of fields, however, this identification now follows a non-linear transformation. A simple example is the Volkov-Akulov (VA) action \cite{Volkov:1972jx}:
 \bea
@@ -254,7 +254,7 @@ where here and in the following $X$ will be the nilpotent chiral field from abov
 \be 
 Y^i=\frac{\bar{\Omega}P_L\Omega}{F}-\frac{\bar{\Omega}P_L \Omega}{2F^2}F^i\,.
 \ee
-Since we once more have removed the scalar the remaining degrees of freedom are fermionic in nature. These multiplets have been successfully used in order to describe the world volume spinors of the anti-$D3$-brane \cite{Vercnocke:2016fbt,Kallosh:2016aep} which will be very useful for our work here.
+Since we once more have removed the scalar the remaining degrees of freedom are fermionic in nature. These multiplets have been successfully used in order to describe the world-volume spinors of the anti-$D3$-brane \cite{Vercnocke:2016fbt,Kallosh:2016aep} which will be very useful for our work here.
 \paragraph{The chiral multiplets $H^a$} with $H^a =\{H^a,P_L \Omega^a,F^a\}$ will be constrained such that 
 \be 
 X\bar{H}^a = \text{chiral.}
@@ -332,10 +332,115 @@ R_2 &= X^0\bar{X}^0 \rme^{-\frac{K}{3}}D\,.
 \eea
 The expansion in components begins with the lowest component of $R_2$ while $R_1$ provides higher order fermionic terms that are required to complete the superconformal embedding. This methode is readily generalized in order to complete any arbitrary real multiplet $R_2$ with weights $(4,0)$. We will use this procedure in order to complete the action of the anti-$D3$-brane in the KKLT scenario.
 
+\section{Non-supersymmetric Branes}
+Thus far, supersymmetry has not been observed in any experiments or natural phenomena. If we want to investigate whether or not string theory can describe the universe we live in, we have to consider effective low energy theories that come from string theory and that break supersymmetry during the compactification process spontaneously. When supersymmetry is spontaneously broken a non-linear transformation of the fields is still realized and we can use the tools of non-linear supersymmetry or supergravity and constrained multiplets to describe it. One way to achieve spontaneous supersymmetry breaking is by including objects in the theory that achieve this. In particular, here we are interested in $Dp$-brane supersymmetry breaking \cite{Sugimoto:1999tx,Antoniadis:1999xk,Angelantonj:1999jh,Aldazabal:1999jr,Angelantonj:1999ms,Dudas:2000nv,Pradisi:2001yv}, for a review see \cite{Mourad:2017rrl}. Other ingredients, like for example $Op$-planes, can also break supersymmetry in a similar way. Importantly, if supersymmetry is broken at or near the string scale, it is not possible to restore it below that scale.\\
+Here, we focus on the description of nun-supersymmetric $Dp$-branes in flux compactifications on $SU(3)\times SU(3)$ structure manifolds \cite{Lust:2008zd}. These theories compactify $10d$ superstring theory to $4d$, $\mathcal{N}=1$ supergravity. A space filling $Dp$-brane then can break the remaining supersymmetry, not broken by the background, spontaneously. Our main goal here is to find the correct description of the supersymmetry breaking object in terms of the resulting supergravity. It is important to stress that the correct $10d$ results are known \cite{Villadoro:2006ia,Blumenhagen:2002wn,Kachru:1999vj,Cvetic:2001nr} but they have often been wrongly interpreted in the language of the $4d$ supergravity as a $D$-term. This section is based on \cite{Cribiori:2020bgt} where we rectified this issue and gave the correct description of any SUSY breaking $Dp$-brane utilizing non-linear supergravity and constrained multiplets.
+
+\subsection{$Dp$-Branes in flat Space}
+Let us review $Dp$-branes in type II supergravity on flat space $\mathbb{R}^{9,1}$ \cite{Polchinski:1998rr,Cederwall:1996pv,Aganagic:1996pe,Cederwall:1996ri,Bergshoeff:1996tu,Aganagic:1996nn} for some basic facts. On this background we have maximal $\mathcal{N}=8$ supersymmetry with $32$ charges, conveniently packaged into two Majorana-Weyl spinors $\varepsilon_1$ and $\varepsilon_2$. Since we will not specify whether we consider type IIA or IIB supergravity the chirality of the spinors is irrelevant, nevertheless, we mention that in IIA the spinors have the same chirality while in IIB they have opposite chirality. If we add a $Dp$-brane in the directions $x^0,\,x^1,\,\cdots,\,x^p$ it will break half of the supersymmetry spontaneously \cite{Polchinski:1998rr}. This divides the supercharges into two groups. The ones acting linearly on the $Dp$-brane world-volume fields satisfy:
+\be 
+\varepsilon_1 = \Gamma_{01\cdots p} \varepsilon_2 =: \Gamma_{Dp}\varepsilon_2\,,
+\ee
+with $\Gamma_{01\cdots p} = \Gamma_0 \Gamma_1 \cdots \Gamma_p$ where we used the Gamma matrices of $10$ dimensional flat space. On the other hand, the non-linearly realized supersymmetries behave differently:
+\be 
+\varepsilon_1 = -\Gamma_{Dp}\varepsilon_2\,.
+\ee
+An anti-$Dp$-brane behaves exactly opposite to a $Dp$-brane:
+\be
+\begin{matrix}
+\text{linear:} & \qquad &\varepsilon_1 = - \Gamma_{Dp} \varepsilon_2 =: \Gamma_{\overline{Dp}} \varepsilon_2\,,\\
+\text{non-linear:} & &\varepsilon_1 = \, \Gamma_{Dp} \varepsilon_2 = -\Gamma_{\overline{Dp}} \varepsilon_2\,.
+\end{matrix}
+\ee
+In general, we can put a $Dp$-brane at an arbitrary angle, where it extends along the directions $x^0,\,x^1,\,\cdots ,\, x^{p-1}$ while it intersects the axis $x^p$ with an angle $\varphi$ in the plane $(x^p,x^{p+1})$. In this case the unbroken supercharges satisfy:
+\be 
+\varepsilon_1 = \left(\cos (\varphi) \Gamma_{01\cdots p} + \sin (\varphi) \Gamma_{01\cdots(p-1)(p+1)} \right)\varepsilon_2 =: \Gamma_{Dp}(\varphi) \varepsilon_2\,,
+\ee
+and the unbroken charges have again a minus instead of a plus in their relation. Of course, in flat space, this distinction between branes, anti-branes and branes at some angle $\varphi$ is rather forced, as we simply could change our coordinate system in order to transform any of the above cases into a simple $Dp$-brane and are physically equivalent. If the background is more involved, like, for example,  $SU(3)\times SU(3)$ structure manifolds, this will no longer be the case. Nevertheless we mention that:
+\bea
+\Gamma_{Dp} (0) = \Gamma_{Dp}\,,\\
+\Gamma_{Dp} (\pi) = \Gamma_{\overline{Dp}}\,.
+\eea
+Another way to get a physical distinction between different brane orientations is to add a reference object, like an $Op$-plane. Let's assume we have an $Op$-plane along the directions $x^0,\,x^1,\,\cdots ,\, x^{p-1}$ which projects out half of the supersymmetry. We are left with $16$ linearly realized supercharges 
+\be 
+\varepsilon_1 = \Gamma_{01\cdots p} \varepsilon_2 =: \Gamma_{Op}\varepsilon_2\,.
+\ee
+If we add a $Dp$-brane without angle to this setup nothing will change for the supersymmetry. On the other hand, adding an anti-$Dp$-brane will break the remaining $16$ supercharges and supersymmetry will be broken completely. Naturally, the case of a $Dp$-brane at an angle $\varphi$ is the most interesting one. There, the $16$ charges, preserved by the background\footnote{In this sense we include the $Op$-brane in the background.} will be realized as a combination of linear and non-linear transformations on the brane world-volume fields. This combination will be necessarily non-linear in total, which will be one of the main conclusions of this section.\\
+Another way to break supersymmetry via branes is by considering a world-volume flux $\mathcal{F}=B+F$, with $B$ the pullback of the Kalb-Ramond field and $F=dA$ a typical field strength on the brane. As discussed in \cite{Johnson:2003glb}, such a situation for a $D(p+1)$-brane is $T$-dual to two $Dp$-branes intersection at an angle $\varphi$ such that:
+\be 
+\mathcal{F} = \tan (\varphi) dx^p \wedge dx^{p+1}\,.
+\ee
+Due to this duality we expect that branes with world-volume flux generically break some of the supersymmetry that would be preserved in the absence of flux. In particular, the linearly preserved supersymmetries now satisfy \cite{Koerber:2010bx}:
+\be 
+\varepsilon_1 = - \frac{1}{\sqrt{g+\mathcal{F}}} \sum_{2n+l=p+1} \frac{1}{n!l!2^n} \epsilon^{a_1\dots a_{2n}b_1 \cdots b_l} \mathcal{F}_{a_1 a_2 } \cdots \mathcal{F}_{a_{2n-1}a_{2n}} \Gamma_{b_1 \cdots b_l} \varepsilon_2 =: \Gamma_{Dp}^{\mathcal{F}}\varepsilon_2\,,
+\ee
+where here our convention is $\epsilon^{01\dots p} = -1$ and the pullback of the Gamma matrices onto the brane world-volume is $\Gamma_a = \partial_a y^M \Gamma_M$.\\
+The examples we have discussed thus far in flat space can be generalized to other spaces. Then, the internal manifold can already break some of the supersymmetry and we have to consider the Gauß-law for all ingredients. This generally leads to reduced supersymmetry, some examples are:
+\be 
+\begin{matrix}
+     T^6 &\qquad& \mathcal{N}=8\,\\
+     T^2 \times K3 &\qquad& \mathcal{N}=4\,\\
+     CY_3 &\qquad& \mathcal{N}=2\,.
+\end{matrix}
+\ee
+Onto these backgrounds we still can add $Op$-planes, removing some supersymmetry, before we add our $Dp$-branes. 
+
+\subsection{Linear + non-linear = non-linear}
+In this subsection we show that the description of a combination of linear and non-linear supersymmetry in the end necessarily has to be non-linear. If we have a background that has preserved supercharges $\{Q^A\}\,,A =1,\,\cdots,\,N$ and then add a supersymmetry breaking source, for example a $Dp$-brane, only a subset of the supersymmetry charges, that can be empty, will still be realized linearly: $\{Q^a\},\,a=1,\,\cdots,\,n<N$. We then want to investigate the behavior of the other remaining charges $\{Q^i\},\,i=n+1,\,\cdots,\,N$.\\
+For this, let us consider a simplified situation where only one set of scalars $\phi^a$ is related to fermions $\lambda^A$ via supersymmetry. The transfromation can be written as
+\be 
+\delta \lambda^A = S^A \varepsilon + \slashed{\partial}\phi^A \varepsilon + \cdots\,,
+\ee
+with complex constants $S^A$ that are not all equal to zero and with additional terms in the $\cdots$ that are not relevant for our discussion here. Splitting the constants as $S^A = \{S^a,\,S^i\}$, with $S^a = 0$ related to the unbroken supersymmetries, we break supersymmetry spontaneously in the directions that are related to the fermionic shifts $S^i\neq0$. We call a supersymmetry transformation non-linear if the shift, related to $\{S^A\}$ is present:
+\bea 
+\delta_s \lambda^a = 0\,,\\
+\delta_s \lambda^i = S^i \varepsilon\,.
+\eea
+One may wonder if it is possible to remove the shift by some sort of allowed transformation. For example, focusing on the set $\{\lambda^i\}$ that has non-linear supersymmetry, we define:
+\be 
+v=K_{i\jb}\lambda^iS^\jb =: \lambda^T g \bar{S}\,,
+\ee
+with the Kähler metric $K_{i\jb}$. The shift action on the new field $v$ is given to be:
+\be 
+\delta_s v = K_{i\jb} S^i S^\jb \varepsilon = \left( S^T K S \right) \varepsilon\,,
+\ee
+in matrix notation where, in this case, $K$ is still the Kähler metric. With this we can redefine the remaining fields as 
+\be 
+\tilde{\lambda}^i = \lambda^i - \frac{S^i}{S^T K \bar{S}}\,,
+\ee
+with 
+\be 
+\tilde{\lambda}^i K_{i\jb} S^\jb = 0\,.
+\ee
+The $\tilde{\lambda}^i$ now have the property that they do not have a shift part in their supersymmetry transformations:
+\be 
+\delta_s \tilde{\lambda}^i = 0\,.
+\ee
+With this we have transformed all degrees of freedom initially present in the $\{\lambda^i\}$ into the $\tilde{\lambda}^i$ and $v$. Importantly, for this to be consistent, we require that $ \left( S^T K S \right) = \| S \|^2 \neq0$. This means that the best thing we can achieve is to transform the non-linear behavior into one direction. We conclude that supersymmetry, realized as a combination of linear and non-linear transformations, will in total always require a non-linear description. An important caveat is that the parameter, giving the SUSY breaking scale, has to contain a constant piece that cannot be removed via field redefinitions. Such cases are readily available, for example, non-supersymmetric $Dp$-branes wrapping tori in the internal manifold. In such a case the SUSY breaking parameter is related to the wrapping numbers and connot be removed.\\
+Compactifications that include SUSY breaking sources thus necessarily require a non-linear realization of the transformations on the world volume fields. This can, for example, lead to $4d$ theories with all supersymmetries realized non-linearly which are called de Sitter supergravity \cite{Antoniadis:2014oya,Dudas:2015eha,Bergshoeff:2015tra,Hasegawa:2015bza,Kallosh:2015sea,Schillo:2015ssx}.
+
+\subsection{Supersymmetry Breaking and Unitarity}
+When any symmetry is broken at some scale $F$ it is expected that will, likewise, be restored when going to, or above, that scale. If we naively follow our effective theory to this scale we expect that new fields or other degrees of freedom appear in order to complete the symmetry. This manifests itself in unitarity violations of the effective theory. This happens, for example, in the Volkov-Akulov theory \cite{Volkov:1972jx,Volkov:1973ix} or when coupling a very heavy scalar in a chiral multiplet to supergravity \cite{Casalbuoni:1988sx}. We will study this problem in the case of some examples in this subsection.\\
+Before we begin let us mention one notable exception to the above statement. In inflation the Hubble scale $H$ changes the SUSY breaking scale to be:
+\be 
+F \sim \sqrt{m^2_{\frac{3}{2}} + H^2 } M_P^2\,,
+\ee
+with the gravitino mass $m_{(3/2)}$ giving the expected supersymmetry breaking scale and $M_P$ the Planck scale \cite{Kallosh:2000ve,DallAgata:2014qsj,Ferrara:2015tyn,Carrasco:2015iij,Ferrara:2016een}. When considering non-linear supergravity models of inflation one would need to keep this change in mind. For simplicity, we will only consider situations where we can safely neglect the Hubble scale.
+
+\paragraph{In the KKLT scenario} we a $4d$ AdS vacuum with $\mathcal{N}=1$ supersymmetry. The vacuum gets lifted to de Sitter by the inclusion of an anti-$D3$-brane at the bottom of a warped throat which at the same time breaks SUSY spontaneously \cite{Kachru:2003aw,Kachru:2003sx}. Here, the breaking scale is given by the uplift energy which in turn corresponds to the warped down string scale. Likewise, the whole tower of open string states is warped down as well. Hence, when going to the SUSY breaking scale, one expects these states to become relevant and invalidated the initial effective theory.\\
+For the KKLT scenario this is not the whole story. When considering the throat to be of Klebanov-Strassler (KS) type \cite{Klebanov:2000hb}, there is a non-trivial 3-cycle at its bottom. This introduces a warped down KK-scale that can be below the string scale, meaning, that massive states enter at this scale \cite{Aalsma:2018pll}. When anti-$D3$-branes at the bottom of the KS-throat polarize into an $NS5$-brane \cite{Kachru:2002gs}, it can wrap a meta-stable cycle and linear supersymmetry can be restored by the KK modes.
+\paragraph{Two $Dp$-branes that enclose a small angle $\varphi \ll 1$} have a supersymmetry breaking scale given by $\varphi/\sqrt{\alpha^\prime}$, with the string tension $1/(2\pi \alpha^\prime)$. Letting $\varphi$ become ever smaller will give us an arbitrarily small SUSY breaking scale. Still, it is not possible to describe such a situation using standard supergravity, as we have already shown. The way supersymmetry is restored when going to the breaking scale is by a set of open string states that stretch between the two branes \cite{Berkooz:1996km,Anastasopoulos:2011hj,Anastasopoulos:2016cmg}. Remember, this means that our or initial effective theory breaks down and no longer correctly describes the physics. It is important to find a new theory that replaces it. In the case of two branes at very small angle this can be done by guessing. It is natural to expect an $SU(2)$ gauge theory for two branes on top of each other. If the angle is non-zero a scalar will get an expectation value and the $SU(2)$ theory breaks to $U(1)\times U(1)$. Interestingly, in this example, we found an infinite tower of states even though we had a particularly small SUSY breaking scale. It is, however, possible to find examples that lack such an explicit tower.
+\paragraph{Two branes intersecting perpendicular on a toroidal orbifold} preserve supersymmetry partially. Again, we can rotate one brane slightly away from the special angle in order to break supersymmetry completely. In this case the SUSY breaking scale can be below both the KK and string scale and thus no obvious heavy states are present that can restore the symmetry at the breaking scale. The solution is somewhat different in this case. While supersymmetry is still realized non-linearly, the theory is nevertheless almost invariant under linear supersymmetry and the world volume fields are in almost regular multiplets. The contributions from the different fields then cancel in divergent cross sections and hence no new massive states are required.\vspace{12pt}\\ %In the paper we write almost cancels. What does it mean when something divergent gets cancelled almost?
+In two of the examples above we found that supersymmetry gets restored by a tower of states coming in at the symmetry breaking scale, as opposed to a single additional state. This means that at this scale the initial low-energy effective theory breaks down and needs to be replaced. This seems to be a generic feature for theories that break supersymmetry by the inclusion of some source, that is not specifically aligned in order to avoid this conclusion (see our last example).\\
+This, fairly strong, requires some remarks. First, the significant changes do not need to effect all sectors of the theory. For example, in the KKLT model the SUSY breaking source sits at the bottom of the warped throat. This means that effects that appear in the bulk will not be changed significantly due to the warping. Secondly, it might be that sources that (almost) preserve supersymmetry are favored by nature, as they minimize energy. This means that seemingly contrived setups could actually be more natural than expected. Finally, if supersymmetry is broken by background effects, like fluxes, and sources are supersymmetric we would not expect to encounter heavy states near the breaking scale.
+
+\subsection{Non-supersymmetric Branes in $4d$, $\mathcal{N}=1$ theories}
+
+
 \section{The Anti-$D3$-Brane in the KKLT Scenario}
 \label{sec:D3barKKLTmain}
-The anti-$D3$-brane in the KKL(MM)T scenario \cite{Kachru:2003aw,Kachru:2003sx} provides the uplifting contribution to the the scalar potential that lifts the minimum from anti-de Sitter space to de Sitter. The description of the anti-brane in terms of $4d$, $\mathcal{N}=1$ supergravity has been studied in the last couple of years. Here we extend this description by including all world volume fields in a complete effective action for the KKLT scenario. As will be shown, we find that the action breaks supersymmetry spontaneously, which might be expected as the anti-$D3$-branes in the KKLT model can be viewed as excited states in a supersymmetric description \cite{Kachru:2002gs}.\\
-The connection of the description of the anti-$D3$-brane to the uplifting contributions included in the KKLT scalar potential has only been fully understood fairly recently \cite{Ferrara:2014kva,Kallosh:2014wsa,Bergshoeff:2015jxa,Kallosh:2015nia,Garcia-Etxebarria:2015lif}. Nevertheless, a full description of the action has not been found before our contribution. It consists of a bosonic part with three complex world volume scalars and an $U(1)$ gauge field and a fermionic contribution that contains four 4 dimensional fermions. In the context of flux compactifications the fermionic part has only been know up to quadratic terms \cite{Grana:2002tu,Grana:2003ek,Marolf:2003ye,Tripathy:2005hv,Martucci:2005rb,Bergshoeff:2013pia}. Naively, one would expect that the focus of the investigation would be on the bosonic part as people typically dislike dealing with spinors. The typical argument would be that the fermionic contributions then are given by supersymmetry. However, the bosonic contributions on the brane can be projected  out using an orientifold and thus, the focus has largely been on the fermionic part of the action \cite{Kallosh:2014wsa,Bergshoeff:2015jxa,Kallosh:2015nia,Garcia-Etxebarria:2015lif,Dasgupta:2016prs,GarciadelMoral:2017vnz}. The combination of the fermionic action with the bosonic uplifting contribution can be combined into a Volkov-Akulov type action \cite{Volkov:1973ix} which can be written using constrained superfields in $4d$, $\mathcal{N}=1$ supergravity. In \cite{GarciadelMoral:2017vnz} the action for all GKP background fields and the four world volume fermions has been derived. In \cite{Cribiori:2019hod} we extended the description to include the remaining contributions, namely the world volume scalars and the $U(1)$ gauge field. This will give a complete description of the uplifting anti-$D3$-brane in the KKLT background in terms of an effective $4d$, $\mathcal{N}=1$ supergravity action.
+The anti-$D3$-brane in the KKL(MM)T scenario \cite{Kachru:2003aw,Kachru:2003sx} provides the uplifting contribution to the the scalar potential that lifts the minimum from anti-de Sitter space to de Sitter. The description of the anti-brane in terms of $4d$, $\mathcal{N}=1$ supergravity has been studied in the last couple of years. Here we extend this description by including all world-volume fields in a complete effective action for the KKLT scenario. As will be shown, we find that the action breaks supersymmetry spontaneously, which might be expected as the anti-$D3$-branes in the KKLT model can be viewed as excited states in a supersymmetric description \cite{Kachru:2002gs}.\\
+The connection of the description of the anti-$D3$-brane to the uplifting contributions included in the KKLT scalar potential has only been fully understood fairly recently \cite{Ferrara:2014kva,Kallosh:2014wsa,Bergshoeff:2015jxa,Kallosh:2015nia,Garcia-Etxebarria:2015lif}. Nevertheless, a full description of the action has not been found before our contribution. It consists of a bosonic part with three complex world-volume scalars and an $U(1)$ gauge field and a fermionic contribution that contains four 4 dimensional fermions. In the context of flux compactifications the fermionic part has only been know up to quadratic terms \cite{Grana:2002tu,Grana:2003ek,Marolf:2003ye,Tripathy:2005hv,Martucci:2005rb,Bergshoeff:2013pia}. Naively, one would expect that the focus of the investigation would be on the bosonic part as people typically dislike dealing with spinors. The typical argument would be that the fermionic contributions then are given by supersymmetry. However, the bosonic contributions on the brane can be projected  out using an orientifold and thus, the focus has largely been on the fermionic part of the action \cite{Kallosh:2014wsa,Bergshoeff:2015jxa,Kallosh:2015nia,Garcia-Etxebarria:2015lif,Dasgupta:2016prs,GarciadelMoral:2017vnz}. The combination of the fermionic action with the bosonic uplifting contribution can be combined into a Volkov-Akulov type action \cite{Volkov:1973ix} which can be written using constrained superfields in $4d$, $\mathcal{N}=1$ supergravity. In \cite{GarciadelMoral:2017vnz} the action for all GKP background fields and the four world-volume fermions has been derived. In \cite{Cribiori:2019hod} we extended the description to include the remaining contributions, namely the world-volume scalars and the $U(1)$ gauge field. This will give a complete description of the uplifting anti-$D3$-brane in the KKLT background in terms of an effective $4d$, $\mathcal{N}=1$ supergravity action.
 
 \subsection{Action of the Anti-$D3$-Brane in KKLT}
 \label{sec:D3barKKLT}
@@ -352,7 +457,7 @@ S^{\text{DBI}} &= - \int d^4x \sqrt{-\text{det}\left( P \left[ g_{\mu \nu} + \rm
 S^{\text{CS}} &= -\int P\left[(C_0 + C_2 + C_4)\wedge \rme^{B_2}\right] \wedge \rme^F\,.
 \label{eq:DBICSact}
 \eea 
-In our conventions the string length is $l_S = 2 \pi \sqrt{\alpha^\prime} = 1$, $B_2$ is the NSNS Kalb-Ramond field and $F_{\mu\nu}$ denotes the field strength of the $U(1)$ gauge field on the brane\footnote{Note that we have rescaled the $U(1)$ field strength by $2\pi$ compared to other typical conventions. Likewise, the action has been rescaled by $1/(2\pi)$ in order to remove the brane tension $T_3 = (2\pi)^{-3} (\alpha^\prime)^{-2} = 2\pi$.}. $P$ is the pullback operation onto the brane world volume.\\
+In our conventions the string length is $l_S = 2 \pi \sqrt{\alpha^\prime} = 1$, $B_2$ is the NSNS Kalb-Ramond field and $F_{\mu\nu}$ denotes the field strength of the $U(1)$ gauge field on the brane\footnote{Note that we have rescaled the $U(1)$ field strength by $2\pi$ compared to other typical conventions. Likewise, the action has been rescaled by $1/(2\pi)$ in order to remove the brane tension $T_3 = (2\pi)^{-3} (\alpha^\prime)^{-2} = 2\pi$.}. $P$ is the pullback operation onto the brane world-volume.\\
 The GKP background\cite{Giddings:2001yu} is warped which makes the identification of the Kähler modulus $\rmim(T)$ rather tedious \cite{Frey:2008xw}. In the case of a single Kähler modulus a fixed overall scaling for all terms in the action exists. We will use the Ansatz \cite{deAlwis:2016cty}
 \be 
 ds^2 = \rme^{-6u(x)} \left(1+\frac{\rme^{-4\mathcal{A}(z)}}{\rme^{4u(x)}}\right)^{-\frac{1}{2}} g_{\mu\nu} dx^\mu dx^\nu + \rme^{2u(x)} \left(1+\frac{\rme^{-4\mathcal{A}(z)}}{\rme^{4u(x)}}\right)^{\frac{1}{6}} g_{a\bar{b}} dz^a dz^{\bar{b}}\,,
@@ -366,7 +471,7 @@ Utilizing this we proceed our investigation of the DBI action \cite{McGuirk:2012
 S^{\text{DBI}} = - \int d^4x \sqrt{-g_4} \bigg(& \rme^{4 \mathcal{A}(H,\bar{H}) - 8 u(x)} + \frac{1}{2}  \rme^{\frac{4}{3} \mathcal{A}(H,\bar{H}) - \frac{8}{3} u(x)} g_{a\bar{b}}(H,\bar{H}) \partial_\mu H^a \partial^\mu \bar{H}^{\bar{b}} \\&+ \frac{1}{4} \rme^{-\phi(H,\bar{H})} F_{\mu\nu} F^{\mu\nu} + \cdots \bigg)\,.
 \label{eq:DBIact}
 \eea
-Here, the $H^a$ are the  world volume scalars that give the position of the brane, entering the action via the pullback and the ellipses denote suppressed, higher order terms. In the following we will consider the brane to be sitting at some point in the strongly warped throat and then the $H^a$ will denote small fluctuations around that initial position.\\
+Here, the $H^a$ are the  world-volume scalars that give the position of the brane, entering the action via the pullback and the ellipses denote suppressed, higher order terms. In the following we will consider the brane to be sitting at some point in the strongly warped throat and then the $H^a$ will denote small fluctuations around that initial position.\\
 The DBI-part of the action yields all kinetic terms for the scalar fields. In $4d$, $\mathcal{N} = 1$ supergravity this this can be described using the Kähler potential \cite{DeWolfe:2002nn}:
 \be 
 K = -3 \log [-\rmi (T-\bar{T}) + k(H,\bar{H})]\,,
@@ -416,7 +521,7 @@ Before we continue, a remark about the KKLT scenario is in order. The volume mod
 
 \paragraph{The fermionic part of the anti-$D3$-brane action} has to contain a Goldstino, responsible for the spontaneous breaking of supersymmetry by the anti-brane. The goal of this part of the thesis is  to offer a complete description of the anti-$D3$-brane in the KKLT setup in the language of $4d$, $\mathcal{N}=1$ supergravity. For this, the Goldstino will be described using a constrained superfield, to be precise, it will be contained in a nilpotent chiral field. \\
 Before we come to the fermionic action of the anti-$D3$-brane we need to figure out how the anti-$D3$-brane action contains the Goldstino. General $Dp$-brane actions in flux backgrounds are know only up to quadratic orders in fermions \cite{Grana:2002tu,Grana:2003ek,Marolf:2003ye,Tripathy:2005hv,Martucci:2005rb,Bergshoeff:2013pia}. Discussions focused on the anti-$D3$-brane in this context can be found in \cite{Kallosh:2014wsa,Bergshoeff:2015jxa,GarciadelMoral:2017vnz,McGuirk:2012sb}. \\
-There are four world volume fermions on the anti-$D3$-brane, part of the $SU(3)$ holonomy group of the internal manifold. One singlet $\lambda$ and three $\chi^i$, forming a triplet. The behavior of these fermions is determined by the imaginary  self dual (ISD) part 
+There are four world-volume fermions on the anti-$D3$-brane, part of the $SU(3)$ holonomy group of the internal manifold. One singlet $\lambda$ and three $\chi^i$, forming a triplet. The behavior of these fermions is determined by the imaginary  self dual (ISD) part 
 \be 
 G_3^{\text{ISD}} = \frac{1}{2} \left( G_3 - \rmi \star_6 G_3 \right)\,,
 \ee
@@ -649,7 +754,7 @@ does reproduce all the required couplings to $\partial_{\mu} \rmim(\tau)$, $\par
 &-\frac{1}{2} \rmre(f)\bar{\lambda}^\prime \gamma^\mu \left( \partial_\mu + \frac{1}{4} \left[\partial_\mu U^A \partial_{U^A} K - \partial_\mu \bar{U}^A \partial_{\bar{U}^A} K\right]\gamma_\star\right)\lambda^\prime\,.
 \eea
 
-As a final note we remark that, in order to produce the correction terms involving the world volume scalars, we require
+As a final note we remark that, in order to produce the correction terms involving the world-volume scalars, we require
 
 \be
 \partial_{H^a}\partial_{\bar{H}^{\bar{b}}} k(H,\bar{H}) \approx \frac{1}{6} \rme^{\frac{4}{3} (\mathcal{A} + u )} \left(-\rmi \int \Omega \wedge \bar{\Omega} \right)^{\frac{1}{3}} g_{a\bar{b}}\,.
@@ -658,7 +763,7 @@ As a final note we remark that, in order to produce the correction terms involvi
 \subsection{The Anti-$D3$-Brane Action in Supergravity}
 \label{sec:sugraact}
 We now move on to tackle the description of the supersymmetry breaking anti-$D3$-brane in the KKLT setup. This work is an extension of \cite{GarciadelMoral:2017vnz} to which we add the bosonic part of the action, the mixed terms of fermions and bosons as well as the $U(1)$ gauge sector with the vector multiplet. We will package all fields into the constrained multiplets of section \ref{sec:multiplets} which allows us to use the language of linear supergravity for a system with broken and hence non-linearly realized, supersymmetry. The fact that it is possible to do this, using constrained multiplets to write a system with broken supersymmetry in a seemingly linear way, aligns with the fact that supersymmetry is broken spontaneously.
-\paragraph{We start by considering the Goldstino $\lambda$ and the fermion triplet $\chi^i$} which we will put into a nilpotent chiral field $X$ and into constrained chiral fields $Y^i$, respectively. The correct Kähler potential coupling the bulk moduli to the world volume fermions is \cite{GarciadelMoral:2017vnz}:
+\paragraph{We start by considering the Goldstino $\lambda$ and the fermion triplet $\chi^i$} which we will put into a nilpotent chiral field $X$ and into constrained chiral fields $Y^i$, respectively. The correct Kähler potential coupling the bulk moduli to the world-volume fermions is \cite{GarciadelMoral:2017vnz}:
 \bea 
 K = &- \log\left[\left(-\rmi(\tau-\bar{\tau})\right)\right] - 3 \log\left[\left(-\rmi(T-\bar{T})\right)f\left(U^A,\bar{U}^A\right)^{\frac{1}{3}}\right]\\
 &- 3\log \Bigg[ 1- \frac{\rme^{-4\mathcal{A}} X\bar{X}}{3\left(-\rmi (\tau-\bar{\tau})\right)\left(-\rmi(T-\bar{T})\right)f\left(U^A,\bar{U}^A\right)}\\
@@ -666,7 +771,7 @@ K = &- \log\left[\left(-\rmi(\tau-\bar{\tau})\right)\right] - 3 \log\left[\left(
 \eea
 where we used $f\left(U^A,\bar{U}^A\right) = -\rmi \int \Omega \wedge \Omega$. From here on out, we will only use $f\left(U^A,\bar{U}^A\right)$ as notation for the gauge kinetic function, in order to avoid confusion between the $(3,0)$ form $\Omega$ of the internal manifold and the fermions in the multiplets $X$ and $Y^i$. We now need to obtain the correct couplings of the multiplets $X$ and $Y^i$ to the bulk moduli:
 \begin{itemize}
-\item The coupling of $\tau$ is fixed by the modular invariance of the world volume action. For the details on this see appendix \ref{app:modinv}.
+\item The coupling of $\tau$ is fixed by the modular invariance of the world-volume action. For the details on this see appendix \ref{app:modinv}.
 \item For the Goldstino in $X$ we have to match the coupling using the scalar potential contribution in \eqref{eq:simpbraneact}. The kinetic term of $\lambda$ will not be matched, as the couplings of a Goldstino are not physical and hence can be set to zero. It is sufficient to write:
 \be 
 P_L \Omega = P_L \lambda + \cdots\,,
@@ -698,7 +803,7 @@ where $m_{ij}$ is the fermion mass matrix that we discussed above in \eqref{eq:f
 \be 
 -\rmi (T-\bar{T}) \,\to \, -\rmi(T-\bar{{T}}) + \frac{k(H^a,\bar{H}^a)}{f(U^A,\bar{U}^A)^{\frac{1}{3}}}=\rme^{4u}\,.
 \ee
-Putting this into the \eqref{eq:Kferm} we find the Kähler potential that now also correctly reproduces the kinetic behavior of the world volume scalars:
+Putting this into the \eqref{eq:Kferm} we find the Kähler potential that now also correctly reproduces the kinetic behavior of the world-volume scalars:
 \bea 
 K = &-\left[\left(-\rmi(\tau-\bar{\tau})\right)\right]-3 \log \left[\left(-\rmi(T-\bar{T})\right)\,f\left(U^A,\bar{U}^A\right)^{\frac{1}{3}}+k\left(H^a,\bar{H}^a\right)\right]\\
 &- 3 \log\Bigg[1-\frac{\rme^{-4\mathcal{A}(H^a,\bar{H}^a)-4u}}{3\left(-\rmi(\tau-\bar{t})\right)f\left(U^A,\bar{U}^A\right)}X\bar{X}\\
@@ -751,7 +856,7 @@ with the dots giving the fermionic terms required by supersymmetry. When going f
 S_{V,\text{ bos}} = \int d^4x \sqrt{-g_4} \left[-\frac{1}{4} \rmim(\tau) F^{\mu\nu}F_{\mu\nu} + \frac{1}{8} \rmre(\tau)\frac{\epsilon^{\mu\nu\rho\sigma}}{\sqrt{-g_4}}F_{\mu\nu}F_{\rho\sigma}\right]\,,
 \ee
 where we went on-shell by using the equations of motion for $D$ and the gauge kinetic function ist $f(\tau) = -\rmi\tau$.
-Expression \eqref{eq:vecact} contains higher order fermionic terms that do not appear in the the action of the anti-$D3$-brane as written in equation \eqref{eq:simpbraneact}. One might fear that this invalidates the match between the two expressions, however, due to the spontaneously broken supersymmetry, the fermions depend on the Goldstino and will vanish in unitary gauge. Since they can be set to zero via a gauge choice these couplings do not have a physical impact and hence the match holds. This is true for as long as the Goldstino is given only in terms of the fermion in our nilpotent chiral field $X$. If, for some reason, the Goldstino becomes a mixed expression of the fermion in $X$ and the world volume fermions, this argument becomes invalid. \\
+Expression \eqref{eq:vecact} contains higher order fermionic terms that do not appear in the the action of the anti-$D3$-brane as written in equation \eqref{eq:simpbraneact}. One might fear that this invalidates the match between the two expressions, however, due to the spontaneously broken supersymmetry, the fermions depend on the Goldstino and will vanish in unitary gauge. Since they can be set to zero via a gauge choice these couplings do not have a physical impact and hence the match holds. This is true for as long as the Goldstino is given only in terms of the fermion in our nilpotent chiral field $X$. If, for some reason, the Goldstino becomes a mixed expression of the fermion in $X$ and the world-volume fermions, this argument becomes invalid. \\
 It is still possible to bring \eqref{eq:vecact} into a more familiar looking form. For this we need make use of the constraints on the multiplets $X$ and $P_L \Lambda_\alpha$ in section \ref{sec:couplinggravity}. Furthermore, using $\Sigma(AB) = A \Sigma(B)$ \cite{Ferrara:2016een}, for a chiral field $A$ and a field $B$ with weights $(w,w-2)$, we observer that 
 \bea 
 \left[f(\tau) \bar{\Lambda}P_L\Lambda\right]_F &= \left[\frac{\Sigma\left(\bar{X}^0 \rme^{-\frac{K}{6}} \bar{X} f(\tau)\right)}{\Sigma\left(\bar{X}^0\rme^{-\frac{K}{6}}\bar{X}\right)}\bar{\Lambda}P_L\Lambda\right]_F\\
@@ -762,7 +867,7 @@ Using this, the fact that $P_L \Lambda_\alpha$ is constrained and $[C_D]=[\Sigma
 S_V &= -\frac{1}{4} \left[\Sigma\left(\frac{\bar{X}^0 \rme^{-\frac{K}{6}} \bar{X} \bar{f}(\tau)}{\Sigma \left(\bar{X}^0\rme^{-\frac{K}{6}}\bar{X}\right)}\right)\bar{\Lambda}P_L\Lambda\right]_F\\
 :&= -\frac{1}{4} \left[\hat{f}_{\overline{D3}}(\bar{\tau},\bar{X})\bar{\Lambda}P_L\Lambda\right]_F\,.
 \eea 
-where we defined the generalized gauge kinetic function for the anit-$D3$-brane:
+where we defined the generalized gauge kinetic function for the anti-$D3$-brane:
 \bea 
 \hat{f}_{\overline{D3}}(\bar{\tau},\bar{X}) := \Sigma\left(\frac{\bar{X}^0 \rme^{-\frac{K}{6}} \bar{X} \bar{f}(\tau)}{\Sigma \left(\bar{X}^0\rme^{-\frac{K}{6}}\bar{X}\right)}\right)\,
 \label{eq:gengaugekin}
@@ -811,7 +916,7 @@ where we remind the reader that we are using the conventions of \cite{Freedman:2
 \be 
 \hat{f}_{\overline{D3}} = \Sigma\left( \frac{\bar{X}^0 \rme^{-\frac{K}{6}}\bar{X}\bar{f}(\bar{\tau})}{\Sigma \left( \bar{X}^0 \rme^{-\frac{K}{6}}\bar{X}\right)}\right)\,,
 \ee
-with $\bar{f}(\bar{\tau}) = \rmi \bar{\tau}$. The multiplets that contain the world volume fields are constrained in the following way:
+with $\bar{f}(\bar{\tau}) = \rmi \bar{\tau}$. The multiplets that contain the world-volume fields are constrained in the following way:
 \be
 \begin{pmatrix}
 X & \quad & X^2=0 & \quad & \text{Goldstino}\\
@@ -867,11 +972,9 @@ with the chiral mass multiplet
 \label{eq:D3barmassmultfinal}
 \ee
 
-\section{Non-supersymmetric Branes}
-
 \section{D-Branes in $4d$ Supergravity - Interim Summary}
 In this section we studied the description of the $D$-branes in different setups in $4$ dimensional supergravity. For this the language of constrained superfields proved useful and we used the new $D$-term as an additional tool to achieve our goals.\\
-In section \ref{sec:D3barKKLTmain} we studied the anti-$D3$-brane at the bottom of a warped throat in the KKLT scenario. We found a description that includes all world volume fields and couplings using the language of non-linear supersymmetry. The action is supersymmetric and the symmetry gets broken spontaneously by the anti-brane. With the results presented here and originally in \cite{Cribiori:2019hod}, we have found a complete description that should find ample use in further studies of KKLT-like models and string phenomenology in general. In particular it should be possible to extend the description here to stacks of anti-$D3$-branes by promoting the world volume fields to have $SU(N_{\overline{D3}})$-symmetry \cite{McGuirk:2012sb}. Such a setup in the KKLT scenario leads, however, to the polarization of the stack of anti-$D3$-branes into a $NS5$-brane \cite{Kachru:2002gs}. The resulting theory \cite{Aalsma:2017ulu,Aalsma:2018pll} has been studied but a description in terms of constrained superfields has not yet been found. Another interesting extension of our work here regards the large volume scenario (LVS) \cite{Balasubramanian:2005zx,Conlon:2005ki}. There, SUSY is broken already in anti-de Sitter space before the uplifting brane is introduced. This leads to a Goldstino that is composed of the world volume fermions and the closed string fermions. It should be possible to re-write the action of this situation in a similar manner as we did here for KKLT. This would be interesting as LVS is one of the main competitors to the KKLT setup.\\
+In section \ref{sec:D3barKKLTmain} we studied the anti-$D3$-brane at the bottom of a warped throat in the KKLT scenario. We found a description that includes all world-volume fields and couplings using the language of non-linear supersymmetry. The action is supersymmetric and the symmetry gets broken spontaneously by the anti-brane. With the results presented here and originally in \cite{Cribiori:2019hod}, we have found a complete description that should find ample use in further studies of KKLT-like models and string phenomenology in general. In particular it should be possible to extend the description here to stacks of anti-$D3$-branes by promoting the world-volume fields to have $SU(N_{\overline{D3}})$-symmetry \cite{McGuirk:2012sb}. Such a setup in the KKLT scenario leads, however, to the polarization of the stack of anti-$D3$-branes into a $NS5$-brane \cite{Kachru:2002gs}. The resulting theory \cite{Aalsma:2017ulu,Aalsma:2018pll} has been studied but a description in terms of constrained superfields has not yet been found. Another interesting extension of our work here regards the large volume scenario (LVS) \cite{Balasubramanian:2005zx,Conlon:2005ki}. There, SUSY is broken already in anti-de Sitter space before the uplifting brane is introduced. This leads to a Goldstino that is composed of the world-volume fermions and the closed string fermions. It should be possible to re-write the action of this situation in a similar manner as we did here for KKLT. This would be interesting as LVS is one of the main competitors to the KKLT setup.\\
 \chr{In section blah non susy branes etc}
 
 
@@ -879,7 +982,7 @@ In section \ref{sec:D3barKKLTmain} we studied the anti-$D3$-brane at the bottom 
 
 \section{KKL(MM)T}
 \label{sec:kklt}%Could be in chapter "KKLT-like Constructions"
-The KKLT-scenario is a possible way to obtain meta-stable de Sitter spaces from String Theory. The initial setup is based on a simple type IIB model with 3 moduli. $S$ is the axio-dilaton, $T$ the Kähler-modulus and $U$ the complex structure modulus. Note that the moduli $T$ and $U$ can split into three independent scalars each. In the simplest model these are taken to be the same and the model simplifies. Such an $STU$-model has the following Kähler- and Superpotential in IIB supergravity:
+The KKLT-scenario \cite{Kachru:2003aw,Kachru:2003sx} is a possible way to obtain meta-stable de Sitter spaces from String Theory. The initial setup is based on a simple type IIB model with 3 moduli. $S$ is the axio-dilaton, $T$ the Kähler-modulus and $U$ the complex structure modulus. Note that the moduli $T$ and $U$ can split into three independent scalars each. In the simplest model these are taken to be the same and the model simplifies. Such an $STU$-model has the following Kähler- and Superpotential in IIB supergravity:
 \bea
 K &= - \log \left( -\rmi (S- \bar{S}\right) - 3 \log\left(-\rmi (T- \bar{T}) \right) - 3 \log\left(-\rmi (U- \bar{U}) \right)\,, \\
 W &= W_{\text{flux}} + W_{\text{np}}\,.
