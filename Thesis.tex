@@ -424,7 +424,7 @@ Compactifications that include SUSY breaking sources thus necessarily require a 
 When any symmetry is broken at some scale $F$ it is expected that will, likewise, be restored when going to, or above, that scale. If we naively follow our effective theory to this scale we expect that new fields or other degrees of freedom appear in order to complete the symmetry. This manifests itself in unitarity violations of the effective theory. This happens, for example, in the Volkov-Akulov theory \cite{Volkov:1972jx,Volkov:1973ix} or when coupling a very heavy scalar in a chiral multiplet to supergravity \cite{Casalbuoni:1988sx}. We will study this problem in the case of some examples in this subsection.\\
 Before we begin let us mention one notable exception to the above statement. In inflation the Hubble scale $H$ changes the SUSY breaking scale to be:
 \be 
-F \sim \sqrt{m^2_{\frac{3}{2}} + H^2 } M_P^2\,,
+F \sim M_P^2 \sqrt{m^2_{\frac{3}{2}} + H^2 } \,,
 \ee
 with the gravitino mass $m_{(3/2)}$ giving the expected supersymmetry breaking scale and $M_P$ the Planck scale \cite{Kallosh:2000ve,DallAgata:2014qsj,Ferrara:2015tyn,Carrasco:2015iij,Ferrara:2016een}. When considering non-linear supergravity models of inflation one would need to keep this change in mind. For simplicity, we will only consider situations where we can safely neglect the Hubble scale.
 
@@ -463,8 +463,8 @@ where $B$ is the Kalb-Ramond 2 form and we work in string frame with zero gauge 
 \paragraph{The description of general non-supersymmetric branes} will require the tools of non-linear supergravity and we will show in the following how it is possible to correctly describe such branes in the low-energy effective SUGRA action. This generalizes the result of \cite{Kallosh:2018nrk}, where the same was done for anti-$Dp$-branes. One main ingredient for this procedure is the nilpotent chiral field $X$ that we already discussed in section \ref{sec:multiplets}. When supersymmetry is broken spontaneously the transformation is still realized in a non-linear way but fields no longer sit in regular multiplets. Nevertheless, constrained multiplets can be used in order to describe fields in such a case. The nilpotent chiral field $X$ can be used to describe the Goldstino related to spontaneous supersymmetry breaking by the brane. This will be an important topic in the next section \ref{sec:D3barKKLT} where we discuss one particular setup in great detail. See also there for a detailed discussion how the brane provides the Goldstino.\\
 To begin with, we consider the theory before the addition of the supersymmetry breaking brane. It is described by a Kähler potential $K_{b4}$ and $W_{b4}$\footnote{Read $b4$ as ``before''.}. Additionally a gauge kinetic function and potential $D$-terms could be present in the theory but we will ignore these possibilities for now. The potentials are obtained by performing a string theory compactification and they depend on chiral multiplets $\Phi^a$. The goal now is to add a general brane to this setup and compute the backreaction onto the fields $\Phi^a$. This backreaction is given by the scalar potential $V_{Dp}(\Phi^a,\bar{\Phi}^a)$ that newly appears due to the inclusion of the brane. In the language of supergravity this can be achieved by a modification of the Kähler and superpotential:
 \bea
-K &= K_{b4} + \rme^{K_{b4}} \frac{S\bar{S}}{V_{Dp}}\,,\\
-W &= W_{b4} + S\,.
+K &= K_{b4} + \rme^{K_{b4}} \frac{X\bar{X}}{V_{Dp}}\,,\\
+W &= W_{b4} + X\,.
 \label{eq:newsugra}
 \eea
 Calculating the scalar potential using these potentials with the usual formula yields:
@@ -476,7 +476,7 @@ which is exactly what one expects. Note that the indices $I$ and $J$ run over al
 K^{X\bar{X}}|_{X=0} &= \rme^{-K_{b4}} V_{Dp}\,,\\
 D_X W|_{X=0} &= 1\,.
 \eea
-It turns out that \eqref{eq:newsugra} actually gives the correct result even for backgrounds that do not preserve supersymmetry. Furthermore the description is not necessarily limited to $Dp$-branes. Indeed any SUSY breaking ingredient that can be described using a nilpotent chiral field can be incorporated in this way. For this reason we occasionally replace $V_{Dp}$ by $V_{\text{new}}$ in the following when we discussing more general results. One thing that is not quite obvious is that $V_{\text{new}}$ is a real function of the fields $\Phi^a$. Nevertheless, it should be always the case since $V_{\text{new}}$ has to be a function of the closed string degrees of freedom that get packaged into the fields $\Phi^a$. One more thing to note is that in more general cases the Goldstino might not be completely given by the SUSY breaking ingredient. If the background fields also break supersymmetry the Goldstino will become a linear combination of the fermion contained in the nilpotent chiral field $X$ and the fermions in the $\Phi^a$. This can, for example, happen if the backreaction of the SUSY breaking source is significant and influences the background fields.\\
+It turns out that \eqref{eq:newsugra} actually gives the correct result even for backgrounds that do not preserve supersymmetry. Furthermore the description is not necessarily limited to $Dp$-branes. Indeed any SUSY breaking ingredient that can be described using a nilpotent chiral field can be incorporated in this way. For this reason we occasionally replace $V_{Dp}$ by $V_{\text{new}}$ in the following when we discussing more general results. One thing that is not quite obvious is that $V_{\text{new}}$ is a real function of the fields $\Phi^a$, which it needs to be since we include it in the Kähler potential $K$. Nevertheless, it should be always the case since $V_{\text{new}}$ has to be a function of the closed string degrees of freedom that get packaged into the fields $\Phi^a$. One more thing to note is that in more general cases the Goldstino might not be completely given by the SUSY breaking ingredient. If the background fields also break supersymmetry the Goldstino will become a linear combination of the fermion contained in the nilpotent chiral field $X$ and the fermions in the $\Phi^a$. This can, for example, happen if the backreaction of the SUSY breaking source is significant and influences the background fields.\\
 The main task in applying this process to new examples is finding the correct form of $V_{\text{new}}$. This might seem simple given the expression in \eqref{eq:newsugra} but can become rather involved for some cases. In particular, when one wants to include all world volume fields in a given setup. Thus far this has only been completely done for the anti-$D3$-brane in the KKLT setup, see \cite{Cribiori:2019hod} or the following section \ref{sec:D3barKKLTmain}. The full result reduces exactly to our proposal here if one sets all world volume fields to zero. The reason that the simple prescription here works is that it seems to be an universal feature, at least for $Dp$-branes, that the Goldstino can be packaged into a nilpotent chiral field $X$ and the features of the background, the brane dimension and other things get put into a scalar function $V_{\text{new}}$. We will give some backup to this claim by investigating some examples in the following where we are able to validate this claim by recovering the correct results. Let us mention that thus far, whenever this method was carfully carried out, it did give the correct answer.
 
 \subsection{Examples of genuine non-supersymmetric Branes}
@@ -492,7 +492,82 @@ K^{\text{throat}} &= -3 \log \left[-\rmi (T-\bar{T})\right] + \frac{X\bar{X}}{\m
 \eea
 where $X^2=0$ is required to perform the last step in the second line.\\
 The validity of the above description was verified in \cite{Kallosh:2014wsa,Bergshoeff:2015jxa} and this formalism was further used in \cite{GarciadelMoral:2017vnz,Cribiori:2019hod} to incorporate all world volume fields of the anti-D3-brane in the KKLT setup, see also the following section \ref{sec:D3barKKLTmain}.
-\paragraph{Our next example will be intersecting $D6$-branes} which are also the main motivation of our considerations here.
+\paragraph{Our next example will be intersecting $D6$-branes} which are also the main motivation of our considerations here. Intersecting $Dp$-branes can be used as ingredients in flux compactifications and for building Standard Model like scenarios \cite{Blumenhagen:2006ci,Blumenhagen:2005mu}. We focus on situations where the background initially preserves $\mathcal{N}=1$ supersymmetry and the branes are responsible for the full breaking of SUSY. Such constructions were initially viewed as being describable as a $D$-term in standard supergravity. In the following we will review the arguments that were used for this conclusion and then we will give the correct description using our methode. Let us once more clarify that the $10d$ picture always was correct. The description was obtained using the correct DBI and world sheet action in $10d$ and the conclusions drawn from this are, to the best of our knowledge, correct. However, the $4d$ interpretation of the behavior as a $D$-term is the wrong point of view. It is necessary to use non-linear supersymmetry for that purpose.\\
+Let us review $D6$-branes wrapping some 3-cycle $\Sigma_3$ in a type IIA compactification on $T^6/(\mathbb{Z}_2 \times \mathbb{Z}_2)$ as our example \cite{Villadoro:2006ia}. For this we define, in our conventions, the 3-form
+\be 
+\Omega_\Sigma = \int_{\Sigma_3} \rme^{-\phi} \Omega\,,
+\ee
+and we find the scalar potential originating from the DBI action, as
+\be 
+V_{\text{DBI}} = T_{D6} \, \rme^{-2\phi} \, vol_6 \sqrt{\rmre (\Omega_\Sigma))^2 + \rmim (\Omega_\Sigma)^2}\,,
+\label{eq:D6DBIact}
+\ee
+with $vol_6$ the volume of the internal space. In the case that the brane is supersymmetric one finds that $\rmim (\Omega_\Sigma) = 0$ and the DBI part of the scalar potential reduces to $V_{\text{DBI}} =T_{D6} \rme^{-2\phi} vol_6 \rmre (\Omega_\Sigma)$, as $\rmre (\Omega) > 0$ for SUSY branes. This actually follows from the action of the $D6$-brane given in equation \eqref{eq:susypbranes} when going to $4d$ Einstein frame. This can be done by writing
+\be 
+\int d^{10}x \sqrt{-g^{\text{string}}_{10}} \rme^{-2\phi} R_{10} = \int d^4x \sqrt{-g_4^{\text{string}}} vol_6 R_4 + \cdots\,,
+\ee
+and then changing to Einstein frame by letting the metric $g^{\text{string}} \to \rme^{4 \phi} vol_6^{-2} g^{\text{Einstein}}$. In particular, this means that the actions in \eqref{eq:susypbranes} only pick up a factor of $\rme^{4 \phi} vol_6^{-2}$ when changing frames. In \cite{Villadoro:2006ia} the authors followed \cite{Blumenhagen:2002wn} and re-wrote the scalar potential in the following way:
+\bea
+V_{\text{DBI}} &= V_F + V_D\,,\\
+V_F &= T_{D6} \rme^{4 \phi} vol_6^{-2} \rmre (\Omega)_\Sigma\,,\\
+V_D &= T_{D6} \rme^{4 \phi} vol_6^{-2} \left( \sqrt{\rmre(\Omega_\Sigma)^2 + \rmim(\Omega_\Sigma)^2} - \rmre (\Omega_\Sigma)\right)\,.
+\eea
+For supersymmetric branes this reduces correctly since then $V_D = 0$ which has to be the case since the $D$-term cannot uplift the vacuum energy without breaking supersymmetry. One can then attempt to re-write everything in terms of a gauge kinetic function and a $D$-term:
+\bea 
+T_{D6} &= \rme^{-2\phi}vol_6 \mathcal{P}\,,\\
+\rmre(f) &= T_{D6} \sqrt{\rmre(\Omega)^2+\rmim(\Omega)^2} = T_{D6} \rmre(\Omega) + \mathcal{O} \left(\frac{\rmim(\Omega_\Sigma)}{\rmre(\Omega_\Sigma)}\right)\,,
+\eea
+where the first line describes the moment map $\mathcal{P}$. We now neglect the higher order terms in the above expressions and use everything to write:
+\bea 
+V_D &= T_{D6} \, \rme^{4 \phi} \, vol_6^{-2} \frac{\;\rmim(\Omega_\Sigma)^2}{\rmre(\Omega_\Sigma)} \frac{1}{1+\sqrt{1+\left(\frac{\rmim(\Omega_\Sigma)}{\rmre(\Omega_\Sigma)}\right)^2}}\,\\
+&= \frac{1}{2\rmre(f)} \, \mathcal{P}^2 \, \frac{2}{1+\sqrt{1+\left(\frac{\rmim(\Omega_\Sigma)}{\rmre(\Omega_\Sigma)}\right)^2}}\,.
+\eea
+One could argue that this is compatible with standard $\mathcal{N}=1$ supergravity for as long as $|\rmim(\Omega_\Sigma)|/|\rmre(\Omega_\Sigma)| \ll 1$ \cite{Villadoro:2006ia}. Strictly speaking, however, this is only true iff $\rmim(\Omega_\Sigma) = 0$, which is, for example, the case for supersymmetric branes. Then, everything can be written using a standard $D$-term and standard supergravity is applicable. If the brane is not supersymmetric, higher order terms need to appear to mend this discrepancy. These are exactly provided by non-linear supergravity. There is one more relevant example where standard supergravity formulas can correctly describe the situation. When anti-$D6$-branes wrap SUSY cycles that have the opposite orientation we also have $\rmim(\Omega_\Sigma)=0$ and everything works out. In \cite{Kallosh:2018nrk} the correct description of anti-branes using non-linear supergravity and constrained fields was given. In the following we will generalize their result to arbitrary branes.
+
+\subsection{Non-linear SUGRA Description for any Brane}
+\paragraph{Let us begin by describing arbitrary $D6$-branes} by utilizing the methode in equation \eqref{eq:newsugra}. This is easy because all we have to do is use the DBI contribution to the scalar potential and find the modified Kähler and superpotential:
+\bea 
+K &= K_{b4} + \rme^{K_{b4}} \frac{X\bar{X}}{T_{D6} \, \rme^{-2\phi} \, vol_6 \sqrt{\rmre (\Omega_\Sigma))^2 + \rmim (\Omega_\Sigma)^2}}\,,\\
+W &= W_{b4} + X\,,
+\eea
+where we again used the nilpotent chiral field $X$. As we mentioned before the brane provides the Goldstino via the only degree of freedom of $X$ and we neglect other, model specific, world volume fields. This readily generalizes to multiple $D6$-branes by adding a sum over the individual contributions in the above formulae. The Goldstino, contained in $X$, is the a linear combination of the fermions coming from each brane individually. Including world volume fields in this description, in particular in the case where the background contributes to the supersymmetry breaking due to the backreaction of the brane, would significantly complicate the description and is model dependent.\\
+In every case one still needs to make sure that the scalar potential contribution, $V_{\text{new}}$, only depends on the closed string degrees of freedom and is a real function. To be more specific $V_{\text{new}}$ has to be a real function of the complex structure moduli $\mathcal{Z}^N$. Let us give an argument for this in this simple example before we move on to general branes. For this we note that the complex structure moduli in type IIA can be written as
+\be 
+\mathcal{Z}^N = \int_{\Sigma^N} \left(\frac{1}{2} C_3 + \rmi \rme^{-\phi} \sqrt{vol_6}\,\rmre(\Omega)\right)\,,
+\ee
+with the $\Sigma^N$ a basis of the orientifold odd 3-homology. With this we conclude that
+\be 
+\rmim(\mathcal{Z}^N) = \int_{\Sigma^N} \rme^{-\phi} \sqrt{vol_6} \, \rmre(\Omega)\,,
+\ee
+and since the dilaton and the volume are always given by the closed string moduli $\rmre{\Omega_\Sigma}$ is a real function of the complex structure moduli. For the imaginary part of $\Omega_\Sigma$ that also appears in the scalar potential we have to do a little bit more work as it does not appear in the above expression for the $\mathcal{Z}^N$. The resolution lies in the orientifold involution of the $O6$-plane that is part of the example we consider. It maps:
+\be 
+\sigma:\quad \Omega \to \bar{\Omega}\,,
+\ee
+which in turn allows us to write $\rmim(\Omega_\Sigma)$ as a real function in terms of $\rmre(\Omega_\Sigma)$, for details see \cite{Grimm:2004ua}. All of this leads us to conclude that $V_{\text{new}}$ in our example here is indeed a real function of the closed string degrees of freedom and the formalism works as intended.
+
+\paragraph{We now generalize further to give the description for arbitrary $Dp$-branes} utilizing the same tools as above. For the $Dp$-brane actions we will take the results found in \cite{Martucci:2005ht,Martucci:2006ij}. As our Ansatz for the metric we use
+\be 
+ds^2 = \rme^{2\mathcal{A}(y)} g_{\mu \nu} dx^\mu dx^\nu + g_{mn} dy^m dy^n \,,
+\ee
+with the warp factor $\mathcal{A}(y)$ that depends only on the internal coordinates. We will assume that the internal space has $SU(3)\times SU(3)$ structure and use the pure spinors $\hat{\Psi}_1$ and $\hat{\Psi}_2$ to describe the manifold \cite{Martucci:2005ht}. Importantly, the definition of those spinors depends on wether we consider type IIA or type IIB theory. We re-iterate that the branes fill the 4 extended dimensions of spacetime and they wrap a $(p-3)$-cycle $\Sigma$ in the internal manifold. Using a subscript $\Sigma$ to denote the pullback of a quantity onto the worldvolume of the brane and $(p-3)$ for quantities where we are only interested in the $(p-3)$-form part of the expression we define:
+\bea 
+\mathcal{W}_m \, d\sigma^1 \wedge \cdots \wedge d\sigma^{p-3} &= \frac{(-1)^p}{2} \left[\rme^{3\mathcal{A}-\phi} \left( i_m + g_{mk}\,dy^k \wedge \right) \hat{\Psi}_2 \right]_\Sigma \wedge \rme^{\mathcal{F}}\Big|_{p-3}\,,\\
+\mathcal{D} \, d\sigma^1 \wedge \cdots \wedge d\sigma^{p-3} &= \left[\rme^{4\mathcal{A}-\phi} \rmim(\hat{\Psi}_1)\right]_\Sigma \wedge \rme^{\mathcal{F}}\Big|_{p-3}\,,\\
+\Theta \, d\sigma^1 \wedge \cdots \wedge d\sigma^{p-3} &= \left[\rme^{4\mathcal{A}-\phi} \rmre(\hat{\Psi}_1)\right]_\Sigma \wedge \rme^{\mathcal{F}}\Big|_{p-3}\,.
+\eea 
+%$i_m: see hep-th 0406137: i_{\partial_m}: \Lambda^P T^\star \to \Lambda^{p-1}T^\star$, $i_\partial_m dx^{n_1} \wedge \cdtos \wedge dx^{n_p} = p\delta_{m}^{[n_1} dx^{n_2} \wedge \cdots \wedge dx^{n_p]}$.
+Utilizing these quantities we re-write the DBI action of the $Dp$-brane as
+\bea
+S_{\text{DBI},\,p} &= T_{Dp} \, \int_{M^{3,1}} d^4x \int_\sigma d^{p-3}y \, \rme^{-\phi|_\Sigma} \sqrt{\det(-g|_\Sigma + \mathcal{F}|_\Sigma)}\\
+&= T_{Dp} \, \int_{M^{3,1}} d^4x \int_\sigma d^{p-3}y \, \sqrt{\Theta^2 + \rme^{4\mathcal{A}} \mathcal{D}^2 + 2 \rme^{2\mathcal{A}} g^{mn} \mathcal{W}_m \mathcal{W}_n}\,,
+\eea
+which reduces to the previous $D6$- brane solution in equation \eqref{eq:eq:D6DBIact} for $p=6$, $\mathcal{W}_n = 0$ and when going to Einstein frame in $4$ dimensions.\\
+In general, $\mathcal{W}_n$ will alway be zero for us since it is the derivative of a holomorphic superpotential that includes the model dependent contributions from the open string degrees of freedom. Since we choose to neglect world volume fields, except the Goldstino. We thus set $\mathcal{W}_n = 0$. Now we still need to argue that the remainder, $\Theta^2 + \rme^{4\mathcal{A}} \mathcal{D}^2$, is a real function of the closed string moduli. The general argument is that the moduli are a combination of the RR axions and the imaginary parts of the NSNS sector fields which we will call $\mathcal{Z}$ again for convenience. Similar to the $D6$ example above, $\rmim(\mathcal{Z})$ can be written directly as a function of $\rmre(\hat{\Psi}_1)$ and $\rmre(\mathcal{Z})$ can be related back to $\rmim(\mathcal{Z})$ as discussed in \cite{Grana:2005jc}. Hence, we write generally:
+\bea 
+S_{\text{DBI},\,p} &= T_{Dp} \, \int_{M^{3,1}} d^4x \int_\sigma d^{p-3}y \, \sqrt{\Theta^2 + \rme^{4\mathcal{A}} \mathcal{D}^2 + 2 \rme^{2\mathcal{A}} g^{mn} \mathcal{W}_m \mathcal{W}_n}\,,\\
+&= T_{Dp} \, \int_{M^{3,1}} d^4x \int_\sigma d^{p-3}y \, \sqrt{ f(\rmim(\mathcal{Z}^a))+g(\rmim(\mathcal{Z}^a))}\,.
+\eea
+Here, $f(\rmim(\mathcal{Z}^a))$ and $g(\rmim(\mathcal{Z}^a))$ are real functions and we recover a supersymmetric $Dp$-brane for $g(\rmim(\mathcal{Z}^a)) = 0$. Since the behaviors of different brane setups gets incorporated into real functions depending on the closed string moduli, this procedure is applicable in very general setups.
 
 
 \section{The Anti-$D3$-Brane in the KKLT Scenario}
