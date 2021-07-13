@@ -2204,6 +2204,46 @@ We see that for the Higgs potential the second condition is satisfied. In \cite{
 
 \section{de Sitter Extrema}
 \label{sec:dSextrema}
+\subsection{Type II Flux Compactifications}
+In this section we will show that it is relatively easy to find de Sitter extrema from classical type II flux compactifications. This is exactly the setup that the conjecture \eqref{eq:dSconori} should hold in. These points violate the original conjecture but the refined version \eqref{eq:dScon} still holds due to the condition on the Hessian. The contents of this section are based on \cite{Roupec:2018mbn}.\\
+The specific setup we consider here are models that are compactifications of $10d$ type II supergravity on $SU(3)$ structure manifolds including RR-, NSNS-fluxes, orientifold planes, $D$-branes and potentially KK-monopoles and NS5-branes. After compactification one obtains a $4d$, $\mathcal{N}=1$ supergravity.\\
+One subset of these compactifications are massive type IIA models based on flat Calabi-Yau 3-folds that include $O6$-planes, NSNS-flux $H_3$ as well as RR-fluxes $F_0$, $F_2$ and $F_4$. The RR-fluxes are typically constrained by tadpole conditions but in the particular setup the $F_4$-flux is unconstrained. The dimensional reduction of these theories was studied in \cite{Grimm:2004ua} and generically lead to AdS vacua \cite{Villadoro:2005cu,DeWolfe:2005uu,Camara:2005dc,Ihl:2006pp} and in a limit of large $F_4$-flux a separation between the AdS and KK-scale is obtained. In \cite{Hertzberg:2007ke} a numerical investigation of the scalar potential was performed in an attempt to find regions with positive values for the potential and very small slow-roll parameter
+\be 
+\epsilon = \frac{1}{2} \frac{|\nabla V|^ 2}{V^ 2}\,,
+\ee
+corresponding to a flat region. For the investigated models \cite{Villadoro:2005cu,DeWolfe:2005uu,Ihl:2006pp} no such regions were found. This is relevenat for our discussion here because the slow-roll parameter is related to the order one parameter of the initial de Sitter conjecture \eqref{eq:dSconori} in the following way:
+\be 
+\epsilon = \frac{c^ 2}{2}\,.
+\ee
+It is in fact possible to show the lack of these regions in an analytical way \cite{Hertzberg:2007wc}. For this we write define 
+\bea 
+\rho &= \left(vol_6\right)^ {\frac{1}{3}} \;\qquad \text{as the volume modulus and}\\
+\tau &= \rme^ {-\phi} \sqrt{vol_6} \;\quad \text{as the dilaton.}
+\eea 
+With this we can schematically write the scalar potential of these models as
+\be 
+V(\rho,\tau) = \frac{A_H}{\rho^3 \tau^2} + \sum_{p=0,2,4,5} \frac{A_p}{\rho^ {p-3} \tau^4} - \frac{A_{O6}}{\tau^3}\,,
+\ee
+with the $A$'s being positive functions of the flux quanta and potential other moduli. From this one can obtain the following condition:
+\be 
+-\rho \frac{\partial V}{\partial \rho} - 3 \tau \frac{\partial V}{\partial \tau} = 9 V + \sum_{p=0,2,4,5} \frac{A_p}{\rho^ {p-3} \tau^4} \geq 9V\,.
+\label{eq:simpnogo}
+\ee
+This immediately forbids de Sitter critical points since for this the derivatives would vanish while the scalar potential is necessarily positive. For the models investigated in \cite{Hertzberg:2007wc} it is possible to find an explicit bound for the slow roll parameter, and thus also $c$, as
+\be 
+\epsilon \geq \frac{27}{13} \quad \Rightarrow \quad c \gtrsim 2\,.
+\ee 
+It is then natural to investigate broader classes of models that either relax some constraints or include more ingredients \cite{Caviezel:2008tf,Flauger:2008ad,Saltman:2004jh,Silverstein:2007ac,Haque:2008jz,Danielsson:2009ff,deCarlos:2009fq,deCarlos:2009qm,Caviezel:2009tu,Danielsson:2010bc,Dong:2010pm,Andriot:2010ju}. In order to avoid the above no-go theorem and similar ones presented,for example, in \cite{Flauger:2008ad,Silverstein:2007ac,Haque:2008jz,Danielsson:2009ff,Caviezel:2009tu,Caviezel:2008ik,Wrase:2010ew,Andriot:2016xvq,Andriot:2017jhf}\footnote{All of these satisfy the dS swampland conjecture with $c \gtrsim \mathcal{O}(1)$.}, the most straight forward, and also promising, generalization is to go towards non-flat manifolds. The natural choice are $SU(3)$ structure manifolds. Furthermore, it is also possible to study type IIB models that can potentially evade all no-go theorems. The simplest example that can work is similar to the above Calabi-Yau case but now on an $SU(3)$ structure manifold with curvature. The scalar potential becomes:
+\be 
+V(\rho,\tau) = \frac{A_H}{\rho^3 \tau^2} + \sum_{p=0,2,4,5} \frac{A_p}{\rho^ {p-3} \tau^4} - \frac{A_{O6}}{\tau^3} + \frac{A_{R_6}}{\rho\tau}\,,
+\ee
+where we have $A_{R_6}>0$ for spaces with negative curvature. It turns out that no simple no-go theorem in the spirit of \eqref{eq:simpnogo} exists. We would, however, like to stress that this does not mean that de Sitter extrema exist \cite{Obied:2018sgi}. Other reasons for the lack of dS points can certainly be present. Nevertheless, one can attempt to find such points by looking explicitly at the scalar potentials of these models as was first done in \cite{Caviezel:2008tf,Flauger:2008ad} and later extended upon by us in \cite{Roupec:2018mbn}. Note, that this is still not necessarily an objection to the original dS swampland conjecture. If the solutions found numerically cannot satisfy certain requirements in order to be consistent with string theory they should not be considered. These include tadpole cancellation, flux quantization and no string loop corrections.
+
+\subsection{Potential Issues}
+Before we come to presenting our results we discuss some potential problems and required consitency conditions that string compactifications should satisfy.
+\paragraph{First, we need to identify the relevant moduli.} For $SU(3)$ compactifications it is problematic to correctly isolate the lightest fields in the theory \cite{Kashani-Poor:2006ofe,Kashani-Poor:2007nby}. This essentially disallows us from studying the low energy effective theory. Luckily, a consistent truncation exists \cite{Cassani:2009ck} for compactifications on group manifolds. One can then expand in left-invariant forms and the $4d$ theory will lift consistently to $10d$. The orientifold projection, which we include in the models we investigate here, should not change this expansion. It is still not guaranteed that the scalars are the lightest fields, or even below the KK-scale \cite{Andriot:2018wzk} but, since we found a solution in $4d$ that lifts to solutions in $10d$, this is no issue. Furthermore, giving more evidence for the validity of this procedure, some of the $4d$ dS extrema can be explicitly lifted to $10d$ \cite{Danielsson:2010bc}.
+\paragraph{Another concern is that we use integrated equations of motion for intersecting sources.} This can be an issue since it is not possible to solve the equations of motion for intersecting sources. Due to this, one usually restricts to smearing the sources. A priori this should not be allowed as, for example, $O$-planes are localized and thus cannot be smeared. For initial discussions on this topic see \cite{Douglas:2010rt,Blaback:2010sj,Blaback:2011nz,Blaback:2011pn,Saracco:2012wc,McOrist:2012yc}. Rather recently, however, it has been argued that this is no issue as the smearing should give the effective result in the low energy theory. First order localizations of this problem were performed in \cite{Junghans:2020acz,Marchesano:2020qvg,Cribiori:2021djm} and it seems that the smearing is an appropriate approximation. 
+
 
 \section{A refined dS Conjecture}
 \label{sec:refconj}
