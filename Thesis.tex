@@ -2272,7 +2272,29 @@ When discussing the de Sitter conjecture we have an effective $4d$ theory in min
 \be 
 S = \int d^4x \sqrt{g_4} \left(\frac{M_P^ 2}{2} R_4 - \frac{1}{2} K_{ij} \partial_\mu \phi^ i \partial^ \mu \phi^ j - V(\phi^ i)\right)\,,
 \ee
-where $R_4$ is the $4d$ Ricci scalar and the scalar potential $V(\phi^ i)$ determines the dynamics of the scalars $\phi^ i$. 
+where $R_4$ is the $4d$ Ricci scalar and the scalar potential $V(\phi^ i)$ determines the dynamics of the scalars $\phi^ i$. In order to precise, let us (re-) define some quantities we will be using in the following. The gradient of the scalar potential is
+\be 
+|\nabla V| = \sqrt{K^{ij}\partial_i V \partial_j V}\,
+\ee
+and for the condition on the smallest value of the Hessian we use
+\be 
+\text{min}(\nabla_i \nabla_j V) = \text{smallest eigenvalue of }(\nabla_i \nabla_j V\,.
+\ee
+For a positive value of the potential we define the first and second slow-roll parameters to be:
+\bea 
+\epsilon &= \frac{1}{2} \frac{|\nabla V|^2}{V^2}\,,
+\eta &= \frac{\text{min}((\nabla_i \nabla_j V))}{V}\,.
+\eea
+Finally, for constant fields, the mass matrix is
+\be
+M^i_j= \nabla^i \nabla_j V\,,
+\ee
+and the eigenvalues are the masses of the scalars. If negative eigenvalues are present we know that a tachyon is present and the extremum will be unstable. Likewise, a zero value of an eigenvalue means that we have a flat direction that might be problematic as well. In terms of the slow-roll parameters, the refined de Sitter conjecture \eqref{eq:dScon} reads:
+\be 
+\sqrt{2 \, \epsilon} \geq c \quad \text{or} \quad \eta \leq - c^\prime\,,
+\ee
+for as long as the value of the potential at the extremum is positive.
+
 
 \chapter{Summary and Outlook}
 \section{Summary}
