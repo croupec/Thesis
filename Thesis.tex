@@ -2272,7 +2272,7 @@ When discussing the de Sitter conjecture we have an effective $4d$ theory in min
 \be 
 S = \int d^4x \sqrt{g_4} \left(\frac{M_P^ 2}{2} R_4 - \frac{1}{2} K_{ij} \partial_\mu \phi^ i \partial^ \mu \phi^ j - V(\phi^ i)\right)\,,
 \ee
-where $R_4$ is the $4d$ Ricci scalar and the scalar potential $V(\phi^ i)$ determines the dynamics of the scalars $\phi^ i$. In order to precise, let us (re-) define some quantities we will be using in the following. The gradient of the scalar potential is
+where $R_4$ is the $4d$ Ricci scalar and the scalar potential $V(\phi^ i)$ determines the dynamics of the scalars $\phi^ i$. In this section we will include the explicit factors of $M_P$ when necessary due to a point that will be raised further down below. In order to precise, let us (re-) define some quantities we will be using in the following. The gradient of the scalar potential is
 \be 
 |\nabla V| = \sqrt{K^{ij}\partial_i V \partial_j V}\,
 \ee
@@ -2282,18 +2282,23 @@ and for the condition on the smallest value of the Hessian we use
 \ee
 For a positive value of the potential we define the first and second slow-roll parameters to be:
 \bea 
-\epsilon &= \frac{1}{2} \frac{|\nabla V|^2}{V^2}\,,
-\eta &= \frac{\text{min}((\nabla_i \nabla_j V))}{V}\,.
+\epsilon &= \frac{M_P^ 2}{2} \frac{|\nabla V|^2}{V^2}\,,
+\eta &= M_P^ 2 \frac{\text{min}((\nabla_i \nabla_j V))}{V}\,.
 \eea
 Finally, for constant fields, the mass matrix is
 \be
 M^i_j= \nabla^i \nabla_j V\,,
 \ee
-and the eigenvalues are the masses of the scalars. If negative eigenvalues are present we know that a tachyon is present and the extremum will be unstable. Likewise, a zero value of an eigenvalue means that we have a flat direction that might be problematic as well. In terms of the slow-roll parameters, the refined de Sitter conjecture \eqref{eq:dScon} reads:
+and the eigenvalues are the masses of the scalars. If negative eigenvalues are present we know that a tachyon is present and the extremum will be unstable. Likewise, a zero value of an eigenvalue means that we have a flat direction that might be problematic as well. The refined de Sitter conjecture \eqref{eq:dScon}, in terms of the quantities defined here and including factors of $M_P$, is:
 \be 
-\sqrt{2 \, \epsilon} \geq c \quad \text{or} \quad \eta \leq - c^\prime\,,
+|\nabla V| \geq \frac{c}{M_P} V \quad \text{or} \quad \text{min}(\nabla_i \nabla_j V) \leq - \frac{c^ \prime}{M_P^ 2} V\,,
+\label{eq:dSconMP}
 \ee
-for as long as the value of the potential at the extremum is positive.
+with our two order one parameters $c$ and $c^ \prime$. In terms of the slow-roll parameters, the refined de Sitter conjecture \eqref{eq:dScon} reads:
+\be 
+\sqrt{2 \epsilon \,} \geq c \quad \text{or} \quad \eta \leq - c^\prime\,,
+\ee
+for as long as the value of the potential at the extremum is positive. Disregarding, for now, the motivation given in \cite{Ooguri:2018wrx} the second part of the above expression is easily motivated if one wants to allow unstable dS extrema. The logical ``or'' is a strange sight in a physical expression and in \cite{Andriot:2018wzk} an attempt was made to propose a singular expression that incorporates both quantities $\epsilon$ and $\eta$ that reproduces the same key features, namely disallowing stable de Sitter points while allowing unstable, positive extrema. The problem of this proposal was that it was not formulated in a covariant manner. We not only rectified this issue in \cite{Andriot:2018mav}, motivate the parameter range of the parameters in the conjecture with data from \cite{Roupec:2018mbn} and also discussed the non-trivial limit of $M_P \to \infty$ of the expression. This (formal) limit is a key point in the swampland program as it corresponds to the decoupling of gravity from the field theory. For the conjectures this means that they have to be trivially satisfied in the decoupling limit as they should be valid in a regime where we have a consistent, effective theory of quantum gravity. For the refined conjecture \eqref{eq:dSconMP} this is trivially the case, in no small part due to the ``or'' appearing therein.
 
 
 \chapter{Summary and Outlook}
