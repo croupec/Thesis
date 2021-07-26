@@ -2271,6 +2271,7 @@ Due to the criticism from both, classical dS constructions \cite{Andriot:2018ept
 When discussing the de Sitter conjecture we have an effective $4d$ theory in mind with scalars $\phi^ i$ that couple to gravity. Schematically the action for such a theory can be written as:
 \be 
 S = \int d^4x \sqrt{g_4} \left(\frac{M_P^ 2}{2} R_4 - \frac{1}{2} K_{ij} \partial_\mu \phi^ i \partial^ \mu \phi^ j - V(\phi^ i)\right)\,,
+\label{eq:leeact}
 \ee
 where $R_4$ is the $4d$ Ricci scalar and the scalar potential $V(\phi^ i)$ determines the dynamics of the scalars $\phi^ i$. In this section we will include the explicit factors of $M_P$ when necessary due to a point that will be raised further down below. In order to precise, let us (re-) define some quantities we will be using in the following. The gradient of the scalar potential is
 \be 
@@ -2298,7 +2299,37 @@ with our two order one parameters $c$ and $c^ \prime$. In terms of the slow-roll
 \be 
 \sqrt{2 \epsilon \,} \geq c \quad \text{or} \quad \eta \leq - c^\prime\,,
 \ee
-for as long as the value of the potential at the extremum is positive. Disregarding, for now, the motivation given in \cite{Ooguri:2018wrx} the second part of the above expression is easily motivated if one wants to allow unstable dS extrema. The logical ``or'' is a strange sight in a physical expression and in \cite{Andriot:2018wzk} an attempt was made to propose a singular expression that incorporates both quantities $\epsilon$ and $\eta$ that reproduces the same key features, namely disallowing stable de Sitter points while allowing unstable, positive extrema. The problem of this proposal was that it was not formulated in a covariant manner. We not only rectified this issue in \cite{Andriot:2018mav}, motivate the parameter range of the parameters in the conjecture with data from \cite{Roupec:2018mbn} and also discussed the non-trivial limit of $M_P \to \infty$ of the expression. This (formal) limit is a key point in the swampland program as it corresponds to the decoupling of gravity from the field theory. For the conjectures this means that they have to be trivially satisfied in the decoupling limit as they should be valid in a regime where we have a consistent, effective theory of quantum gravity. For the refined conjecture \eqref{eq:dSconMP} this is trivially the case, in no small part due to the ``or'' appearing therein.
+for as long as the value of the potential at the extremum is positive. Disregarding, for now, the motivation given in \cite{Ooguri:2018wrx} the second part of the above expression is easily motivated if one wants to allow unstable dS extrema. The logical ``or'' is a strange sight in a physical expression and in \cite{Andriot:2018wzk} an attempt was made to propose a singular expression that incorporates both quantities $\epsilon$ and $\eta$ that reproduces the same key features, namely disallowing stable de Sitter points while allowing unstable, positive extrema. The problem of this proposal was that it was not formulated in a covariant manner. We not only rectified this issue in \cite{Andriot:2018mav}, motivate the parameter range of the parameters in the conjecture with data from \cite{Roupec:2018mbn} and also discussed the non-trivial limit of $M_P \to \infty$ of the expression. This (formal) limit is a key point in the swampland program as it corresponds to the decoupling of gravity from the field theory. For the conjectures this means that they have to be trivially satisfied in the decoupling limit as they should be valid in a regime where we have a consistent, effective theory of quantum gravity. For the refined conjecture \eqref{eq:dSconMP} this is trivially the case, in no small part due to the ``or'' appearing therein.\\
+We, on the other hand, propose a single expression as an alternative to the refined de Sitter conjecture that gives a simultaneous condition on $\epsilon$ and $\eta$. Formulated as a conjecture:\\
+\emph{Any consistent, low energy, effective quantum gravity theory, that can be written as in \eqref{eq:leeact}, should satisfy the following condition whenever $V>0$:}
+\be 
+\left(M_P \frac{|\nabla V|}{V}\right)^ q - a M_P^2 \frac{\text{min}(\nabla_i \nabla_j V)}{V} \geq b\,,
+\label{eq:ourdScon}
+\ee
+\emph{where the parameters satisfy:}
+\be 
+a,\, b > 0,\qquad a+b = 1, \qquad \text{and}\qquad q>2\,.
+\ee
+Written in terms of the slow-roll parameters this reads:
+\be 
+(2\epsilon)^ {\frac{q}{2}} - a \eta \geq b\,.
+\ee
+The decoupling limit is trivially satisfied by first dividing by $M_P^q$. Then one recovers $(|\nabla V|/V)^q \geq 0$ which is always satisfied. When going to an extremum one finds, due to the positivity of the parameters in the conjecture, that $(\text{min}(\nabla_i \nabla_j V)/V)|_{\text{ext}}<0$ which means that only unstable de Sitter points are allowed because we have at least one tachyon. Our conjecture thus has the same basic features as the refined dS conjecture of \cite{Ooguri:2018wrx} but there are differences in the allowed values of $\epsilon$ and $\eta$. Both conjectures disallow small values of $\epsilon$ with positive $\eta$ but differ in certain regions of the $(\epsilon,\eta)$ parameter space. It is, however, not the case that one conjecture is strictly stronger than the other. This differences, depicted in figures \ref{fig:conjreg} and \ref{fig:conjreg2}, mean that the conjectures draw a different border of the swampland in the landscape and potentially allow or disallow certain models. For example, as we will discuss later on, single field slow-roll inflation is not impossible in our conjecture.
+
+\begin{figure}[htp]
+     \centering
+     \includegraphics[scale=0.8]{conreg3.pdf}
+     \caption{The excluded regions of parameter space for both refined conjectures, \eqref{eq:dScon} and \eqref{eq:ourdScon}. The axis are $(\sqrt{2\epsilon},\eta)$, denoted in the graphs as $(|V^ \prime|/V,V^ {\prime \prime}/V)$. The upper left quadrant of the dashed lines is excluded for the refined conjecture of \cite{Ooguri:2018wrx} and everything up and left of the curved solid line is excluded for our refined conjecture. The differences between the two conjectures are the approximately triangular shaped region near the cross (shaded pink) which is allowed by our conjecture and the regions right of and below the dashed lines up to the solid curved line (shaded light blue). Those are excluded by our conjecture but allowed by the conjecture \eqref{eq:dScon}. The selected value of $a = 1/5.7$ in this picture gives a good overview of the different regions.}
+     \label{fig:conjreg}
+\end{figure}
+\begin{figure}[htp]
+     \centering
+     \includegraphics[scale=0.6]{conreg1.pdf}
+     \includegraphics[scale=0.6]{conreg2.pdf}
+     \caption{For different values of the parameter $a$ the differences in allowed/excluded regions change as some regions merge or disappear compared to \ref{fig:conjreg}. On the left we have $a = 1$. Here the region below the curved line is only excluded by the conjecture \eqref{eq:dScon}. On the right we have $a=1/2$. There the conjectures agree for very small $\epsilon$.}
+     \label{fig:conjreg2}
+\end{figure}
+We now move on to motivate our conjecture \eqref{eq:ourdScon} by an argument base in the weak coupling regime similar to what was done in \cite{Ooguri:2018wrx}.
 
 
 \chapter{Summary and Outlook}
