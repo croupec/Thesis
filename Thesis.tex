@@ -2329,7 +2329,45 @@ The decoupling limit is trivially satisfied by first dividing by $M_P^q$. Then o
      \caption{For different values of the parameter $a$ the differences in allowed/excluded regions change as some regions merge or disappear compared to \ref{fig:conjreg}. On the left we have $a = 1$. Here the region below the curved line is only excluded by the conjecture \eqref{eq:dScon}. On the right we have $a=1/2$. There the conjectures agree for very small $\epsilon$.}
      \label{fig:conjreg2}
 \end{figure}
-We now move on to motivate our conjecture \eqref{eq:ourdScon} by an argument base in the weak coupling regime similar to what was done in \cite{Ooguri:2018wrx}.
+We now move on to motivate our conjecture \eqref{eq:ourdScon} by an argument base in the weak coupling regime similar to what was done in \cite{Ooguri:2018wrx}. The idea is that when going to large distances in field space, corresponding to weak coupling, one is in a controlled regime of string theory. This is usually the case when the string coupling is small, the dilaton is large and negative, $\alpha^ \prime$ corrections are neglibel and the internal volume is large. When going to large distances in field space one also has to consider the swampland distance conjecture \cite{Baume:2016psm} for the case of a non-zero scalar potential \cite{Klaewer:2016kiy,Ooguri:2006in}. In short, the distance conjecture proposes that infinite towers of light modes appear when going to large distances in moduli space. Since more degrees of freedom enter the effective theory one can relate this to entropy. De Sitter space has a finite amount of entropy given by the Gibbons-Hawking entropy \cite{Gibbons:1977mu}. In the weak coupling limit we assume that the Bousso bound \cite{Bousso:1999xy} is saturated. In order to apply these tools for our purpose in a universe that undergoes accelerated expansion we have to make sure that we remain within a semi-classical description. Concretely, this means that the second slow-roll parameter $\eta$ has to be below $-1$, which corresponds to the second condition in \eqref{eq:dSconMP}. The goal of this derivation is to motivate the conjecture \eqref{eq:ourdScon} and the parameter ranges of $a$, $b$, and $q$.
+\paragraph{Let us start the motivation of our conjecture} by considering a single, canonically normalized scalar field $\phi$ with scalar potential $V$ in the low-energy effective theory. As is argued in \cite{Ooguri:2018wrx}, the scalar potential takes the form
+\be 
+V(\phi)=\left(n(\phi) \rme^ {d\phi}\right)^ {-k}\,,
+\ee
+where both parameters $d$ and $k$ are positive. The function $n(\phi)$ counts the number of towers that become light in the asymptotic regime. This means that $n(\phi)>0$ and $\partial_\phi n =: n^ \prime > 0$ as the number of contributing towers grows when going to large distances in field space. Using this we can write
+\be 
+\frac{V^ \prime}{V} = -k \left(d+ \frac{n^ \prime}{n}\right)\,,
+\ee
+using $n^ \prime >0$ this leads to the first condition of \eqref{eq:dSconMP}:
+\be 
+\frac{|V^ \prime|}{V} \geq k\cdot d =: c\,,
+\ee
+where we now defined the familiar order one parameter $c$. Exponentiating this with $q$ we find:
+\be 
+\left(\frac{|V^ \prime|}{V}\right)^ q = k^ q \left(d+\frac{n^ \prime}{n}\right)^ q \geq k^ q \left(d^q + q \frac{n^ \prime}{n} d^ {q-1}\right)\,,
+\label{eq:partcon1}
+\ee
+which holds since all terms in the power expansion are positive. This is true not only for integers $q>2$ but also more generally for real valued $q$ since:
+\be 
+(x+y)^ q -x^q = \int_x^ {x+y} dt \, q t^ {q-1} \geq \int_x^ {x+y} dt\, q x^ {q-1} = q y x^ {q-1}\,.
+\ee
+In order to arrive at our conjecture \eqref{eq:ourdScon} we also use the second derivative of the scalar potential to compute:
+\be 
+\frac{V^{\prime\prime}}{V} = k^ 2 d^ 2 + \frac{n^ \prime}{n} k \left( \frac{k+1}{n} + 2 kd\right) - k\frac{n^ {\prime\prime}}{n}\,.
+\ee
+We then assume $n\geq 1$ as in the asymptotic regime the number of towers that become light grows and it is therefore reasonable to start with at least one tower. Furthermore, we also consider $n^{\prime\prime} \geq 0$ as the number of towers that become relevant should grow the farther one goes in field space. Writing these conditions as
+\be 
+n\geq 1 \qquad \text{and} \qquad \frac{n^ {\prime\prime}}{n} \geq 0\,,
+\ee we deduce from the above expression that:
+\be 
+\frac{V^ {\prime\prime}}{V} \leq k^ 2 d^ 2+ \frac{n^ \prime}{n} k (k+1+2kd)\,.
+\label{eq:partcon2}
+\ee
+Combining \eqref{eq:partcon1} and \eqref{eq:partcon2} we find:
+\be
+\left(\frac{|V^\prime|}{V}\right)^ q -a \frac{V^ {\prime\prime}}{V} \geq k^ q d^ q - a k^ 2 d^ 2 + \frac{n^ \prime}{n} \left[q k^ q d^ {q-1} - a k (k+1+2kd)\right]\,.
+\ee
+
 
 
 \chapter{Summary and Outlook}
