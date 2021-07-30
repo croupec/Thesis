@@ -2240,6 +2240,7 @@ V(\rho,\tau) = \frac{A_H}{\rho^3 \tau^2} + \sum_{p=0,2,4,5} \frac{A_p}{\rho^ {p-
 where we have $A_{R_6}>0$ for spaces with negative curvature. It turns out that no simple no-go theorem in the spirit of \eqref{eq:simpnogo} exists. We would, however, like to stress that this does not mean that de Sitter extrema exist \cite{Obied:2018sgi}. Other reasons for the lack of dS points can certainly be present. Nevertheless, one can attempt to find such points by looking explicitly at the scalar potentials of these models as was first done in \cite{Caviezel:2008tf,Flauger:2008ad} and later extended upon by us in \cite{Roupec:2018mbn}. Note, that this is still not necessarily an objection to the original dS swampland conjecture. If the solutions found numerically cannot satisfy certain requirements in order to be consistent with string theory they should not be considered. These include tadpole cancellation, flux quantization and no string loop corrections.
 
 \subsection{Potential Issues}
+\label{sec:stringrequ}
 Before we come to presenting our results we discuss some potential problems and required consitency conditions that string compactifications should satisfy.
 \paragraph{First, we need to identify the relevant moduli.} For $SU(3)$ compactifications it is problematic to correctly isolate the lightest fields in the theory \cite{Kashani-Poor:2006ofe,Kashani-Poor:2007nby}. This essentially disallows us from studying the low energy effective theory. Luckily, a consistent truncation exists \cite{Cassani:2009ck} for compactifications on group manifolds. One can then expand in left-invariant forms and the $4d$ theory will lift consistently to $10d$. The orientifold projection, which we include in the models we investigate here, should not change this expansion. It is still not guaranteed that the scalars are the lightest fields, or even below the KK-scale \cite{Andriot:2018wzk} but, since we found a solution in $4d$ that lifts to solutions in $10d$, this is no issue. Furthermore, giving more evidence for the validity of this procedure, some of the $4d$ dS extrema can be explicitly lifted to $10d$ \cite{Danielsson:2010bc}.
 \paragraph{Another concern are integrated equations of motion for intersecting sources.} This can be an issue since it is not possible to solve the equations of motion for intersecting sources. Due to this, one usually restricts to smearing the sources. A priori this should not be allowed as, for example, $O$-planes are localized and thus cannot be smeared. For initial discussions on this topic see \cite{Douglas:2010rt,Blaback:2010sj,Blaback:2011nz,Blaback:2011pn,Saracco:2012wc,McOrist:2012yc}. Rather recently, however, it has been argued that this is no issue as the smearing should give the effective result in the low energy theory. First order localizations of this problem were performed in \cite{Junghans:2020acz,Marchesano:2020qvg,Cribiori:2021djm} and it seems that the smearing is an appropriate approximation. Still, in the case of only parallel sources the solution can be obtained by including simple warp factors and no no-go's exist when restricting to such setups \cite{Andriot:2016xvq}. However, it is not clear if geometries exist that allow for such situations. Our setups here all include intersecting sources such that we rely on the recent investigations regarding first-order localization and the smearing argument. 
@@ -2313,12 +2314,13 @@ a,\, b > 0,\qquad a+b = 1, \qquad \text{and}\qquad q>2\,.
 Written in terms of the slow-roll parameters this reads:
 \be 
 (2\epsilon)^ {\frac{q}{2}} - a \eta \geq b\,.
+\label{eq:ourdSconslowroll}
 \ee
 The decoupling limit is trivially satisfied by first dividing by $M_P^q$. Then one recovers $(|\nabla V|/V)^q \geq 0$ which is always satisfied. When going to an extremum one finds, due to the positivity of the parameters in the conjecture, that $(\text{min}(\nabla_i \nabla_j V)/V)|_{\text{ext}}<0$ which means that only unstable de Sitter points are allowed because we have at least one tachyon. Our conjecture thus has the same basic features as the refined dS conjecture of \cite{Ooguri:2018wrx} but there are differences in the allowed values of $\epsilon$ and $\eta$. Both conjectures disallow small values of $\epsilon$ with positive $\eta$ but differ in certain regions of the $(\epsilon,\eta)$ parameter space. It is, however, not the case that one conjecture is strictly stronger than the other. This differences, depicted in figures \ref{fig:conjreg} and \ref{fig:conjreg2}, mean that the conjectures draw a different border of the swampland in the landscape and potentially allow or disallow certain models. For example, as we will discuss later on, single field slow-roll inflation is not impossible in our conjecture.
 
 \begin{figure}[htp]
      \centering
-     \includegraphics[scale=0.8]{conreg3.pdf}
+     \includegraphics[scale=0.85]{conreg3.pdf}
      \caption{The excluded regions of parameter space for both refined conjectures, \eqref{eq:dScon} and \eqref{eq:ourdScon}. The axis are $(\sqrt{2\epsilon},\eta)$, denoted in the graphs as $(|V^ \prime|/V,V^ {\prime \prime}/V)$. The upper left quadrant of the dashed lines is excluded for the refined conjecture of \cite{Ooguri:2018wrx} and everything up and left of the curved solid line is excluded for our refined conjecture. The differences between the two conjectures are the approximately triangular shaped region near the cross (shaded pink) which is allowed by our conjecture and the regions right of and below the dashed lines up to the solid curved line (shaded light blue). Those are excluded by our conjecture but allowed by the conjecture \eqref{eq:dScon}. The selected value of $a = 1/5.7$ in this picture gives a good overview of the different regions.}
      \label{fig:conjreg}
 \end{figure}
@@ -2389,7 +2391,52 @@ q < k+3\,,
 which is the case for as long as $q>2$ where we will allow real valued $q$ as well.
 
 \subsection{Constraining Parameters with known Examples}
-Here, we will use solutions like the ones discussed in the previous section in order to constrain the parameters $a$, $b$ and $q$ appearing in our conjecture \eqref{eq:ourdScon}.
+Here, we will use solutions like the ones discussed in the previous section in order to constrain the parameters $a$, $b$ and $q$ appearing in our conjecture \eqref{eq:ourdScon}. We use points obtained from classical solutions as they have less intrinsic problems as constructions relying on anti-$D$-brane uplifts. Still we have the same requirements as discussed in \ref{sec:stringrequ}. For a discussion about the construction and search for such classical de Sitter points look there or in \cite{Caviezel:2008tf,Flauger:2008ad,Danielsson:2012et}. We use two types of points, classical unstable de Sitter points that are extrema, found in \cite{Danielsson:2012et} and later extended by us in \cite{Roupec:2018mbn} and non-extrema with $V>0$, obtained in \cite{Blaback:2013fca}. The latter were obtained from similar setups as our unstable dS points and they face the same issues as well. We select several points from both data sets that have acceptable values for the string coupling and internal volume in such a way that they limit the parameters of the conjecture the most. This basically means that they allow as many models in the landscape as possible from the data we have at our disposal. One interesting thing to note is that the curve, given by the conjecture \eqref{eq:ourdScon}, always runs through $(\sqrt{2\epsilon},\eta) = (1,1)$, meaning that points with $\sqrt{2\epsilon} \geq 1$ and $\eta \leq 1$ do not constrain the parameters. The points we selected are given in table \ref{tab:dSpoints} and we illustrate the situation in figure \ref{fig:constconj}. We note that these points also conform with the refined de Sitter conjecture \eqref{eq:dScon} for reasonable values of $c$ and $c^ \prime$ which is typically done as there is no reason that forces them to strictly be equal to $1$.
+
+\begin{table}[htb]
+     \begin{center}
+     \begin{tabular}{|c|c|c|c||c|c|}\hline
+     $\sqrt{2 \epsilon_V}$ & $\eta_V$ &$\sqrt{2 \epsilon_V}$ & $\eta_V$&$\sqrt{2 \epsilon_V}$ & $\eta_V$\\\hline
+     $3.738\cdot 10^{-10}$& 	$-2.495$ &$1.728\cdot10^{-6}$&	$-3.927$&$ 0.950$  & $-0.077$\\
+     $3.711\cdot10^{-7}$&	$-3.663$ &$1.894\cdot10^{-6}$&	$-3.964$&$ 0.927$  & $-0.151$\\
+     $1.479\cdot10^{-6}$&	$-3.673$ &$2.378\cdot10^{-6}$&	$-3.973$&$ 0.875$  & $-0.162$\\
+     $7.733\cdot10^{-6}$&	$-3.727$ &$1.129\cdot10^{-6}$&	$-4.049$&$ 0.885$  & $-0.318$\\
+     $4.487\cdot10^{-6}$&	$-3.904$ &$2.859\cdot10^{-6}$&	$-4.049$&&\\
+     $2.712\cdot10^{-6}$&	$-3.914$ &$6.255\cdot10^{-6}$&	$-4.145$&&\\
+     $8.251\cdot10^{-7}$&	$-3.915$ &$1.998\cdot10^{-6}$&	$-4.186$&&\\
+     $1.105\cdot10^{-6}$&	$-3.915$ &$4.634\cdot10^{-6}$&	$-4.187$&&\\
+     $9.719\cdot10^{-7}$& 	$-3.918$ &$4.289 \cdot 10^ {-5}$&	$-4.211$&&\\
+     $1.248\cdot10^{-6}$&	$-3.922$ &$2.562 \cdot 10^ {-5}$&	$-4.297$&&\\\hline
+     \end{tabular} \caption{20 data points of de Sitter extrema from \cite{Danielsson:2012et,Roupec:2018mbn} in the left and middle column and 4 points of classical non-extrema from \cite{Blaback:2013fca} in the rightmost column.} 
+     \label{tab:dSpoints}
+     \end{center}
+\end{table}
+
+\begin{figure}[htb]
+     \centering
+     \includegraphics[trim=0 210 0 180,clip,width=\textwidth]{constpara.pdf}
+     \caption{In this figure the way how known solutions, listed in table \ref{tab:dSpoints}, constrain the parameters of the conjecture \eqref{eq:ourdScon}. The red dots are the de Sitter extrema while the red stars give the saddle points. We adjusted the parameters such that the conjecture agrees with the known solutions which is in agreement with the general expected values allowed for these parameters.}
+     \label{fig:constconj}
+\end{figure}
+
+The data points constrain the parameters in \eqref{eq:ourdScon} in the following way:
+\begin{itemize}
+     \item The points that have $\epsilon \sim 0$ give:
+     \be 
+     a \geq \frac{1}{1-\eta} \quad \text{which leads to} \quad a\geq 0.286\,.
+     \ee
+     \item $b$ is then given by $a+b = 1$ to $b \leq 0.714$.
+     \item With these values the point $(\epsilon,\eta) = (0.875,-0.162)$, extracted from table \ref{tab:dSpoints}, provides an upper bound of $q \leq 3.03$.
+\end{itemize}
+Note, however, that the bound for $q$ is a conservative value, where we assumed that the bound of $a$ is saturated. If we choose a higher value of $a$ then $q$ can likewise be a higher number.\\
+As a final remark we want to mention some more points that were obtained in the literature. They are not more constraining than what is presented here but are generally of the same order which gives some weight to our discussion.\\
+In similar type IIA setups as discussed here the authors of \cite{Flauger:2008ad} mention de Sitter points with $\eta \simeq -3.7$ and $\eta \simeq -2.5$.\\
+In type IIB solutions found in \cite{Caviezel:2009tu} obtained a value of $\eta \simeq -3.1$. This is a nice hint at the universality of these bounds. \\
+Lastly, there is an interesting analytical upper bound on $\eta$ that was derived in \cite{Junghans:2016abx} for specific constructions in $4d$, $\mathcal{N}=1$ supergravities that are parametrically close to Minkowski solutions. The bound is $\eta \leq -4/3$ which would be a bit more constraining than our explicit examples. It is, unfortunately, not clear to us if this bound can be reached via an explicit and consistent string construction.
+
+\subsection{A Note on Cosmological Implications}
+Since the refined de Sitter conjecture gives constraints on the two slow-roll parameters $\epsilon$ and $\eta$, as evident from \eqref{eq:ourdSconslowroll}, it is natural to consider potential implications for the theory of inflation. In inflation models one does not sit at a extremum but the conjecture should hold in general, not only for specific points. Hence, we can restrict the space of allowed inflationary theories if we take the conditions of \eqref{eq:ourdSconslowroll} serious.\\
+First off, our conjecture favors models with $\eta \leq 0$ which implies that single field models that have a positive scalar potential should have a concave form of the potential. This is even more interesting as such potentials have recently been found to be favored by experimental evidence as well \cite{Planck:2018jri}.
 
 
 \chapter{Summary and Outlook}
