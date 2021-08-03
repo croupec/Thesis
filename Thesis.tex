@@ -2311,7 +2311,7 @@ We, on the other hand, propose a single expression as an alternative to the refi
 \be 
 a,\, b > 0,\qquad a+b = 1, \qquad \text{and}\qquad q>2\,.
 \ee
-Written in terms of the slow-roll parameters this reads:
+Written in terms of the slow-roll parameters\footnote{Strictly speaking the slow-roll parameters we use here are the ones only valid for single field slow-roll inflation, often denoted $\epsilon_V$ and $\eta_V$.} this reads:
 \be 
 (2\epsilon)^ {\frac{q}{2}} - a \eta \geq b\,.
 \label{eq:ourdSconslowroll}
@@ -2335,6 +2335,7 @@ We now move on to motivate our conjecture \eqref{eq:ourdScon} by an argument bas
 \paragraph{Let us start the motivation of our conjecture} by considering a single, canonically normalized scalar field $\phi$ with scalar potential $V$ in the low-energy effective theory. As is argued in \cite{Ooguri:2018wrx}, the scalar potential takes the form
 \be 
 V(\phi)=\left(n(\phi) \rme^ {d\phi}\right)^ {-k}\,,
+\label{eq:expdec}
 \ee
 where both parameters $d$ and $k$ are positive. The function $n(\phi)$ counts the number of towers that become light in the asymptotic regime. This means that $n(\phi)>0$ and $\partial_\phi n =: n^ \prime > 0$ as the number of contributing towers grows when going to large distances in field space. Using this we can write
 \be 
@@ -2447,10 +2448,51 @@ where $\lambda >0$ is some parameter. This potential is convex which is not favo
 \be 
 \lambda^ q - a \lambda^ 2 - b \geq 0\,,
 \ee
-which is saturated for $\lambda = 1$, independent of the parameters $a$, $b$ and $q$ and only values of $\lambda \geq 1$ are allowed. Since experimentally $\lambda \leq 0.6$ such simple quintessence models are excluded by our conjecture.
+which is saturated for $\lambda = 1$, independent of the parameters $a$, $b$ and $q$ and only values of $\lambda \geq 1$ are allowed. Since experimentally $\lambda \leq 0.6$ such simple quintessence models are excluded by our conjecture. Quintessence models in general, however, are not completely excluded. If one still wants $\rme^ {-\lambda \phi}$ with $\lambda \geq 0$ exponentially, either due to the Dine-Seiberg argument \cite{Dine:1985he}, because of the upper bound obtained in \cite{Hebecker:2018vxz} or the exponential decay discussed around equation \eqref{eq:expdec} \cite{Ooguri:2018wrx}, one can make the proposal for the scalar potential:
+\be 
+V(\phi) = \frac{V_0}{2} \left(1- \tanh (\lambda \phi)\right) = V_0\frac{\rme^ {-\lambda \phi}}{\rme^ {\lambda \phi}+ \rme^ {-\lambda \phi}}\,.
+\label{eq:improvquint}
+\ee
+Here, importantly, $V_0 >0$ and $\lambda >0$. The form of the potential is depicted in figure \ref{fig:quintpot1}.
+\begin{figure}[htb]
+     \centering
+     \includegraphics[scale=0.9]{quintpot1.pdf}
+     \caption{The improved quintessence potential from equation \eqref{eq:improvquint} with $V_0=1$ and $\lambda= 1/2$.}
+     \label{fig:quintpot1}
+\end{figure}
+This potential has a very flat slope for negative values of $\phi$, below about $\phi = -5$. There the potential is concave and quintessence seems possible with good slow-roll parameters. We can check the first and second slow-roll parameters by computing:
+\bea 
+\frac{|V^ \prime|}{V} &= 2 \lambda \frac{\rme^ {\lambda \phi}}{\rme^ {\lambda \phi} + \rme^ {-\lambda \phi}}\,,\\
+\frac{V^{\prime \prime}}{V} &= 4 \lambda^ 2 \rme^ {\lambda \phi} \frac{\rme^ {\lambda \phi}-\rme^ {-\lambda \phi}}{(\rme^ {\lambda \phi} + \rme^ {-\lambda \phi})^2}\,.
+\eea
+In the limit where we let $\phi \to -\infty$, we get:
+\bea 
+\frac{|V^ \prime|}{V} &\sim 2 \lambda \rme^ {-2\lambda |\phi|}\,,\\
+\frac{V^ {\prime \prime}}{V} &\sim 4 \lambda^ 2 \rme^{-2 \lambda |\phi|}\,,
+\eea
+which means that the slow-roll parameters $\epsilon$ and $\eta$ are exponentially suppressed in this limit. The ratio of the pressure and energy density of dark energy $w$ is given to be \cite{Agrawal:2018own} 
+\be 
+w+1 = \frac{2}{3} \epsilon\,
+\ee
+in this regime and since $\epsilon$ basically vanishes we obtain $w=-1$ to very high precision, as is required by observations.\\
+What is left is to verify that this potential also works with our refined conjecture \eqref{eq:ourdScon}, for which we have to find suitable and allowed parameters $b$ (or $a$) and $q$. As the condition is saturated for $\rme^ {-\phi}$ we can fix $\lambda = 1/2$ such that we get back the critical expression from $V \sim \rme^ {-2\lambda \phi}$ to which \eqref{eq:improvquint} converges for $\phi \to +\infty$. For the limit of $\phi \to - \infty$, the $\eta$ part of the conjecture dominates and we can use this to fix 
+\be 
+b = \frac{1}{2} \left( 4 \lambda^ 2 \rme^ {2\lambda \phi_0}\right) = \frac{1}{2} \rme^ {-10}\,,
+\ee
+where we have used $\phi_0=-10$ as a somewhat arbitrary cutoff related to the time in the past when quintessence started.
+\begin{figure}[htb]
+     \centering
+     \includegraphics[scale=0.9]{quintpot2.pdf}
+     \caption{The conjecture \eqref{eq:ourdScon} checked for the scalar potential \eqref{eq:improvquint} with $\lambda= 1/2$, $b=\rme^ {-10}/2$ and $q=3$.}
+     \label{fig:quintpot2}
+\end{figure}
 
+The scalar potential is concave from $-\infty$ until the origin and thus there is no issue satisfying the conjecture for that region. However, it needs to hold for any part of the range of $\phi$ and starting from $\phi = 0$ the potential is convex. Due to $\epsilon < 1$ we cannot have $q$ too big. As it turns out $q=3$ is acceptable. The situation with these parameters is shown in figure \ref{fig:quintpot2}.\\
+As a word of caution we would like to mention that the potential we used for quintessence here \eqref{eq:improvquint} is purpose built in order to illustrate how our refined de Sitter conjecture \eqref{eq:ourdScon} can accommodate quintessence. Whether such a model can realistically arise in string cosmology needs to be investigated.\\
+Finally we note that both, slow-roll inflation and quintessence models, compatible with our conjecture need to have parameters $a \simeq 1$, $b\ll1$. 
 
-
+\subsection{Refined de Sitter conjecture - Interim Summary}
+In this subsection we discussed an alternative to the refined de Sitter conjecture \eqref{eq:dScon} of \cite{Ooguri:2018wrx}. Our condition \eqref{eq:ourdScon}, first presented in \cite{Andriot:2018mav}, has the advantage of givin a single expression tha incorporates the same basic features as the original refined conjecture. Both conjectures allow positive extrema and forbid stable de Sitter minima. Nevertheless, the conjectures differe in certain regions and allow different kinds of models. For example, our condition does allow certain single field slow-roll inflation models but gives restrictions on quintessence. The constructions that are favored by our conjecture also are currently prime candidates according to cosmological observations \cite{Planck:2018jri}. Interestingly, cosmological models allowed by our conjecture seem to prefer $a\simeq 1$ and $b \ll 1$. We also attempted to motivate our parameters $a$, $b$ and $q$ by known classical de Sitter constructions from \cite{Danielsson:2012et,Roupec:2018mbn}. This lead to a lower bound $a \geq 0.286$ and an upper bound of $q\leq 3.03$ if one saturates the bound on $a$.
 
 \chapter{Summary and Outlook}
 \section{Summary}
