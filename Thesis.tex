@@ -2346,6 +2346,45 @@ This can easily be solved and the relevant terms scale the same for:
 \be 
 c_\tau = c_\rho - c_{R_6} \qquad \text{and} \qquad c_\rho = -\frac{1}{2} \left( c_{F_0} + c_{R_6} \right)\,.
 \ee
+Unfortunately, this does not facilitate our goal of having parametrically large volume and small coupling. The reason for this is that all fluxes are bounded from below and the second condition then implies that $c_\rho$ must be negative. This then immediately leads to a small volume in the $\lambda \to \infty$ limit since $vol_6 = \rho^ 3 \propto \lambda^ {3 c_\rho} = \lambda^ {-3 |c_\rho|}$.\\
+The conclusion of this investigation is that we are unable to establish parametrically controlled de Sitter solutions in the setup we discussed thus far. Nevertheless, there is still some hope left. If we can establish some hierarchies between the different contributions, represented by the $A$'s in \eqref{eq:genscal}, it could still be possible to arrive at a de Sitter point. In setups where only one $O6$-plane wraps each 3-cycle \cite{Danielsson:2011au} this seems unlikely. Due to the limited amount of $O6$-planes, one has $F_0$ and $H$ fixed to a similarly small number as well. For example, let us consider a compactification on $T^ 6/(\mathbb{Z}_2 \times \mathbb{Z}_2)$ with an orientifold projection that flips the signs of the three circle directions. In this case one has $2^ 3 = 8$ $O6$-planes. However, due to the orbifold of $\mathbb{Z}_2 \times \mathbb{Z}_2$ plus an additional $\mathbb{Z}_2$ orientifolding leading us to an identification of $2^ 3 = 8$ fixed points. This leaves us with only one $O6$-plane in the end. Still, it is in principle possible to have complicated internal manifold with many fixed points under the orientifold projection and thus a larger number of $O$-planes. While we cannot present an explicit example here we will investigate the behavior of such models in general. For this, we now allow the sources term to scale like $A_{\text{sources}} \propto \lambda^ {c_\text{s}}$ which means that we allow a large number $N_{O6}$ of $O6$-planes in our model. The terms $A_{\text{source}}$, $A_{F_0}$, and $A_{R_6}$ then scale the same if we satisfy the conditions:
+\be 
+-3 c_\rho + 4 c_\tau -c_{F_0} = 3 c_\tau - c_{\text{s}} = c_\rho + 2 c_\tau -c_{R_6}\,.
+\ee
+Furthermore, if we keep in mind that the contributions from fluxes in the scalar potential are quadratic in flux quanta, we find from the tadpole condition that:
+\be 
+\frac{1}{2} \left( c_{R_6} + c_{F_2} \right) = \frac{1}{2} \left( c_{F_0} + c_H \right) = c_{\text{s}}\,.
+\ee
+With all of these conditions we can calculate a solution that allows for all required terms to stay relevant at the same time. This is achieved for:
+\bea 
+c_\rho &= \hspace{6pt} c_{\text{s}} - \frac{1}{2} \left( c_{F_0} + \;\, c_{R_6} \right)\,,\\
+c_\tau &= 2 c_{\text{s}} - \frac{1}{2} \left(c_{F_0} + 3 c_{R_6} \right)\,,\\
+c_{F_2} &= 2 c_{\text{s}} - c_{R_6}\,,\\
+c_{H} &= 2 c_{\text{s}} - c_{F_0}\,.
+\eea
+Using these results we can now calculate $vol_6 = \rho^3$ and $\rme^ {-\phi}/\sqrt{vol_6}$ to behave like
+\bea 
+vol_6 \propto \lambda^ {\frac{3}{2} \left[ 2 c_{\text{s}} - \left(c_{F_0} + c_{R_6}\right)\right]}\,,\\
+\rme^ {-\phi} \propto \lambda^ {\frac{1}{4} \left[2c_{\text{s}}+c_{F_0} -3 c_{R_6}\right]}\,,
+\eea
+in the large $\lambda$ limit. For a parametrically controlled solution we need a large internal volume and small coupling. This can be obtained by requiring:
+\be 
+c_{\text{s}} > \frac{3}{2} c_{R_6} + \frac{1}{2} c_{F_0}\,.
+\ee
+The solution holds even for the case where $c_{F_0} = 0 = c_{R_6}$, which allows us to look at the interesting special case where only the number of $O6$-planes grows. Then we find 
+\bea
+vol_6 &\propto N^ 3_{O6}\,,\\
+\rme^ {-\phi} &\propto \sqrt{N_{O6}}\,,
+\eea
+which tells us that controlled solutions can exists for a large number of orientifold planes. The question remaining is wether such compactifications, that allow for a large number of orientifold planes, can exist. In the case of F-theory and IIB compactifications on Calabi-Yau manifolds it is well understood what number of $O3$-planes one can expect, the same is not as clear for the case of compactifications on $SU(3)$-structure manifolds in type IIA. Constructing an explicit example with a large number of $O6$-planes remains an open problem.
+\subsection{Additional Ingredients}
+Thus far we have limited ourselves to the most typical ingredients that can appear in a scalar potential of a massive type IIA flux compactification. There are, however, additional contributions one might consider. The issue with this is that each new contribution comes with potential issues, like complicated backreaction effects and new degrees of freedom. Hence, one attempts to build the simplest model first and only includes more exotic contributions if absolutely necessary. Ingredients we will consider are $NS5$-branes, $NSO5$-planes, $KK$-monopoles and $KKO$-planes. Here we will include them in the same manner as all other contributions to the scalar potential, reducing them to their scalings in $\rho$ and $\tau$ with all additional factors packed into a coefficient. The expressions are:
+\bea 
+V_{NS5} &= \frac{A_{NS5}}{\rho^ 2 \tau^ 2}\,, \qquad V_{NSO5} = - \frac{A_{NSO5}}{\rho^ 2 \tau^ 2}\,,\\
+V_{KK} &= \frac{A_{KK}}{\rho \tau^ 2}\,, \qquad \; V_{KKO} = - \frac{A_{KKO}}{\rho \tau^ 2}\,,
+\eea
+where the coefficients are positive. For the complete expression of these terms we refer the reader to \cite{Silverstein:2007ac}.
+
 
 \section{de Sitter Extrema}
 \label{sec:dSextrema}
