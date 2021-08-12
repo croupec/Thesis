@@ -2383,8 +2383,57 @@ Thus far we have limited ourselves to the most typical ingredients that can appe
 V_{NS5} &= \frac{A_{NS5}}{\rho^ 2 \tau^ 2}\,, \qquad V_{NSO5} = - \frac{A_{NSO5}}{\rho^ 2 \tau^ 2}\,,\\
 V_{KK} &= \frac{A_{KK}}{\rho \tau^ 2}\,, \qquad \; V_{KKO} = - \frac{A_{KKO}}{\rho \tau^ 2}\,,
 \eea
-where the coefficients are positive. For the complete expression of these terms we refer the reader to \cite{Silverstein:2007ac}.
-
+where the coefficients are positive. For the complete expression of these terms we refer the reader to \cite{Silverstein:2007ac}.\\
+For the $KK$-monopoles and $KKO$-planes the analysis is trivial since the corresponding terms scale exactly like the curvature does. This allows us to group all three terms together and define an effective curvature
+\be 
+\tilde{A}_{R_6} = A_{R_6} + A_{KK} - A_{KKO}\,.
+\ee
+Again, de Sitter solutions can only exist for as long as this effective curvature term is positive: $\tilde{A}_{R_6} >0$. De Sitter solutions, found in \cite{Blaback:2018hdo}, including $KK$-sources then suffer from the same lack of a controlled limit as discussed before.\\
+$NS5$-sources do introduce a new scaling behavior into the scalar potential. The complete scalar potential, again broken down to it's scaling behavior, is
+\be 
+V(\rho,\tau) = \frac{A_H}{\rho^3 \tau^2} + \sum_{p=0,2,4,5} \frac{A_p}{\rho^ {p-3} \tau^4} - \frac{A_{\text{source}}}{\tau^3} + \frac{\tilde{A}_{R_6}}{\rho\tau} + \frac{A_{NS5}}{\rho^ 2 \tau^ 2} - \frac{A_{NSO5}}{\rho^ 2 \tau^ 2}\,.
+\label{eq:genscalplus}
+\ee
+We now proceed along similar lines as we did before and minimize the potential, first with respect to $\tau$:
+\be
+0 = \partial_\tau V = -2 \frac{A_H}{\rho^ 3 \tau^ 3} - 4 \sum_{p=0,2,4,5} \frac{A_p}{\rho^ {p-3} \tau^5} + 3 \frac{A_{\text{sources}}}{\tau^ 4} - 2 \frac{\tilde{A}_{R_6}}{\rho \tau^ 3} - 2 \frac{A_{NS5}}{\rho^ 2 \tau ^3} + 2 \frac{A_{NSO5}}{\rho^ 2 \tau ^3}\,,
+\ee
+which can be solved by 
+\be 
+\frac{A_H}{\rho^ 3 \tau^ 2} + \frac{\tilde{A}_{R_6}}{\rho \tau^ 2} + \frac{A_{NS5}}{\rho^ 2 \tau^ 2} - \frac{A_{NSO5}}{\rho^ 2 \tau^ 2} = -2 \sum_{p=0,2,4,5} \frac{A_p}{\rho^ {p-3} \tau^4} + \frac{3}{2} \frac{A_{\text{sources}}}{\tau^3}\,.
+\ee
+Using this in the scalar potential \eqref{eq:genscalplus} we find 
+\be 
+V(\rho,\tau) = - \sum_{p=0,2,4,5} \frac{A_p}{\rho^ {p-3} \tau^4} + \frac{1}{2} \frac{A_{\text{sources}}}{\tau^ 3}\,.
+\ee
+Again, we find that de Sitter solutions are only possible for $A_{\text{sources}} \propto 2 N_{O6} - N_{D6} -N_{\overline{D6}} >0$. This means that even the inclusion of a different kind of negative tension source does not relax the condition on the $O6$-planes. Furthermore, it is easy to check that we still require a massive compactification, if one only uses $NS5$-branes. In principle, however, it seems to be possible to have a dS solution with vanishing mass parameter $A_{F_0}$ in type IIA if we have $A_{NSO5} > A_{NS5}$. This then would allow for an M-theory uplift that is otherwise prohibited by the appearance of the Romans mass. The curvature term again has to satisfy $A_{R_6} \propto - R_6 \leq 0$ since otherwise again the bound from above is obtained. For the massless case the relevant scalings now come from the curvature term, the sources and the $NSO5$ contribution, giving the relevant scalar potential:
+\be 
+V = \frac{A_{R_6}}{\rho \tau^ 2} - \frac{A_{\text{sources}}}{\tau^ 3} - \frac{A_{NSO5}}{\rho^ 2 \tau^ 2}\,,
+\ee
+with a fixed number of $O6$-planes and $NSO5$-planes. The scaling limit yields the following condition on the scale parameters:
+\be 
+c_{R_6} - c_\rho - 2 c_\tau = -3 c_\tau = -2 c_\rho -2 c_\tau\,.
+\ee
+This can be solved by
+\be 
+c_\tau = 2 c_\rho \qquad \text{and} \qquad c_{R_6} = -c_\rho\,.
+\ee
+Letting $\lambda \to \infty$ and requiring $c_\rho >0$ implies that the curvature goes to zero:
+\be 
+A_{R_6} \propto - R_6 \propto \lambda^ {c_{R_6}} = \lambda^ {-c_\rho} \to 0\,.
+\ee
+However, the curvature is fixed for a given compactification manifold and thus cannot become parametrically small. We conclude that a de Sitter solution with a small, fixed amount of $NSO5$-planes is not possible.\\
+Non-geometric Q- and R- fluxes are some more potential candidates for inclusion in type IIA compactifications. These can lead to stable de Sitter solutions \cite{deCarlos:2009fq,deCarlos:2009qm,Danielsson:2012by,Blaback:2013ht,Damian:2013dq,Blaback:2015zra}. The scaling behavior of these contributions goes like:
+\be 
+V_\text{Q} = \frac{A_{\text{Q}}}{\rho^{-1}\tau^ 2} \qquad \text{and} \qquad V_{\text{R}} = \frac{A_{\text{R}}}{\rho^ {-3} \tau^ 2}\,.
+\ee
+By duality there are also corresponding sources for these fluxes. The problem with these contributions is that, due to their non-geometric nature, it is not clear if and how $\alpha^ \prime$ corrections can be handeled in their presence.\\
+In the case of a different class of compactification manifold, other than an $SU(3)$ structure manifold, it is possible to have non-trivial $1$- and $5$-cycles that then allows for the corresponding $Dp$-branes and $Op$-planes. The scaling behavior of these sources goes like:
+\be 
+V_{Dp/\overline{Dp}} = \frac{A_{Dp/\overline{Dp}}}{\rho^ {\frac{6-p}{2}} \tau^ 3} \qquad \text{and} V_{O_p} = - \frac{A_{O_p}}{\rho^ {\frac{6-p}{2}}\tau^ 3}\,.
+\ee
+\subsection{Isotropic Compactification of massive Type IIA}
+Up until this point our discussion has been fairly general. Here, we want to give an explicit example of a compactification in order to complement the discussion. The isotropic compactification of massive type IIA on $S^ 3 \times S^ 3 /(\mathbb{Z}_2 times \mathbb{Z}_2)$ is potentially the simplest models we could choose. It has been extensively studied in \cite{Roupec:2018mbn,Caviezel:2008tf,Flauger:2008ad,Danielsson:2009ff,Danielsson:2010bc,Danielsson:2012et,Junghans:2016uvg,Junghans:2016abx,Kallosh:2018nrk,Blaback:2018hdo,Villadoro:2005cu,Camara:2005dc,Aldazabal:2007sn,Blaback:2013fca} and admits dS critical points. This model might even be able to admit stable de Sitter points if one includes anti-$D6$-branes and $KK$-monopoles \cite{Kallosh:2018nrk,Blaback:2018hdo}.
 
 \section{de Sitter Extrema}
 \label{sec:dSextrema}
