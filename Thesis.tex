@@ -2182,7 +2182,7 @@ In particular, the swampland program is concerned with whether the UV completion
      \caption{Schematic picture of the relation between the swampland, the landscape and string theory. Full string theory or quantum gravity arises at or around the Planck scale.}
      \label{fig:swamppic}
 \end{figure}
-\section{de Sitter space and the Swampland}
+\section{de Sitter Space and the Swampland}
 In order to describe the late time accelerated expansion of our universe it is necessary to have a positive vacuum energy. One way to describe such a situation is via a de Sitter vacuum. Models from string theory that emulate such a situation were studied in the previous chapter. Here, we consider that it might be futile to attempt to build such models. Previously, it was argued that there should be no obstruction to obtain dS space from string theory. A rough estimate of the amount of possible, different models from string theory is given by the number of different Calabi-Yau manifolds, which can be estimated to about $10^{500}$ \cite{Blumenhagen:2004xx}. Considering different setups, for example F-theory, this number can be even larger. Such a enormous numbers suggest that there should be many possible theories and certainly some that allow for a de Sitter vacuum with a cosmological constant that matches what we observe. Following the anthropic principle \cite{Weinberg:1987dv}, one would not be surprised if everything works out. Nevertheless, explicit constructions of de Sitter spaces remain very difficult and challenging in string theory setups. As a result, in \cite{Obied:2018sgi} a conjecture was proposed that effectively rules out de Sitter vacua. For any scalar potential $V$ there should be a bound on its gradient of form
 \be 
 |\nabla V| \geq \frac{c}{M_P} V\,,
@@ -2285,6 +2285,7 @@ V = \frac{1}{(f_4)^ {\frac{7}{2}}} \frac{A_{R_6}}{\tilde{\rho} \tilde{\tau}^ 2} 
 With such a potential it is not possible to achieve moduli stabilization and hence no vacua can exist.\\
 A particular concern that arises after considering the non-flat case is that even in Calabi-Yau compactifications, the localization of the $O6$-planes might introduce an effective curvature via backreaction. In such a scenario, however, one first needs to identify the correct moduli as they will change as well due to the backreaction. Then it is necessary to fully understand the new, warped effective field theory. Generically, it is expected that the effects of the $O$-plane backreaction should be neglibel for weak coupling and large volume and thus the parametrically controlled AdS vacua we investigated here should be safe. 
 \subsection{The large $F_4$-Flux limit in de Sitter}
+\label{sec:largef4}
 We would now like to study wether or not the the models we investigated in the last subsection for the case of AdS allow, in principle, de Sitter points. Numerous no-go theorems against dS solutions with vanishing mass parameter ($A_{F_0} = 0$) or positive internal curvature ($A_{R_6}\leq 0$) exist \cite{Wrase:2010ew,Flauger:2008ad,Junghans:2016uvg} but in general nothing forbids such points.\\
 The case with vanishing mass parameter would be interesting because then one can lift the solutions to M-theory. Looking at our simplified scalar potential \eqref{eq:genscal} with $A_{F_0} = 0$ we find:
 \be 
@@ -2439,8 +2440,50 @@ Up until this point our discussion has been fairly general. Here, we want to giv
 \ee
 In addition to the fluxes we also consider $\overline{D6}$-branes in the model that can wrap two different $3$-cycles \cite{Kallosh:2018nrk}, labelled $N_{\overline{D6},1}$ and $N_{\overline{D6},2}$. These anti-branes spontaneously break supersymmetry and we will use constrained multiplets in order to describe their contribution using only the Kähler- and superpotential as was discussed in chapter \ref{sec:antiD3}. The potentials we are going to use in this section are:
 \bea 
-K = -\log\left[\right]
+K =& -\log\left[(T+\bar{T})^ 3 - \frac{1}{2} \frac{X \bar{X}}{ N_{\overline{D6},1}(Z_1 + \bar{Z}_1) + N_{\overline{D6},2}(Z_2 + \bar{Z}_2)}\right] \\
+&- \log\left[2^ {-4} (Z_1 + \bar{Z}_1)(Z_2 + \bar{Z}_2)^ 3\right]\,,\\
+W =& -3 f_2 T^ 2 + \rmi f_0 T^ 3 + (\rmi h - 3T) Z_1 - 3(\rmi h+T)Z_2 + X\,,
 \eea
+from which we can derive the scalar potential $V$ using the usual formula
+\be 
+V = \rme^ K \left[D_I W K^ {I\bar{J}} \overline{D_J W} - 3 W \overline{W}\right]_{X\to 0\,,\bar{X} \to 0}\,,
+\ee
+where we have to set the nilpotent chiral fields $X$ and $\bar{X}$ to zero after performing the calculation since we are only interested in the purely bosonic scalar potential.\\
+The resulting scalar potential has a number of rescaling symmetries. One of those will precisely match the rescaling to a large number of $O6$-planes, which was the only possibility for a stable de Sitter solution that we found in this section. Generally, we can scale the moduli any way we desire if the scalar potential does not change by more than an overall numeric factor. This does not change the eigenvalues of the mass matrix or the fact that critical points are present. Although, it in general changes the location of the critical points in moduli space. The most general rescaling, satisfying these conditions, is $T \to aT$ and $f_0 \to b f_0$ which, in turn, fixes the required scaling of all other moduli:
+\be 
+T\to aT\,, \quad Z_1 \to a^ 2 b Z_1\,, \quad Z_2 \to a^ 2 b Z_2\,,\quad X \to a^ 3 b X\,,
+\ee
+where the same must hold for the complex conjugates as well. Since the real parts of the moduli have to be and remain positive we restrict to $a,\,b>0$. For the flux parameter and number of $O6$-planes this leads to:
+\be 
+f_0 \to b f_0\,,\quad f_2 \to abf_2\,,\quad h\to ah\,,\quad N_{\overline{D6},1} \to ab N_{\overline{D6},1}\,,\quad N_{\overline{D6},2} \to ab N_{\overline{D6},2}\,.
+\ee
+The effective rescalings of the scalar- and superpotential that result from this are:
+\be 
+W \to a^ 3 b W \qquad \text{and} \qquad V \to a^ {-5}b^ {-2} V\,.
+\ee
+Evidently, this scaling freedom does have an effect on the physics of the model, by changing the cosmological constant. However, the existence of critical points is not effected. This allows us to set some fluxes to $1$ and thus fixing the symmetry. After finding a minimum one can once more employ the scaling symmetry to fix the values of the fluxes to appropriate numbers.\\
+The model with standard ingredients, discussed in section \ref{sec:largef4}, has no scaling of $0$-flux and curvature. Relating this to the above discussion we have $b=0$. Then, we easily find that $a =N_{O6}$ and we can recover the familiar situation from the formulas we have in this section:
+\bea 
+vol_6 &\sim \rmre(T)^ 3 \propto N^ 3_{O6}\,,\\
+\rme^ {-\phi} &\sim \frac{\sqrt[\leftroot{-2}\uproot{2} 4]{\rmre(Z_1)\rmre(Z_2)^ 3}}{\sqrt{vol_6}} \propto \sqrt{N_{O6}}\,.
+\eea
+\subsection{Explicit Solutions to the isotropic Compactification}
+Before we come to presenting explicit solutions to the rather simple model we are interested in, we need to mention that even here it can be very complicated to find a solution or even map out the part of parameter space where these solutions are possible. However, if we add anti-$D6$ branes, it becomes possible to find analytic solutions to the minimization problem. In order to find a solution we first use the scaling symmetry of the scalar potential to fix $|f_0| = 1 = |f_2|$. The remaining parameters are the H-flux, represented by $h$ and the numbers of anti-branes: $N_{\overline{D6},1}$ and $N_{\overline{D6},1}$. It is then possible to solve the axionic derivatives, $\partial_{\rmim(T)} V = \partial_{\rmim(Z_1)} V = \partial_{\rmim(Z_2)} V= 0$ and so on, in terms of the corresponding axions, $rmim(T)$, $\rmim(Z_1)$ and $\rmim(Z_2)$. The rest of the equations, $\partial_{\rmre(T)} V = \partial_{\rmre(Z_1)} V = \partial_{\rmre(Z_2)} V=0$ are more difficult to evaluate in terms of the moduli, luckily, the remaining expressions with derivatives with resprect ot $Z_1$ and $Z_2$ are linear in the number of anti-branes. Likewise, $\partial_{\rmre(T)} V = 0$ is quadratic in the flux parameter $h$ and thus we can solve the expressions and obtain two sets of solutions. The solution then depends on the values of the moduli $\rmre(T)$, $\rmre(Z_1)$ and $\rmre(Z_2)$.\\
+There are some additional criteria that need to be met in order to find a sensible solution. First, we are interested in solutions with $V_{\text{min}} >0$ and we require that we have positive numbers of anti-$D6$-branes. For stable extrema we also need to have all eigenvalues of the mass matrix positive. Disregarding quantization contions, two regions emerge from our search that allow such points. They are depicted in figure \ref{fig:tworeg}. The smaller, green, region even allows for stable solutions if the axions are allowed to vary.
+\begin{figure}[htb]
+     \centering
+     \includegraphics[scale=0.6]{tworegs.pdf}
+     \caption{Two regions where stable de Sitter solutions are in principle possible. The larger region, in yellow, allows only for such solutions if the non-isotropic directions are fixed while the smaller, green, region can have varying axions.}
+     \label{fig:tworeg}
+\end{figure}
+In principle, we should now be able to use the scaling freedom of the model in order to change the values of the fluxes. Due to the fact that we have $N_{O6} = 1$ in this setup we are unfortunately restricted in doing so. In particular, we cannot rescale to solution sufficiently in order to arrive at a trustworthy regime of $rho = \rmre(T) \gg 1 $ and $\tau^ 4 \rmre(Z_1) \rmre(Z_2)^ 3 \gg 1$. Thus, we are not able to find de Sitter solutions that can be trusted in this simple model.\\
+Since we have analytic control over the solutions we can check what the $\mathcal{O}(1)$ numbers, appearing in front of the scaling behavior, are in our solutions. We find that:
+\bea 
+vol_6 &= c_1 N^ 3_{O6} \qquad\quad \text{with} \qquad 8 \cdot 10^ {-8} \lesssim c_1 \lesssim 0.24\,,\\
+\rme^ {-\phi} &= c_2 \sqrt{N_{O6}} \qquad \text{with} \qquad 4 \cdot 10^ {-5} \lesssim c_2 \lesssim 0.12\,.
+\eea
+These small parameters make it even harder to obtain a solution with a small number of $O6$-planes. Since we are restricted to one single $O6$-plane we are unable to use the current model to build a trustworthy de Sitter solution. The numbers above should give a reasonable estimate of the number of $O$-planes required in related models in order to find such dS points.
+\subsection{Scaling Limits of de Sitter - Interim Summary}
 
 \section{de Sitter Extrema}
 \label{sec:dSextrema}
