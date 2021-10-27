@@ -1,0 +1,112 @@
+\documentclass[12pt]{report}
+\usepackage{jheppub}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx,color,slashed,mathtools,bm,bbm,float,placeins}
+\usepackage{bbm} 
+\usepackage{ifpdf}
+\usepackage{setspace}
+
+
+
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bI}{\mathbb{I}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\Tr}{\mathrm{Tr\,}}
+\newcommand{\ov}{\overline}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{equation}\begin{aligned}}
+\newcommand{\eea}{\end{aligned}\end{equation}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ea}{\end{eqnarray}}
+\newcommand{\nn}{\nonumber}
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+\newcommand{\ls}{\left[}
+\newcommand{\rs}{\right]}
+\newcommand{\vep}{\varepsilon}
+\renewcommand{\d}{\textrm{d}}
+\newcommand{\e}{\textrm{e}}
+\newcommand{\ep}{\epsilon}
+\newcommand{\w}{\wedge}
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cL}{\mathcal{L}}
+\renewcommand{\baselinestretch}{1.2}
+\def\rmi{{\rm i}}
+\def\rme{{\rm e}}
+\def\ib{{\bar \imath}}
+\def\jb{{\bar \jmath}}
+\def\rmre{{\rm Re}}
+\def\rmim{{\rm Im}}
+\newcommand{\Db}{\overline{D6}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\V}{\mathcal{V}}
+
+\newcommand{\chr}[1]{\textbf{\textcolor{blue}{(#1 --CR)}}}
+\newcommand{\tw}[1]{\textbf{\textcolor{red}{(#1 --TW)}}}
+\newcommand{\nc}[1]{\textbf{\textcolor{green}{(#1 --NC)}}}
+\newcommand{\da}[1]{\textbf{\textcolor{yellow}{(#1 --DA)}}}
+
+\title{Flux Compactifications, dS Vacua and the Swampland}
+\author{Christoph Oliver Roupec MSc}
+\begin{document}
+\section*{Kurzfassung}
+Eines der Hauptziele der String Phänomenologie ist es die grundlegenden Eigenschaften der Raumzeit des Universums in einer konsistenten, effektiven Theorie bei niedrigen Energien zu beschreiben. Von kosmologischen Observationen wissen wir dass sich unser Universum beschleunigt ausdehnt. Im Kontext von Einsteins Relativitätstheorie kann dies durch eine positive kosmologische Konstante beschrieben werden. In String Theorie ist es möglich diese durch ein skalares Feld zu beschreiben, welches an einer Stelle in seinem Potential mit positiver Energie sitzt. Oft wird ein stabiles Minimum des skalaren Potentials verwendet um eine de Sitter Raumzeit zu erhalten. Konstruktionen von de Sitter Raumzeiten in String Theorie sind nicht trivial und werden oft kritisiert. In dieser Dissertation werden Themen behandelt die mit Konstruktion von de Sitter Raumzeiten in effektiven Theorien die von String Theorie kommen zusammenhängen.\\
+Ein wichtiger Bestandteil einer Klasse von Modellen sind (anti)-$D$-Branen, welche wir im Rahemen von Supergravitations beschreiben werden. Besonderes Augenmerk liegt auf der anti-$D3$-Brane im KKLT Modell, welche dazu dient die Energie des Vakuums positiv zu machen. Hier geben wir eine vollständige Beschreibung, inklusive aller Felder die im Volumen der Brane vorkommen. Des weiteren zeigen wir wie das KKLT Modell, welches ursprünglich in Typ IIB String Theorie erfunden wurde, auch in Typ IIA mittels anti-$D6$-Branen funktioniert. Außerdem führen wir eine ``massenproduktions Methode" ein, welche es erlaubt unkompliziert viele de Sitter Vakua zu konstruieren. Aufbauend darauf untersuchen wir Modelle die auf 7 Torus Kompaktifizierungen von M Theorie basieren. Wir finden dass auch solche Konstruktionen zu de Sitter Raumzeiten führen können und zeigen wie sie mit Typ II Supergravitation zusammenhängen.\\
+Eine neuere Entwicklung im Bereich der String Phänomenologie sind die sogenannten Sumpfland Vermutungen. Hier liegt unser Augenmerk auf der de Sitter Vermutung, welche behauptet dass konsitente Konstruktionen von de Sitter Raumzeiten in String Theorie nicht möglich sind. Wir zeigen dass es schwierig ist de Sitter Minima in klassischen Typ IIA String Kompaktifizierungen zu finden. Nachdem wir die ursprüngliche Behauptung durch explizite instabile Lösungen wiederlegen, präsentieren wir unsere eigene, verbesserte de Sitter Sumpfland Behauptung welche sich von der überarbeiteten Version der ersten Behauptung in einigen Aspekten unterscheidet.\vspace{12pt}\\
+Die vorliegende Dissertation basiert auf den Publikationen \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt}, an welchen ich während meines Doktoratsstudiums gearbeitet habe.
+
+\section*{Abstract}
+One of the main goals of the field of string phenomenology is to describe the properties of our spacetime in low-energy effective models related to and consistent with string theory. It is known from observations that our universe undergoes accelerated expansion, which can be described in Einstein's theory of general relativity as a positive cosmological constant. Within string theory descriptions, this is realized by a scalar field with a positive value of its potential. Often times, this is modelled by having the scalar at a stable, positive minimum. One then obtains a de Sitter spacetime. Constructions of de Sitter spaces from string theory are not straight forward and face many criticisms. In this thesis we adress several aspects related to this topic.\\
+We investigate the description of general branes in supergravity and in particular describe the uplifting anti-$D3$-brane of the KKLT model, including all world volume fields. Additionally, we translate the type IIB based KKLT model into type IIA and introduce a mechanism that allows for the rapid construction of many de Sitter solutions. Related to this we investigate models based on twisted $7$-tori from M-theory and their relation to type II supergravity. These setups can also yield de Sitter solutions using the same mass production mechanism.\\
+One of the more recent and serious claims against the construction of de Sitter spaces in string theory, the de Sitter swampland conjecture, is also adressed here. We highlight the difficulty of obtaining a stable, positive vacuum energy in classical type IIA flux compactifications and their reliance on $O$-plane sources. Then, we turn our attention to the conjecture itself. Contrary to the initial claim, we find many unstable de Sitter points in numerical searches and go on to present our own refined conjecture that differs in several key apects from the refined version of the original conjecture.\vspace{12pt}\\
+This thesis is based on the publications \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt} that I worked on during my doctoral studies.
+
+\newpage
+\makeatletter
+\renewenvironment{thebibliography}[1]
+     {\chapter*{\bibname}% <-- this line was changed from \chapter* to \section*
+      \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+\clearpage% or cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{JHEP}
+\singlespace
+%\small
+\bibliography{refs}
+%\bibliography{refs}
+\end{document}
