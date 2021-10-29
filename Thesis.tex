@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[a4paper,12pt]{report}
 \usepackage{jheppub}
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage{amsmath}
@@ -82,9 +82,56 @@ This thesis is based on the publications \cite{Roupec:2018mbn,Banlaki:2018ayh,An
 \setlength{\parindent}{0pt}
 \renewcommand{\arraystretch}{1.2} % Increases height of table rows. Otherwise fractions might touch lines.
 
-\maketitle
+%\maketitle
+
+\pagenumbering{roman}
+\setcounter{page}{0}
+
+%Titlepage
+{\thispagestyle{empty}
+\includegraphics[scale=0.08]{TU_Logo.png}
+\vspace{12pt}
+\begin{center}
+{\large
+Dissertation\vspace{12pt}\\
+{\Large\textbf{Flux Compactifications, dS Vacua and the Swampland}}\vspace{12pt}\\
+ausgeführt zum Zwecke der Erlangung des akademischen Grades eines Doktors der Naturwissenschaften\vspace{12pt}\\
+unter der Leitung von\vspace{12pt}\\
+Privatdozent Timm Michael Wrase, PhD\\
+E136\\
+Institut für Theoretische Physik\vspace{12pt}\\
+eingereicht an der Technischen Universität Wien\\
+Fakultät für Physik\vspace{12pt}\\
+von\vspace{12pt}\\
+{\Large\textbf{Christoph Oliver Roupec}, MSc}\\
+Matrikelnummer: 01108500\vspace{12pt}\\
+Breitenseer Straße 39a, T23-24, 1140 Wien\vspace{90pt}\\
+Wien, am XX. November 2021 \hspace{\fill}\rule{0.33 \textwidth}{0.5pt}
+}
+\end{center}
+}
 
 
+%German Abstract
+\section*{Kurzfassung}
+Eines der Ziele der String Phänomenologie ist es, die grundlegenden Eigenschaften der Raumzeit des Universums in einer konsistenten, effektiven Theorie bei niedrigen Energien zu beschreiben. Von kosmologischen Observationen wissen wir, dass sich unser Universum beschleunigt ausdehnt. In Einsteins Relativitätstheorie kann dies durch eine positive kosmologische Konstante beschrieben werden. In String Theorie ist es möglich diese durch ein skalares Feld zu beschreiben, welches an einer Stelle in seinem Potential mit positiver Energie sitzt. Oft wird ein stabiles Minimum des skalaren Potentials verwendet, um eine de Sitter Raumzeit zu erhalten. Konstruktionen von de Sitter Raumzeiten in String Theorie sind nicht trivial und werden oft kritisiert. In dieser Dissertation werden Themen behandelt, die mit Konstruktionen von de Sitter Raumzeiten in effektiven Theorien, die von String Theorie kommen, zusammenhängen.\\
+Ein wichtiger Bestandteil einer Klasse von Modellen sind (anti)-$D$-Branen, welche wir im Rahmen von Supergravitation beschreiben werden. Besonderes Augenmerk liegt auf der anti-$D3$-Brane im KKLT Modell, welche dazu dient, die Energie des Vakuums positiv zu machen. Hier geben wir eine vollständige Beschreibung, inklusive aller Felder, die im Volumen der Brane vorkommen. Des Weiteren zeigen wir, wie das KKLT Modell, welches ursprünglich in Typ IIB String Theorie erfunden wurde, auch in Typ IIA mittels anti-$D6$-Branen funktioniert. Außerdem führen wir eine ``massenproduktions Methode" ein, welche es erlaubt, unkompliziert viele de Sitter Vakua zu konstruieren. Aufbauend darauf untersuchen wir Modelle, die auf 7 Torus Kompaktifizierungen von M Theorie basieren. Wir finden, dass auch solche Konstruktionen zu de Sitter Raumzeiten führen können und zeigen, wie sie mit Typ II Supergravitation zusammenhängen.\\
+Eine neuere Entwicklung im Bereich der String Phänomenologie sind die sogenannten Sumpfland Vermutungen. Hier liegt unser Augenmerk auf der de Sitter Vermutung, welche behauptet, dass konsitente Konstruktionen von de Sitter Raumzeiten in String Theorie nicht möglich sind. Wir zeigen, dass es schwierig ist, de Sitter Minima in klassischen Typ IIA String Kompaktifizierungen zu finden. Nachdem wir die ursprüngliche Behauptung durch explizite instabile Lösungen widerlegen, präsentieren wir unsere eigene, verbesserte de Sitter Sumpfland Behauptung, welche sich von der überarbeiteten Version der ersten Behauptung in einigen Aspekten unterscheidet.\vspace{12pt}\\
+Die vorliegende Dissertation basiert auf den Publikationen \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt}, an welchen ich während meines Doktoratsstudiums gearbeitet habe.
+
+%English Abstract
+\section*{Abstract}
+One of the main goals of the field of string phenomenology is to describe the properties of our spacetime in low-energy effective models related to and consistent with string theory. It is known from observations that our universe undergoes accelerated expansion, which can be described in Einstein's theory of general relativity as a positive cosmological constant. Within string theory descriptions, this is realized by a scalar field with a positive value of its potential. Often times, this is modelled by having the scalar at a stable, positive minimum. One then obtains a de Sitter spacetime. Constructions of de Sitter spaces from string theory are not straight forward and face many criticisms. In this thesis we adress several aspects related to this topic.\\
+We investigate the description of general branes in supergravity and in particular describe the uplifting anti-$D3$-brane of the KKLT model, including all world volume fields. Additionally, we translate the type IIB based KKLT model into type IIA and introduce a mechanism that allows for the rapid construction of many de Sitter solutions. Related to this we investigate models based on twisted $7$-tori from M-theory and their relation to type II supergravity. These setups can also yield de Sitter solutions using the same mass production mechanism.\\
+One of the more recent and serious claims against the construction of de Sitter spaces in string theory, the de Sitter swampland conjecture, is also adressed here. We highlight the difficulty of obtaining a stable, positive vacuum energy in classical type IIA flux compactifications and their reliance on $O$-plane sources. Then, we turn our attention to the conjecture itself. Contrary to the initial claim, we find many unstable de Sitter points in numerical searches and go on to present our own refined conjecture that differs in several key apects from the refined version of the original conjecture.\vspace{12pt}\\
+This thesis is based on the publications \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt} that I worked on during my doctoral studies.
+
+\newpage
+
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
 \chapter{For the Uninitiated}
 The world we live in is a curious place and we humans are trying to comprehend as much about it as possible. This lead us to develop different subjects of natural science. Physics represents the most fundamental of those theories, beating out mathematics due to formality. However, physics is still divided into many different categories ranging from applied, like condensed matter physics, to theoretical and fundamental, sometimes bordering on the field of pure mathematics \footnote{The reader may feel free to consider physics as little more than ``applied mathematics''. If the reader is a mathematician he may find the mercy in his heart to forgive me for this statement.}. During the human pursuit to understand the laws of nature physicists have pushed to ever more fundamental theories. This lead to the discovery of the theories of the very small with Quantum Mechanics, and the very large, described by General Relativity. Unfortunately, the combination of the two proves to be troublesome. Theories that attempt to quantize gravity are collected under the umbrella of \emph{Quantum Gravity}. Perhaps the most promising theory to date is known as \emph{String Theory} and considers tiny, vibrating strings as the fundamental object of the theory. String Theory does allow for a quantum theory that includes gravity but the connection to the physics at energy scales that we can probe in experiments is not clear. In particular we need to be able to obtain both the Standard Model of Particle Physics and the spacetime properties of the universe from string theory. The present work is motivated by the latter.\\
 In 1998 a curious property of the universe was detected. The space around us is expanding at an accelerated rate. This statement might seem mundane at first but has important implications. For one it implies that, as time  progresses, certain parts of the universe will become unobservable as not even light will be able to reach us. More importantly for this work is, however, that it leads to the following question: What causes this expansion? Due to the lack of any concrete ideas and the behavior of the expansion matching a positive and constant vacuum energy very precisely the name \emph{Dark Energy} has been coined. Geometrically, a universe with accelerated expansion can be described, on large scales, as a de Sitter spacetime, a geometry with positive and constant cosmological constant.\\
@@ -92,6 +139,7 @@ At this point the reader might ask them self how this connects to string theory 
 This raises the question why theoretical physicists are still investigating string theory if it describes a universe with a wrong number of spatial dimensions and includes a symmetry that is not observed in nature. The answer has to do with the notion of \emph{effective theories}. In short, full string theory is constructed to be valid up to energies close to the Planck scale. At significantly lower energies, however, not all details of string theory matter. Nature is then approximated sufficiently well\footnote{Read: Indistinguishable in experiments due to insufficient of precision.} by an \emph{effective theory}. At the energies we currently probe these theories would be the Standard Model and General Relativity. We thus expect that, in the process of going to lower energies, the extra dimensions \emph{become small} and supersymmetry \emph{breaks} at some point. Both of these things can be accomplished, in principle.\\
 In order to go from 10 dimensions down to our familiar 4 we perform what is called a \emph{Compactification}. For this we split spacetime in two parts, the 3+1 dimensions we observe and a compact space with 6 dimensions. The choice of the internal geometry is crucial for the resulting effective theory. In the process of compactification scalar fields, so-called moduli, that describe the properties of this manifold have to be considered. These moduli contain information about the size and shape of the space and are dynamical. During the compactification we need to \emph{stabilize} them such that their dynamics does not appear in the effective theory. While this is a difficult task in general it also opens up possibilities. For example, if a modulus is stabilized at the minimum of a potential with a positive energy this can act as a cosmological constant in the effective theory! Thus, a string compactification can solve the dark energy problem. The properties of the internal manifold also play a role in supersymmetry breaking, however, also other ingredients like \emph{D-Branes}, can play a role. Branes are extended objects in string theory on which strings can end. They play an important role in many models and, as already mentioned, can break supersymmetry, depending on their orientation.\\
 At this point the reader might conclude that string theory allows for a realistic description of the nature we observer\footnote{The valued reader might also think that this is contrived beyond reason. Unfortunately, convincing them of the contrary would require more space than is available in this thesis.}. The devil, however, lies in the details. Currently, no model is known that reproduces even the basic properties of our spacetime and is without major criticism. There are numerous properties one needs to achieve that go beyond the scope of this simple overview. Due to this, it is necessary to tackle one problem at a time before one can hope to fit the pieces of the puzzle together. To this end several different aspects of string compactifications will be described in this thesis in the hope that they may contribute to the field as a whole and bring us closer to understanding the fundamental nature of the world we live in.
+
 
 \chapter{Introduction}
 The goals of applying string theory to our physical world are roughly split into two categories. One half is trying to reproduce the Standard Model of particle physics, one of the most successfull physical theories in history. The other, is concerned with gravity and the large scale universe. From cosmological observations we know the universe is expanding in an accelerated manner \cite{Planck:2018jri}. The two most popular attempts to describe this behavior are that either the spacetime of our universe is de Sitter or that it is undergoing quintessence. In the context of low-energy effective theories obtained from string theory, both situations are described by a scalar field in a potential. For de Sitter, the scalar rests at a (meta-) stable minimum with positive vacuum energy. In the case of quintessence, the scalar rolls slowly on a flat slope such that the positive vacuum energy changes only by an amount that is unobservable on timescales below the cosmological. In both scenarios one needs to build low-energy effective models that are consistent with string theory. The framework of these models is supergravity. Unfortunately, supergravity does not sufficiently restrict models in order to ensure that they consistently lift to string theory. This is the concern of a field that has recently emerged under the name of the swampland program \cite{Brennan:2017rbf,Palti:2019pca,vanBeest:2021lhn}. While this program has yielded several so-called swampland conjectures, here we are mostly interested in the de Sitter swampland conjecture \cite{Obied:2018sgi}, that effectively forbids dS solutions to be consistent with string theory. In this thesis we will investigate several aspects related to the description of spacetime in string theory motivated models.\\
@@ -102,7 +150,7 @@ In chapter \ref{sec:swamplandconjectures} we review the works \cite{Roupec:2018m
 \vspace{12pt}
 The present thesis is based on the works \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt} published during the course of my doctoral studies at TU Wien under the supervision of Timm Wrase.
 
-\chapter{D-Branes in 4 dimensional Supergravity}
+\chapter{D-Branes in 4d Supergravity}
 \label{sec:antiD3}
 
 \section{Non-linear Supersymmetry and Supergravity}
@@ -145,10 +193,13 @@ Furthermore, if we decide to add the secondary constraint
 to the above it is possible to write an equivalent action to the VA-action either as a pure $F$- or pure $D$-term:
 
 \bea 
-S_{\text{VA},F} &= \int d^4x \int d^2 \theta \int d^2 \bar{\theta} X \bar{X} \\
+S_{\text{VA},F} &= \int d^4x \int d^2 \theta \int d^2 \bar{\theta} X \bar{X}\,,
+\eea
+\bea
 S_{\text{VA},D} &=  M^2 \left( \int d^4 x \int d^2\theta X + h.c.\,\right)\,.
 \eea
-The equivalence of these two formulations is implied by the secondary constraint \eqref{eq:secconst}.\\
+
+The equivalence of these two formulations is implied by the secondary constraint given in equation \eqref{eq:secconst}.\\
 Importantly, the choice of constrained multiplet is not unique. Many different options are available \cite{Bandos:2016xyu,GarciadelMoral:2017vnz}. Not limiting ourselves to their applicability to the VA theory and repeating the nilpotent chiral field for completeness, we mention the following options:
 \begin{itemize}
 \item The nilpotent chiral field $X = x + \sqrt{2} \psi \theta + F \theta^2$ with $X^2=0$ gives:
@@ -224,6 +275,7 @@ The supergravity equivalent to the global supersymmetry Volkov-Akulov model \eqr
 K &= X\bar{X}\,,\\
 W &= W_0 + M^2 X\,,
 \eea
+
 with a nilpotent chiral multiplet $X$ that contains the Goldstino. Applying the superconformal action to this example with just one chiral multiplet we find:
 \be 
 S = \left[-3 X^0 \bar{X}^0 + X^0 \bar{X}^0 X\bar{X}\right]_D + \left[ (X^0)^3\, (W_0 + M^2 X) \right]_F\,.
@@ -744,7 +796,7 @@ where we also read of that $c_4(x^\mu)\, Y_{2,2} = -c_4(x^\mu)\, [2 \rmim(T)]^{-
 &= \frac{\rmre(T)}{2\rmim(T)} \bar{\theta} \delta_{i\ib}\delta_{j\jb}\Gamma^\mu \tilde{\Gamma}^{i\ib j\jb}\tilde{\Gamma}_{0123} \theta\\
 &= -\rmi \frac{\partial_\mu \rmre(T)}{\rmim(T)} \left( 3\bar{\lambda} P_R \gamma^\mu \lambda - \delta_{i\jb} \bar{\chi}^\jb P_R\gamma^\mu \chi^i \right)\,.
 \eea
-The remaining term coming from $C_4$ can be related to the above one due to the self-duality of $dC_4$ in $10d$. Using this property one finds that
+The remaining term coming from $C_4$ can be related to the above one due to the self-duality of $dC_4$ in $10d$. Using this property one finds that:
 \be 
 F_{\mu n p q r} \Gamma^{\mu n p q r} = -2 \rme^{\frac{8}{3} \mathcal{A} + \frac{16}{3} u} F_{\mu\nu \rho mn} \Gamma^{\mu \nu \rho mn} \tilde{\Gamma}_\star\,.
 \ee
@@ -789,7 +841,8 @@ S^{\overline{D3}}
 
 \subsection[The $D3$-Brane Action and Supergravity]{The $\mathbf{D3}$-Brane Action and Supergravity}
 \label{sec:susyD3}
-Even though our goal is to describe the anti-$D3$-brane action in the KKLT background it will be useful to first have a look at the supersymmetric action of the normal $D3$-brane. The results of this section will proof useful  for the investigation of the anti-$D3$-brane case. In particular, we will match the action with the standard $\mathcal{N}=1$ supergravity action for a single vector multiplet and three chiral multiplets because for the $D3$-brane equation \eqref{eq:simpbosact} reduces exactly to that. First, the ``uplift" term of the bosonic action vanishes for the supersymmetric $D3$-brane as do the fermionic mass terms. Taking into account the sign flip in the RR-fields only one vector multiplet, containing $\lambda$ and $A_\mu$, and three chiral multiplets with $H^a$ and $\chi^a := e^a_i \chi^i$ remain. The $D3$-brane action is then given to be:
+Even though our goal is to describe the anti-$D3$-brane action in the KKLT background it will be useful to first have a look at the supersymmetric action of the normal $D3$-brane. The results of this section will proof useful  for the investigation of the anti-$D3$-brane case. In particular, we will match the action with the standard $\mathcal{N}=1$ supergravity action for a single vector multiplet and three chiral multiplets because for the $D3$-brane equation \eqref{eq:simpbosact} reduces exactly to that. First, the ``uplift" term of the bosonic action vanishes for the supersymmetric $D3$-brane as do the fermionic mass terms. Taking into account the sign flip in the RR-fields only one vector multiplet, containing $\lambda$ and $A_\mu$, and three chiral multiplets with $H^a$ and $\chi^a := e^a_i \chi^i$ remain.\\
+The $D3$-brane action is then given to be:
 \bea 
 S^{D3}
 =& S^{D3}_{\text{bosonic}} + S^{D3}_{\text{fermionic}}\\
@@ -1391,6 +1444,7 @@ Rewriting the scalar potential $V=\rme^K \left(|DW|^2 - 3 |W|\right)$ with this 
 \be 
 V = m_a K^{a\bar{b}}\bar{m}_{\bar{b}} - 3 |m|^2 =: |m_a|^2 - 3 |m|^2\,,
 \ee
+
 where the Kähler metric is defined as $K_{a\bar{b}} = \partial_a \partial_{\bar{b}}K$. This scalar potential has an extremum for:
 \be 
 \partial_a V = -2 m_a \bar{m} + m_{ab} K^{b\bar{b}} \bar{m}_{\bar{b}}=0\,,
@@ -1817,24 +1871,9 @@ For the downshift and uplift parameters we choose values
 \Delta W_0 &= - 10^{-5}\\
 \mu^4_{\text{bulk}} &= 3.10079 \cdot 10^{-10}\,,
 \eea
-where we once again will focus on the placement of the anti-$D3$-branes in the bulk. Placing the branes at the bottom of a warped throat and using $\mu^4_{\text{throat}} = 2.46069 \cdot 10^{-10}$ will produce similar results. The resulting potential is visualized in figures \ref{fig:fibre2d} and \ref{fig:fibre3d}. 
-
-\begin{figure}[htb]
-\includegraphics[scale=0.55]{fibreSLarge.pdf} \qquad\includegraphics[scale=0.6]{fibreSClose.pdf}
-\includegraphics[scale=0.55]{fibreTLarge.pdf} \qquad\includegraphics[scale=0.6]{fibreTClose.pdf}\\
-\includegraphics[scale=0.55]{fibreULarge.pdf} \qquad\includegraphics[scale=0.6]{fibreUClose.pdf}
-\caption{2-dimensional plots of the minimum of the K3-fibration model used for fibre inflation. The large scale pictures on the left show the AdS and dS scalar potential overlapping. On the right the close up of the minimum depicts the AdS minimum (blue, dash-dotted) being lifted to a dS minimum (red, solid). The anti-$D3$-brane contribution (green, dotted) is above the close up of the minimum in this case. }
-\label{fig:fibre2d}
-\end{figure}
-\begin{figure}[htb]
-\centering
-\includegraphics[scale=0.7]{fibre3DLarge}
-\caption{Form of the scalar potential around the minimum of the fibre inflation model in the $\rmim(T)$ and $\rmim(U)$ slice in 3d.}
-\label{fig:fibre3d}
-\end{figure}
-
+where we once again will focus on the placement of the anti-$D3$-branes in the bulk. Placing the branes at the bottom of a warped throat and using $\mu^4_{\text{throat}} = 2.46069 \cdot 10^{-10}$ will produce similar results. The resulting potential is visualized in figures \ref{fig:fibre2d} and \ref{fig:fibre3d}.\\
 The values of the eigenvalues of the mass matrix are given in table \ref{tab:fibremass}, for Minkowski and de Sitter. Once again, we find the usual picture that they change slightly and that the degeneracy of scalars and pseudo-scalars is broken in dS.
-\begin{table}[htb]
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|}\hline
 &  Minkowski  & de Sitter \\\hline
@@ -1849,7 +1888,22 @@ $m_6^{\,2}$ & $\; 2.44807 \cdot 10^{-2} \;$ & $\; 2.44665 \cdot 10^{-2} \;$\\\hl
 \label{tab:fibremass}
 \end{table}
 
-\FloatBarrier
+\begin{figure}[H]
+     \centering
+     \includegraphics[width=0.4\textwidth]{fibreSLarge.pdf} \hspace{20pt} \includegraphics[width=0.45\textwidth]{fibreSClose.pdf}\\
+     \includegraphics[width=0.4\textwidth]{fibreTLarge.pdf} \hspace{20pt} \includegraphics[width=0.45\textwidth]{fibreTClose.pdf}\\
+     \includegraphics[width=0.4\textwidth]{fibreULarge.pdf} \hspace{20pt} \includegraphics[width=0.45\textwidth]{fibreUClose.pdf}
+\caption{2-dimensional plots of the minimum of the K3-fibration model used for fibre inflation. The large scale pictures on the left show the AdS and dS scalar potential overlapping. On the right the close up of the minimum depicts the AdS minimum (blue, dash-dotted) being lifted to a dS minimum (red, solid). The anti-$D3$-brane contribution (green, dotted) is above the close up of the minimum in this case. }
+\label{fig:fibre2d}
+\end{figure}
+
+\begin{figure}[H]
+     \centering
+     \includegraphics[width=0.6\textwidth]{fibre3DLarge.pdf}
+     \caption{Form of the scalar potential around the minimum of the fibre inflation model in the $\rmim(T)$ and $\rmim(U)$ slice in 3d.}
+     \label{fig:fibre3d}
+\end{figure}
+
 \paragraph{Our final example is based on the Fano three-fold $\bm{\mathcal{F}_{11}}$} and is sometimes called a multi-hole Swiss-cheese model. This manifold is topologically equivalent to a Calabi-Yau three-fold with Hodge numbers $h^{1,1} = 3$ and $h^{2,1} =111$. It has been studied in detail in \cite{Denef:2004dm}. The internal volume can be described by \cite{Cicoli:2008gp}:
 \be 
 \mathcal{V}_6 (\tau_i) = \frac{1}{3 \sqrt{2}} \bigg(2[\tau_1  + \tau_2 + 2 \tau_3]^{3/2} - [\tau_2 + 2 \tau_3]^{3/2} - [\tau_2]^{3/2}\bigg)\,.
@@ -1880,20 +1934,18 @@ $S_0 = 1$ & $T_0 = 1$ & $U_0 = 1$\\\hline
 
 As before we show 2d and 3d plot of the minimum in figures \ref{fig:swiss2d} and \ref{fig:swiss3d}. The masses obtained with these parameters are given in table \ref{tab:swissmass}.
 
-\begin{figure}[htb]
-\center
-\includegraphics[scale=0.56]{quevedo_38_S_large.pdf}\qquad\includegraphics[scale=0.6]{quevedo_38_S_close.pdf}
-\includegraphics[scale=0.56]{quevedo_38_T_large.pdf}\qquad\includegraphics[scale=0.6]{quevedo_38_T_close.pdf}
-\end{figure}
-\begin{figure}[htb]
-\includegraphics[scale=0.56]{quevedo_38_U_large.pdf}\qquad\includegraphics[scale=0.6]{quevedo_38_U_close.pdf}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{quevedo_38_S_large.pdf}\qquad\includegraphics[scale=0.59]{quevedo_38_S_close.pdf}\\
+\includegraphics[scale=0.55]{quevedo_38_T_large.pdf}\qquad\includegraphics[scale=0.59]{quevedo_38_T_close.pdf}\\
+\includegraphics[scale=0.55]{quevedo_38_U_large.pdf}\qquad\includegraphics[scale=0.59]{quevedo_38_U_close.pdf}
 \caption{2d plots of the scalar potential in the Fano three-fold model. All 3 directions show a similar meta-stable behavior. The AdS potential (blue, dash-dotted) gets lifted to dS (red, solid) via the contribution of the ant-D3-brane (green, dotted).}
 \label{fig:swiss2d}
 \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{quevedo_38_3D_large.pdf}
+\includegraphics[scale=0.78]{quevedo_38_3D_large.pdf}
 \caption{3d plot of the $\rmim(T)$ and $\rmim(U)$ slice in the Fano three-fold model with the meta-stable minimum clearly visible.}
 \label{fig:swiss3d}
 \end{figure}
@@ -2545,9 +2597,10 @@ and for the condition on the smallest value of the Hessian we use:
 For a positive value of the potential we define the first and second slow-roll parameters\footnote{Strictly speaking the slow-roll parameters we use here are the ones only valid for single field slow-roll inflation, often denoted $\epsilon_V$ and $\eta_V$.} to be:
 \bea 
 \epsilon &= \frac{M_P^ 2}{2} \frac{|\nabla V|^2}{V^2}\,,\\
-\eta &= M_P^ 2 \frac{\text{min}(\nabla^i \nabla_j V)}{V}\,.
+\eta &= M_P^ 2 \, \frac{\text{min}(\nabla^i \nabla_j V)}{V}\,.
 \eea
-Finally, for constant fields, the mass matrix is
+
+Finally, for constant fields, the mass matrix is:
 \be
 M^i_j= \nabla^i \nabla_j V\,,
 \ee
@@ -2681,6 +2734,7 @@ Here, we will use solutions, like the ones discussed in the previous section, in
      \caption{In this figure we present the way how known solutions, listed in table \ref{tab:dSpoints}, constrain the parameters of the conjecture \eqref{eq:ourdScon}. The red dots are the de Sitter extrema while the red stars give the saddle points. We adjusted the parameters such that the conjecture agrees with the known solutions which is in agreement with the general expected values allowed for these parameters. For the lines symbolizing the typical de Sitter conjecture $c=c^ \prime = 1$ was used again.}
      \label{fig:constconj}
 \end{figure}
+\newpage
 
 The data points constrain the parameters in \eqref{eq:ourdScon} in the following way:
 \begin{itemize}

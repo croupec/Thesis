@@ -1,0 +1,124 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{jheppub}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx,color,slashed,mathtools,bm,bbm,float,placeins}
+\usepackage{bbm} 
+\usepackage{ifpdf}
+\usepackage{setspace}
+
+
+
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bI}{\mathbb{I}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\Tr}{\mathrm{Tr\,}}
+\newcommand{\ov}{\overline}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{equation}\begin{aligned}}
+\newcommand{\eea}{\end{aligned}\end{equation}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ea}{\end{eqnarray}}
+\newcommand{\nn}{\nonumber}
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+\newcommand{\ls}{\left[}
+\newcommand{\rs}{\right]}
+\newcommand{\vep}{\varepsilon}
+\renewcommand{\d}{\textrm{d}}
+\newcommand{\e}{\textrm{e}}
+\newcommand{\ep}{\epsilon}
+\newcommand{\w}{\wedge}
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cL}{\mathcal{L}}
+\renewcommand{\baselinestretch}{1.2}
+\def\rmi{{\rm i}}
+\def\rme{{\rm e}}
+\def\ib{{\bar \imath}}
+\def\jb{{\bar \jmath}}
+\def\rmre{{\rm Re}}
+\def\rmim{{\rm Im}}
+\newcommand{\Db}{\overline{D6}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\V}{\mathcal{V}}
+
+\newcommand{\chr}[1]{\textbf{\textcolor{blue}{(#1 --CR)}}}
+\newcommand{\tw}[1]{\textbf{\textcolor{red}{(#1 --TW)}}}
+\newcommand{\nc}[1]{\textbf{\textcolor{green}{(#1 --NC)}}}
+\newcommand{\da}[1]{\textbf{\textcolor{yellow}{(#1 --DA)}}}
+
+\title{Flux Compactifications, dS Vacua and the Swampland}
+\author{Christoph Oliver Roupec MSc}
+\begin{document}
+\includegraphics[scale=0.08]{TU_Logo.png}
+\vspace{12pt}
+\begin{center}
+{\large
+Dissertation\vspace{12pt}\\
+{\Large\textbf{Flux Compactifications, dS Vacua and the Swampland}}\vspace{12pt}\\
+ausgeführt zum Zwecke der Erlangung des akademischen Grades eines Doktors der Naturwissenschaften\vspace{12pt}\\
+unter der Leitung von\vspace{12pt}\\
+Privatdozent Timm Michael Wrase, PhD\\
+E136\\
+Institut für Theoretische Physik\vspace{12pt}\\
+eingereicht an der Technischen Universität Wien\\
+Fakultät für Physik\vspace{12pt}\\
+von\vspace{12pt}\\
+{\Large\textbf{Christoph Oliver Roupec}, MSc}\\
+Matrikelnummer: 01108500\vspace{12pt}\\
+Breitenseer Straße 39a, T23-24, 1140 Wien\vspace{60pt}\\
+Wien, am XX. November 2021 \hspace{\fill}\rule{0.33 \textwidth}{0.5pt}
+
+
+
+}
+\end{center}
+
+\newpage
+\makeatletter
+\renewenvironment{thebibliography}[1]
+     {\chapter*{\bibname}% <-- this line was changed from \chapter* to \section*
+      \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+\clearpage% or cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{JHEP}
+\singlespace
+%\small
+\bibliography{refs}
+%\bibliography{refs}
+\end{document}
