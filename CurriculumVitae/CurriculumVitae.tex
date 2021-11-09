@@ -1,0 +1,277 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{jheppub}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx,color,slashed,mathtools,bm,bbm,float,placeins}
+\usepackage{bbm} 
+\usepackage{ifpdf}
+\usepackage{setspace}
+
+
+
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bI}{\mathbb{I}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\Tr}{\mathrm{Tr\,}}
+\newcommand{\ov}{\overline}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{equation}\begin{aligned}}
+\newcommand{\eea}{\end{aligned}\end{equation}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ea}{\end{eqnarray}}
+\newcommand{\nn}{\nonumber}
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+\newcommand{\ls}{\left[}
+\newcommand{\rs}{\right]}
+\newcommand{\vep}{\varepsilon}
+\renewcommand{\d}{\textrm{d}}
+\newcommand{\e}{\textrm{e}}
+\newcommand{\ep}{\epsilon}
+\newcommand{\w}{\wedge}
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\cZ}{\mathcal{Z}}
+\newcommand{\cL}{\mathcal{L}}
+\renewcommand{\baselinestretch}{1.2}
+\def\rmi{{\rm i}}
+\def\rme{{\rm e}}
+\def\ib{{\bar \imath}}
+\def\jb{{\bar \jmath}}
+\def\rmre{{\rm Re}}
+\def\rmim{{\rm Im}}
+\newcommand{\Db}{\overline{D6}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\V}{\mathcal{V}}
+
+\newcommand{\chr}[1]{\textbf{\textcolor{blue}{(#1 --CR)}}}
+\newcommand{\tw}[1]{\textbf{\textcolor{red}{(#1 --TW)}}}
+\newcommand{\nc}[1]{\textbf{\textcolor{green}{(#1 --NC)}}}
+\newcommand{\da}[1]{\textbf{\textcolor{yellow}{(#1 --DA)}}}
+
+
+%----------------------------------------------------------------------------------------
+%	FOR THE CV
+%----------------------------------------------------------------------------------------
+
+\usepackage[parfill]{parskip} % Remove paragraph indentation
+\usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
+\usepackage{ifthen} % Required for ifthenelse statements
+\usepackage{setspace}
+
+% Defines the rSection environment for the large sections within the CV
+\newenvironment{rSection}[1]{ % 1 input argument - section name
+  \sectionskip
+  \MakeUppercase{\bf #1} % Section title
+  \sectionlineskip
+  \hrule % Horizontal line
+  \begin{list}{}{ % List for each individual item in the section
+    \setlength{\leftmargin}{1.5em} % Margin within the section
+  }
+  \item[]
+}{
+  \end{list}
+}
+
+\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
+ {\bf #1} \hfill {#2} % Bold company name and date on the right
+ \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+  \\
+  {\em #3} \hfill {\em #4} % Italic job title and location
+  }\smallskip
+
+  \begin{spacing}{0.75}
+  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+   
+  }{
+  \end{list}
+  \end{spacing}
+  \vspace{0.5em} % Some space after the list of bullet points
+}
+
+% The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
+\def\namesize{\huge} % Size of the name at the top of the document
+\def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
+\def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
+\def\nameskip{\bigskip} % The space after your name at the top
+\def\sectionskip{\medskip} % The space after the heading section
+
+%----------------------------------------------------------------------------------------
+%
+%----------------------------------------------------------------------------------------
+
+
+\title{Flux Compactifications, dS Vacua and the Swampland}
+\author{Christoph Oliver Roupec MSc}
+\begin{document}
+
+\center
+\section*{Christoph Oliver ROUPEC}
+Institute for Theoretical Physics, Vienna University of Technology\\
+Wiedner Hauptstraße 8-10/136, A-1040 Vienna, Austria\\
+Christoph.Roupec@gmail.com\\
++43 664 3826128
+
+\begin{rSection}{Personal Information}
+      {\bf Date of Birth} \hfill { 31st of July 1991}
+      \\{\bf Place of Birth} \hfill { Vöcklabruck, Austria}
+      \\{\bf Nationality} \hfill { Austria}
+      \\{\bf Address} \hfill {Breitenseer Straße 39a, T23-24, A-1140, Vienna, Austria}
+
+\end{rSection}
+
+\begin{rSection}{Experience}
+
+      {\bf Vienna University of Technology, Institute for Theoretical Physics, Vienna} \hfill {\em 2017 - 2022} 
+      \\ Doctorate in Theoretical Physics under the supervision of {\bf Timm Wrase}.
+      \\ Thesis Title: \emph{Flux Compactifications, dS Vacua and the Swampland}\vspace{7pt}
+      \\{\bf Stanford Institute for Theoretical Physics} \hfill {\em August - December 2019}
+      \\ Visiting Scientist working with {\bf Renata Kallosh} and {\bf Andrei Linde}.
+      %\\ Uplifting $\overline{D6}$-branes
+      \vspace{7pt}
+      \\{\bf University of Vienna, Vienna} \hfill {\em 2015 - 2017} 
+      \\ Master of Physics\hfill {graduated with distinction }
+      \\ Emphasis on theoretical particle physics, gravity and cosmology.\vspace{7pt}
+      \\ {\bf University of Vienna, Vienna} \hfill {\em 2011 - 2015}
+      \\ Bachelor of Physics \vspace{7pt}
+      \\ {\bf Austrian High School Equivalent \emph{Matura}} \hfill {\em 2006 - 2011}
+      \\ HTL Wels \hfill {graduated with distinction}
+      \\ School with emphasis on education in technology. Specialisation: Mechatronics
+      
+      \end{rSection}
+
+      \begin{rSection}{Additional Experience}
+
+            {\bf Teaching Assistant} \hfill {\em 2019}
+            \\ Erwin Schrödinger Institute, Vienna, Austria
+            \\ Course on Supergravity taught by {\bf Antoine Van Proeyen}.\vspace{7pt}
+            \\{\bf Teaching Assistant} \hfill {\em 2013}
+            \\ University of Vienna, Vienna, Austria
+            \\ Basics of Programming for physicists.
+            
+            \end{rSection}
+            
+            %--------------------------------------------------------------------------------
+            %    Publications
+            %-----------------------------------------------------------------------------------------------
+            \newpage
+            \begin{rSection}{Publications}
+            
+            {\bf Non-supersymmetric branes}
+            \\\emph{with:} N. Cribiori, M. Tournoy, A. Van Proeyen and T. Wrase
+             \\ JHEP 07 (2020) 189 \hfill arXiv:2004.13110\vspace{7pt}
+            \\{\bf de Sitter Minima from M theory and String theory}
+            \\\emph{with:} N. Cribiori, R. Kallosh and A. Linde
+             \\ Phys.Rev.D 101 (2020) 4, 046018 \hfill arXiv:1912.02791\vspace{7pt}
+            \\{\bf Mass Production of IIA and IIB dS Vacua}
+            \\\emph{with:} N. Cribiori, R. Kallosh and A. Linde
+             \\ JHEP 02 (2020) 063 \hfill arXiv:1912.00027\vspace{7pt}
+            \\{\bf Uplifting Anti-D6-brane}
+            \\\emph{with:} N. Cribiori, R. Kallosh and T. Wrase
+             \\ JHEP 12 (2019) 171 \hfill arXiv:1909.08629\vspace{7pt}
+             \\{\bf Supersymmetric anti-D3-brane action in the Kachru-Kallosh-Linde-Trivedi setup}
+            \\\emph{with:} N. Cribiori, T. Wrase and Y. Yamada
+            \\Phys.Rev. D100 (2019) no.6, 066001 \hfill arXiv:1906.07727\vspace{7pt}
+            \\{\bf Further refining the de Sitter swampland conjecture}
+            \\\emph{with:} D. Andriot 
+            \\Fortsch.\ Phys.\  {\bf 67} (2019) no.1-2,  1800105 \hfill arXiv:1811.08889\vspace{7pt}
+            \\{\bf Scaling limits of dS vacua and the swampland}
+            \\\emph{with:} A. Banlaki, A. Chowdhury and T. Wrase
+            \\JHEP 1903 (2019) 065 \hfill arXiv:1811.07880\vspace{7pt}
+            \\{\bf de Sitter extrema and the swampland}
+            \\\emph{with:} T. Wrase
+            \\Fortsch.Phys. 67 (2019) no.1-2, 1800082 \hfill arXiv:1807.09538
+            
+            \end{rSection}
+            
+            %----------------------------------------------------------------------------------------
+            %	Talks
+            %----------------------------------------------------------------------------------------
+            
+            \begin{rSection}{Talks}
+            
+            {\bf Non-Supersymmetric Branes}\hfill{\em 17.11.2020}
+            \\ Seminar Series on String Phenomenology, Boston, USA (online)\vspace{7pt}
+            \\{\bf Scaling Limits of dS Vacua}\hfill{\em 27.06.2019}
+            \\ StringPheno 2019, CERN, Geneva, Switzerland\vspace{7pt}
+            \newpage
+            {\bf dS Vacua and Starobinsky Inflation in 4d N=1 Supergravity} \hfill {\em 27.06.2017}
+            \\ Seminar on Mathematical Physics, University of Vienna, Vienna, Austria
+            
+            \end{rSection}
+            
+            %----------------------------------------------------------------------------------------
+            %	Conferences
+            %----------------------------------------------------------------------------------------
+            
+            \begin{rSection}{Conferences and Schools}
+            
+            {\bf StringPheno21}\hfill {\em 12.-16.7.2021}
+            \\ Northeastern University, Boston, USA (online)\vspace{7pt}
+            \\{\bf CERN Winterschool}\hfill {\em 01-05.2.2021}
+            \\CERN, Geneva, Switzerland (online)\vspace{7pt}
+            \\{\bf StringPheno20}\hfill {\em 08.-12.6.2020}
+            \\ Northeastern University, Boston, USA (online)\vspace{7pt}
+            \\{\bf CERN Winterschool}\hfill {\em 03-07.2.2020}
+            \\CERN, Geneva, Switzerland\vspace{7pt}
+            \\{\bf StringPheno19}\hfill {\em 24.-28.6.2019}
+            \\ CERN, Geneva, Switzerland\vspace{7pt}
+            \\{\bf CERN Winterschool}\hfill {\em 04-08.2.2019}
+            \\CERN, Geneva, Switzerland\vspace{7pt}
+            \\{\bf StringPheno18} \hfill {\em 02.-06.7.2018}
+            \\University of Warsaw, Warsaw, Poland\vspace{7pt}
+            \\{\bf CERN Winterschool}\hfill{\em 12-16.2.2018}
+            \\CERN, Geneva, Switzerland \vspace{7pt}
+            \\{\bf Laces 2017}\hfill{\em 27.11.-15.12.2017}
+            \\Galileo Galilei Institute for Theoretical Physics, Florence, Italy
+            
+            \end{rSection}
+            
+            %----------------------------------------------------------------------------------------
+            %	MISC
+            %----------------------------------------------------------------------------------------
+            \begin{rSection}{Grants}
+            
+            {\bf Austrian Marshall Plan Fellowship}\hfill {\em 2019}
+            \\ Travel grant to visit Stanford Institute for Theoretical Physics to collaborate with {\bf Renata Kallosh}.\vspace{7pt}
+            \\ {\bf DKPI Associate} \hfill {\em 2019 - 2020}
+            \\ Associate to the \emph{Doktoratskolleg Particles and Interactions} under the supervision of \textbf{Anton Rebhan}.\vspace{7pt}
+            \\ {\bf ÖAW DOC Stipend}\hfill {\em 2019-2021}
+            \\ Scholarship for excellent Doctorate candidates of the Austrian Academy of Sciences.
+            
+            \end{rSection}
+            
+            
+            \begin{rSection}{Additional Skills}
+            
+            \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+            Language\ & German (native), English (fluent) \\
+            Type Setting \ & \LaTeX \\
+            Mathematics \ & Wolfram Mathematica \\
+            Programming \ & Python, C, Fortran \\
+            Code Management \ & Github\\
+            Office Software \ & Microsoft, Libre, Google\\
+            Operating Systems \ & Microsoft Windows, Linux (Debian/Ubuntu), Android
+            \end{tabular}
+            
+            \end{rSection}
+            
+
+\end{document}
