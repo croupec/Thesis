@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{report}
+\documentclass[a4paper,12pt,twoside,openright]{report}
 \usepackage{jheppub}
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage{amsmath}
@@ -8,7 +8,7 @@
 \usepackage{ifpdf}
 \usepackage{setspace}
 \usepackage{pdfpages}
-
+\usepackage{emptypage}
 
 
 \newcommand{\bC}{\mathbb{C}}
@@ -165,17 +165,26 @@ Wien, am XX. November 2021 \hspace{\fill}\rule{0.33 \textwidth}{0.5pt}
 \end{center}
 }
 
-
+\newpage\thispagestyle{empty}\vspace*{\fill}
+\null %\begin{center}\emph{This page left blank intentionally $\ldots$ wait $\ldots$}\end{center} %use \null instead of this if the joke is not allowed...
+\vspace*{\fill}\newpage
+\setcounter{page}{1}
 %German Abstract
 \section*{Kurzfassung}
+\addcontentsline{toc}{chapter}{Kurzfassung}
 Eines der Ziele der String Phänomenologie ist es, die grundlegenden Eigenschaften der Raumzeit des Universums in einer konsistenten, effektiven Theorie bei niedrigen Energien zu beschreiben. Von kosmologischen Observationen wissen wir, dass sich unser Universum beschleunigt ausdehnt. In Einsteins Relativitätstheorie kann dies durch eine positive kosmologische Konstante beschrieben werden. In String Theorie ist es möglich diese durch ein skalares Feld zu beschreiben, welches an einer Stelle in seinem Potential mit positiver Energie sitzt. Oft wird ein stabiles Minimum des skalaren Potentials verwendet, um eine de Sitter Raumzeit zu erhalten. Konstruktionen von de Sitter Raumzeiten in String Theorie sind nicht trivial und werden oft kritisiert. In dieser Dissertation werden Themen behandelt, die mit Konstruktionen von de Sitter Raumzeiten in effektiven Theorien, die von String Theorie kommen, zusammenhängen.\\
 Ein wichtiger Bestandteil einer Klasse von Modellen sind (anti)-$D$-Branen, welche wir im Rahmen von Supergravitation beschreiben werden. Besonderes Augenmerk liegt auf der anti-$D3$-Brane im KKLT Modell, welche dazu dient, die Energie des Vakuums positiv zu machen. Hier geben wir eine vollständige Beschreibung, inklusive aller Felder, die im Volumen der Brane vorkommen. Des Weiteren zeigen wir, wie das KKLT Modell, welches ursprünglich in Typ IIB String Theorie erfunden wurde, auch in Typ IIA mittels anti-$D6$-Branen funktioniert. Außerdem führen wir eine ``massenproduktions Methode" ein, welche es erlaubt, unkompliziert viele de Sitter Vakua zu konstruieren. Aufbauend darauf untersuchen wir Modelle, die auf 7 Torus Kompaktifizierungen von M Theorie basieren. Wir finden, dass auch solche Konstruktionen zu de Sitter Raumzeiten führen können und zeigen, wie sie mit Typ II Supergravitation zusammenhängen.\\
-Eine neuere Entwicklung im Bereich der String Phänomenologie sind die sogenannten Sumpfland Vermutungen. Hier liegt unser Augenmerk auf der de Sitter Vermutung, welche behauptet, dass konsitente Konstruktionen von de Sitter Raumzeiten in String Theorie nicht möglich sind. Wir zeigen, dass es schwierig ist, de Sitter Minima in klassischen Typ IIA String Kompaktifizierungen zu finden. Nachdem wir die ursprüngliche Behauptung durch explizite instabile Lösungen widerlegen, präsentieren wir unsere eigene, verbesserte de Sitter Sumpfland Behauptung, welche sich von der überarbeiteten Version der ersten Behauptung in einigen Aspekten unterscheidet.\vspace{12pt}\\
+Eine neuere Entwicklung im Bereich der String Phänomenologie sind die sogenannten Sumpfland Vermutungen. Hier liegt unser Augenmerk auf der de Sitter Vermutung, welche behauptet, dass konsistente Konstruktionen von de Sitter Raumzeiten in der String Theorie nicht möglich sind. Wir zeigen, dass es schwierig ist, de Sitter Minima in klassischen Typ IIA String Kompaktifizierungen zu finden. Nachdem wir die ursprüngliche Behauptung durch explizite instabile Lösungen widerlegen, präsentieren wir unsere eigene, verbesserte de Sitter Sumpfland Behauptung, welche sich von der überarbeiteten Version der ersten Behauptung in einigen Aspekten unterscheidet.\vspace{12pt}\\
 Die vorliegende Dissertation basiert auf den Publikationen \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt}, an welchen ich während meines Doktoratsstudiums gearbeitet habe.
+
+\newpage\thispagestyle{empty}\vspace*{\fill}
+\null%\begin{center}\emph{NOT AGAIN $\ldots$}\end{center} %use \null instead of this if the joke is not allowed...
+\vspace*{\fill}\newpage
 
 %English Abstract
 \section*{Abstract}
-One of the main goals of the field of string phenomenology is to describe the properties of our spacetime in low-energy effective models related to and consistent with string theory. It is known from observations that our universe undergoes accelerated expansion, which can be described in Einstein's theory of general relativity as a positive cosmological constant. Within string theory descriptions, this is realized by a scalar field with a positive value of its potential. Often times, this is modelled by having the scalar at a stable, positive minimum. One then obtains a de Sitter spacetime. Constructions of de Sitter spaces from string theory are not straight forward and face many criticisms. In this thesis we adress several aspects related to this topic.\\
+\addcontentsline{toc}{chapter}{Abstract}
+One of the main goals of the field of string phenomenology is to describe the properties of our spacetime in low-energy effective models related to and consistent with string theory. It is known from observations that our universe undergoes accelerated expansion, which can be described in Einstein's theory of general relativity as a positive cosmological constant. Within string theory descriptions, this is realized by a scalar field with a positive value of its potential. Oftentimes, this is modelled by having the scalar at a stable, positive minimum. One then obtains a de Sitter spacetime. Constructions of de Sitter spaces from string theory are not straightforward and face many criticisms. In this thesis we adress several aspects related to this topic.\\
 We investigate the description of general branes in supergravity and in particular describe the uplifting anti-$D3$-brane of the KKLT model, including all world volume fields. Additionally, we translate the type IIB based KKLT model into type IIA and introduce a mechanism that allows for the rapid construction of many de Sitter solutions. Related to this we investigate models based on twisted $7$-tori from M-theory and their relation to type II supergravity. These setups can also yield de Sitter solutions using the same mass production mechanism.\\
 One of the more recent and serious claims against the construction of de Sitter spaces in string theory, the de Sitter swampland conjecture, is also adressed here. We highlight the difficulty of obtaining a stable, positive vacuum energy in classical type IIA flux compactifications and their reliance on $O$-plane sources. Then, we turn our attention to the conjecture itself. Contrary to the initial claim, we find many unstable de Sitter points in numerical searches and go on to present our own refined conjecture that differs in several key apects from the refined version of the original conjecture.\vspace{12pt}\\
 This thesis is based on the publications \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt} that I worked on during my doctoral studies.
@@ -192,12 +201,12 @@ In 1998 a curious property of the universe was detected. The space around us is 
 At this point the reader might ask them self how this connects to string theory exactly. In string theory, unlike general relativity, we cannot add an arbitrary constant to our theory in order to obtain the desired spacetime geometry. In fact, the geometry is obtained in the process of building a model. One important feature of string theory is that it lives naturally in higher dimensions than the usual 3+1 that we observe in our daily lives and indeed also in all experiments to date. \emph{Superstring Theory} requires 10 dimensions in order to be consistent and anomaly free. This theory, furthermore, has the property of \emph{supersymmetry}, which relates bosons with fermions. This is currently the most popular method in order to include fermions, such as electrons, in the theory. Supersymmetry, like extra dimensions, has also not been observed in experiments up to this date.\\
 This raises the question why theoretical physicists are still investigating string theory if it describes a universe with a wrong number of spatial dimensions and includes a symmetry that is not observed in nature. The answer has to do with the notion of \emph{effective theories}. In short, full string theory is constructed to be valid up to energies close to the Planck scale. At significantly lower energies, however, not all details of string theory matter. Nature is then approximated sufficiently well\footnote{Read: Indistinguishable in experiments due to insufficient of precision.} by an \emph{effective theory}. At the energies we currently probe these theories would be the Standard Model and General Relativity. We thus expect that, in the process of going to lower energies, the extra dimensions \emph{become small} and supersymmetry \emph{breaks} at some point. Both of these things can be accomplished, in principle.\\
 In order to go from 10 dimensions down to our familiar 4 we perform what is called a \emph{Compactification}. For this we split spacetime in two parts, the 3+1 dimensions we observe and a compact space with 6 dimensions. The choice of the internal geometry is crucial for the resulting effective theory. In the process of compactification scalar fields, so-called moduli, that describe the properties of this manifold have to be considered. These moduli contain information about the size and shape of the space and are dynamical. During the compactification we need to \emph{stabilize} them such that their dynamics does not appear in the effective theory. While this is a difficult task in general it also opens up possibilities. For example, if a modulus is stabilized at the minimum of a potential with a positive energy this can act as a cosmological constant in the effective theory! Thus, a string compactification can solve the dark energy problem. The properties of the internal manifold also play a role in supersymmetry breaking, however, also other ingredients like \emph{D-Branes}, can play a role. Branes are extended objects in string theory on which strings can end. They play an important role in many models and, as already mentioned, can break supersymmetry, depending on their orientation.\\
-At this point the reader might conclude that string theory allows for a realistic description of the nature we observer\footnote{The valued reader might also think that this is contrived beyond reason. Unfortunately, convincing them of the contrary would require more space than is available in this thesis.}. The devil, however, lies in the details. Currently, no model is known that reproduces even the basic properties of our spacetime and is without major criticism. There are numerous properties one needs to achieve that go beyond the scope of this simple overview. Due to this, it is necessary to tackle one problem at a time before one can hope to fit the pieces of the puzzle together. To this end several different aspects of string compactifications will be described in this thesis in the hope that they may contribute to the field as a whole and bring us closer to understanding the fundamental nature of the world we live in.
+At this point the reader might conclude that string theory allows for a realistic description of the nature we observe\footnote{The valued reader might also think that this is contrived beyond reason. Unfortunately, convincing them of the contrary would require more space than is available in this thesis.}. The devil, however, lies in the details. Currently, no model is known that reproduces even the basic properties of our spacetime and is without major criticism. There are numerous properties one needs to achieve that go beyond the scope of this simple overview. Due to this, it is necessary to tackle one problem at a time before one can hope to fit the pieces of the puzzle together. To this end several different aspects of string compactifications will be described in this thesis in the hope that they may contribute to the field as a whole and bring us closer to understanding the fundamental nature of the world we live in.
 
 
 \chapter{Introduction}
-The goals of applying string theory to our physical world are roughly split into two categories. One half is trying to reproduce the Standard Model of particle physics, one of the most successfull physical theories in history. The other, is concerned with gravity and the large scale universe. From cosmological observations we know the universe is expanding in an accelerated manner \cite{Planck:2018jri}. The two most popular attempts to describe this behavior are that either the spacetime of our universe is de Sitter or that it is undergoing quintessence. In the context of low-energy effective theories obtained from string theory, both situations are described by a scalar field in a potential. For de Sitter, the scalar rests at a (meta-) stable minimum with positive vacuum energy. In the case of quintessence, the scalar rolls slowly on a flat slope such that the positive vacuum energy changes only by an amount that is unobservable on timescales below the cosmological. In both scenarios one needs to build low-energy effective models that are consistent with string theory. The framework of these models is supergravity. Unfortunately, supergravity does not sufficiently restrict models in order to ensure that they consistently lift to string theory. This is the concern of a field that has recently emerged under the name of the swampland program \cite{Brennan:2017rbf,Palti:2019pca,vanBeest:2021lhn}. While this program has yielded several so-called swampland conjectures, here we are mostly interested in the de Sitter swampland conjecture \cite{Obied:2018sgi}, that effectively forbids dS solutions to be consistent with string theory. In this thesis we will investigate several aspects related to the description of spacetime in string theory motivated models.\\
-In chapter \ref{sec:antiD3}, based on \cite{Cribiori:2019hod,Cribiori:2020bgt}, we consider important ingredients that are used in one of the the most successfull class of constructions of de Sitter spaces from string theory, namely the anti-branes of the Kachru-Kallosh-Linde-Trivedi (KKLT) model \cite{Kachru:2003aw}. First, we review, in detail, non-linear supergravity and how it can be used in order to incorporate different contributions into the supergravity potentials. For this constrained supermultiplets \cite{Rocek:1978nb,Lindstrom:1979kq,Samuel:1982uh,Komargodski:2009rz,DallAgata:2016syy,Ferrara:2016een} are used that allow us to write a situation that has broken supersymmetry in terms of a (seemingly) linear Lagrangian. In the second section of this chapter we show how any $Dp$-brane can be written using this formalism \cite{Cribiori:2020bgt} and we investigate general, supersymmetry-breaking branes \cite{Sugimoto:1999tx,Antoniadis:1999xk,Angelantonj:1999jh,Aldazabal:1999jr,Angelantonj:1999ms,Dudas:2000nv,Pradisi:2001yv}. The focus will be on intersecting $D6$-branes and we clear up a long-standing misconception about the description of such setups in the $4d$ effective theory \cite{Villadoro:2006ia,Blumenhagen:2002wn,Kachru:1999vj,Cvetic:2001nr}. In particular, we show that the description of a supersymmetric brane intersecting another brane that breaks supersymmetry is always non-supersymmetric. Following this, we give the complete description of the anti-$D3$-brane in the KKLT setup \cite{Cribiori:2019hod}, including all world volume fields \cite{GarciadelMoral:2017vnz}. This includes all bosonic and fermionic contributions and once again utilizes constrained multiplets.\\
+The goals of applying string theory to our physical world are roughly split into two categories. One half is trying to reproduce the Standard Model of particle physics, one of the most successful physical theories in history. The other, is concerned with gravity and the large scale universe. From cosmological observations we know that the universe is expanding in an accelerated manner \cite{Planck:2018jri}. The two most popular attempts to describe this behavior are that either the spacetime of our universe is de Sitter or that it is undergoing quintessence. In the context of low-energy effective theories obtained from string theory, both situations are described by a scalar field in a potential. For de Sitter, the scalar rests at a (meta-) stable minimum with positive vacuum energy. In the case of quintessence, the scalar rolls slowly on a flat slope such that the positive vacuum energy changes only by an amount that is unobservable on timescales below the cosmological. In both scenarios one needs to build low-energy effective models that are consistent with string theory. The framework of these models is supergravity. Unfortunately, supergravity does not sufficiently restrict models in order to ensure that they consistently lift to string theory. This is the concern of a field that has recently emerged under the name of the swampland program \cite{Brennan:2017rbf,Palti:2019pca,vanBeest:2021lhn}. While this program has yielded several so-called swampland conjectures, here we are mostly interested in the de Sitter swampland conjecture \cite{Obied:2018sgi}, that effectively forbids dS solutions to be consistent with string theory. In this thesis we will investigate several aspects related to the description of spacetime in string theory motivated models.\\
+In chapter \ref{sec:antiD3}, based on \cite{Cribiori:2019hod,Cribiori:2020bgt}, we consider important ingredients that are used in one of the the most successful classes of constructions of de Sitter spaces from string theory, namely the anti-branes of the Kachru-Kallosh-Linde-Trivedi (KKLT) model \cite{Kachru:2003aw}. First, we review, in detail, non-linear supergravity and how it can be used in order to incorporate different contributions into the supergravity potentials. For this constrained supermultiplets \cite{Rocek:1978nb,Lindstrom:1979kq,Samuel:1982uh,Komargodski:2009rz,DallAgata:2016syy,Ferrara:2016een} are used that allow us to write a situation that has broken supersymmetry in terms of a (seemingly) linear Lagrangian. In the second section of this chapter we show how any $Dp$-brane can be written using this formalism \cite{Cribiori:2020bgt} and we investigate general, supersymmetry-breaking branes \cite{Sugimoto:1999tx,Antoniadis:1999xk,Angelantonj:1999jh,Aldazabal:1999jr,Angelantonj:1999ms,Dudas:2000nv,Pradisi:2001yv}. The focus will be on intersecting $D6$-branes and we clear up a long-standing misconception about the description of such setups in the $4d$ effective theory \cite{Villadoro:2006ia,Blumenhagen:2002wn,Kachru:1999vj,Cvetic:2001nr}. In particular, we show that the description of a supersymmetric brane intersecting another brane that breaks supersymmetry is always non-supersymmetric. Following this, we give the complete description of the anti-$D3$-brane in the KKLT setup \cite{Cribiori:2019hod}, including all world volume fields \cite{GarciadelMoral:2017vnz}. This includes all bosonic and fermionic contributions and once again utilizes constrained multiplets.\\
 In the next chapter \ref{sec:kkltconstr}, following \cite{Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb}, we move on to construct de Sitter vacua of our own. After reviewing the basic KKL(MM)T model \cite{Kachru:2003aw,Kachru:2003sx} we  port it from type IIB to IIA in section \ref{sec:IIAuplift} \cite{Cribiori:2019bfx}. In type IIA we can only utilize anti-$D6$-branes in order to lift a stable anti-de Sitter solution to a positive vacuum energy. We work with the so-called STU-model in a particular setup with only $F_6$-flux. The superpotential incorporates non-perturbative corrections in all moduli directions, that are vital to the success of the setup. We argue that these corrections can appear, even for the volume modulus due to M-theory U-duality. The anti-brane is again introduced by the use of constrained superfields. We find explicit models where the masses of all moduli are positive and we are able to satisfy basic string theory consistency conditions such as a large internal volume and small coupling. In section \ref{sec:massprod} we expand upon a mechanism \cite{Cribiori:2019drf}, first discovered in \cite{Kallosh:2019zgd}, where, by going first to Minkowski space, it is possible to guarantee that the procedure yields a stable de Sitter solution after the uplift. This works as follows: One first constructs a Minkowski minimum with no flat directions. Then, a parametrically small downshift, included into the superpotential, will yield a stabel AdS point. After this one can perform an uplift either via an anti-$D3$-brane in type IIB or an anti-$D6$-brane in IIA. For this procedure we utilize the Kallosh-Linde double exponent superpotential \cite{Kallosh:2004yh} for which we also proof that the resulting de Sitter point has positive masses if the Minkowski progenitor has no flat directions and the downshift is small. A further nice feature of the mass production procedure is that there is no need for an extreme fine-tuning of the uplift. Since we can vary the downshift, the uplift can be a lot larger then it would be if performed from Minkowski space directly. We also present several explicit examples, both in type IIA and IIB, based on different internal manifolds and show that the procedure works in each of them. In the second to last section \ref{sec:mtheory} of chapter \ref{sec:kkltconstr}, we consider more general, M-theory inspired models \cite{Cribiori:2019hrb}, based on compactifications on a generalized, twisted $7$-torus \cite{DallAgata:2005zlf,Duff:2010vy,Derendinger:2014wwa,Ferrara:2016fwe}. Interestingly, we find models that allow us to forego the racetrack potential by inclusion of tree-level flux terms. We investigate different kinds of models and their relation to type II supergravity compactifications. It is even possible to not include any non-perturbative contributions in certain directions, due to the included fluxes. A particular case relies on conjectured $S$-fluxes. Using these we are able to build a model in type IIB that does not require any sort of non-perturbative contributions. We also present explicit, numerical solutions for all of these models and show that the mass-production procedure works in each of them.\\
 In chapter \ref{sec:swamplandconjectures} we review the works \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav} and turn our interest to the de Sitter swampland conjecture \cite{Obied:2018sgi} and related issues. We first briefly review the general idea of the swampland program \cite{Brennan:2017rbf,Palti:2019pca,vanBeest:2021lhn} before turning our attention to the de Sitter conjecture \cite{Obied:2018sgi,Ooguri:2018wrx} and its implications. After earlier considerations along similar lines \cite{Danielsson:2018ztv}, the original de Sitter conjecture \cite{Obied:2018sgi} proposed a bound on the ratio of the first derivative of the scalar potential to the value of the potential that effectively forbids any extremum with positive vacuum energy. In section \ref{sec:scaling} we discuss scaling limits of a particularly simple compactification in type IIA \cite{Banlaki:2018ayh}, inspired by the AdS solutions of \cite{DeWolfe:2005uu}, where the $4$-flux is unconstrained. The goal is to find a limit where the solutions are trustworthy, with large internal volume and small string coupling. To that end, we review different ingredients that can appear in such compactifications and we also present an explicit example. Next, we show that the initial de Sitter swampland conjecture is too strict \cite{Roupec:2018mbn}, as it also forbids unstable extrema with positive vacuum energy. We highlight that such points have been found previously \cite{Caviezel:2008tf,Flauger:2008ad} and, in addition, present many new solutions that we obtained via a numerical search. Together with other issues of the original conjecture \cite{Denef:2018etk} this lead to a refinement in \cite{Ooguri:2018wrx}. Finally, in section \ref{sec:refconj} we present our own refinement of the de Sitter swampland conjecture \cite{Andriot:2018mav}. It is given as a single expression inequality on both the first and second derivative of the scalar potential which translates nicely into constraints on the slow-roll parameters of cosmology. We also show that our conjecture differs from the refined original one \cite{Ooguri:2018wrx} in some areas of parameter space. This has implications on the allowed cosmological models. In particular our conjecture does allow for slow roll inflation in certain cases and does restrict quintessence models.
 
@@ -2884,7 +2893,8 @@ During the course of my doctoral studies I have been funded by an FWF grant with
 I would like to offer my sincerest thanks to my advisor Timm Wrase, for all his help and patience in all things related to my doctorate, both scientific and organizational. His explanations taught me more than any book could ever have.\\
 Many thanks to Niccol\`o Cribiori for many explanations, discussions and encouragement. Many more thanks as well to Andreas Banlaki for stimulating discussions and to Abhiram Kidambi for forcing me to consider topics beyond my comfort.\\
 Special thanks to Renata Kallosh and Andrei Linde for the warm welcome at the Stanford Institute for Theoretical Physics. The discussions with you opened my eyes in many regards.\\
-Furthermore I would like to thank David Andriot, Thomas Van Riet and Antoine Van Proeyen for the fruitful collaborations and kind help offered and Anton Rebhan as well as all the people at the Institute  for Theoretical Physics at TU Wien for all their continued support.\\
+Furthermore I would like to thank David Andriot %, Thomas Van Riet 
+and Antoine Van Proeyen for the fruitful collaborations and kind help offered and Anton Rebhan as well as all the people at the Institute  for Theoretical Physics at TU Wien for all their continued support.\\
 Personal thanks go to all my friends and family for their continuous support, especially to Lukas Lüftinger for being a pillar of support when needed and to Matthias Röcklinger for additional encouragement.\\
 To my wife, Anneliese, I cannot offer sufficient thanks for supporting me over so many years but I will try my best.\\
 Finally, to my parents, I am thankful for encouraging me to pursue my dreams and supporting me each step of the way.
@@ -3020,59 +3030,65 @@ which can be proven by using the definition of the generalized gauge kinetic fun
 %\includepdf[pages=-]{CV.pdf} %Should include CV but looks like hores crap.
 %\include{CV.tex} Should include the whole tex thingy but also does not work
 \newpage
-\center
+{\centering
 \section*{Christoph Oliver ROUPEC}
 \addcontentsline{toc}{chapter}{Curriculum Vitae}
 Institute for Theoretical Physics, Vienna University of Technology\\
 Wiedner Hauptstraße 8-10/136, A-1040 Vienna, Austria\\
-Christoph.Roupec@gmail.com\\
-+43 664 3826128
+(+43) 664 3826128 $\,\diamond\,$ Christoph.Roupec@gmail.com\vspace{7pt}\\
+
+}
 
 \begin{rSection}{Personal Information}
-      {\bf Date of Birth} \hfill { 31st of July 1991}
-      \\{\bf Place of Birth} \hfill { Vöcklabruck, Austria}
-      \\{\bf Nationality} \hfill { Austria}
+     \vspace{7pt}
+      {\bf Date of Birth} \hfill { 31st of July 1991}\vspace{7pt}
+      \\{\bf Place of Birth} \hfill { Vöcklabruck, Austria}\vspace{7pt}
+      \\{\bf Nationality} \hfill { Austria}\vspace{7pt}
       \\{\bf Address} \hfill {Breitenseer Straße 39a, T23-24, A-1140, Vienna, Austria}
 
 \end{rSection}
 
-\begin{rSection}{Experience}
-
-      {\bf Vienna University of Technology, Institute for Theoretical Physics, Vienna} \hfill {\em 2017 - 2022} 
-      \\ Doctorate in Theoretical Physics under the supervision of {\bf Timm Wrase}.
-      \\ Thesis Title: \emph{Flux Compactifications, dS Vacua and the Swampland}\vspace{7pt}
-      \\{\bf Stanford Institute for Theoretical Physics} \hfill {\em August - December 2019}
-      \\ Visiting Scientist working with {\bf Renata Kallosh} and {\bf Andrei Linde}.
-      %\\ Uplifting $\overline{D6}$-branes
-      \vspace{7pt}
-      \\{\bf University of Vienna, Vienna} \hfill {\em 2015 - 2017} 
-      \\ Master of Physics\hfill {graduated with distinction }
-      \\ Emphasis on theoretical particle physics, gravity and cosmology.\vspace{7pt}
-      \\ {\bf University of Vienna, Vienna} \hfill {\em 2011 - 2015}
-      \\ Bachelor of Physics \vspace{7pt}
-      \\ {\bf Austrian High School Equivalent \emph{Matura}} \hfill {\em 2006 - 2011}
-      \\ HTL Wels \hfill {graduated with distinction}
-      \\ School with emphasis on education in technology. Specialisation: Mechatronics
-      
-      \end{rSection}
-
-      \begin{rSection}{Additional Experience}
-
-            {\bf Teaching Assistant} \hfill {\em 2019}
-            \\ Erwin Schrödinger Institute, Vienna, Austria
-            \\ Course on Supergravity taught by {\bf Antoine Van Proeyen}.\vspace{7pt}
-            \\{\bf Teaching Assistant} \hfill {\em 2013}
-            \\ University of Vienna, Vienna, Austria
-            \\ Basics of Programming for physicists.
-            
-            \end{rSection}
+\begin{rSection}{Education}
+     \vspace{7pt}
+ {\bf Vienna University of Technology,}\\{\bf Institute for Theoretical Physics} \hfill {\em 2017 - 2022} 
+ \\ Doctorate in Theoretical Physics under the supervision of {\bf Timm Wrase}.
+ \\ Thesis Title: \emph{Flux Compactifications, dS Vacua and the Swampland}\vspace{7pt}
+ \\{\bf University of Vienna} \hfill {\em 2015 - 2017} 
+ \\ Master of Physics\hfill {graduated with distinction }
+ \\ Emphasis on theoretical particle physics, gravity and cosmology.\vspace{7pt}
+ \\ {\bf University of Vienna} \hfill {\em 2011 - 2015}
+ \\ Bachelor of Physics \vspace{7pt}
+ \\ {\bf Austrian High School Equivalent \emph{Matura}} \hfill {\em 2006 - 2011}
+ \\ HTL Wels \hfill {graduated with distinction}
+ \\ School with emphasis on education in technology, focus on Mechatronics.
+ 
+ \end{rSection}
+ 
+ 
+ \begin{rSection}{Experience}
+     \vspace{7pt}
+ {\bf Vienna University of Technology,}\\{\bf Institute for Theoretical Physics} \hfill {\em 2017 - 2022} 
+ \\ Project Assisstent working on non-linear Supergravity with {\bf Timm Wrase}.
+ \vspace{7pt}
+ \\{\bf Stanford Institute for Theoretical Physics} \hfill {\em August - December 2019}
+ \\ Visiting Scientist working with {\bf Renata Kallosh} and {\bf Andrei Linde}.
+ %\\ Uplifting $\overline{D6}$-branes
+ \vspace{7pt}
+ \\{\bf Teaching Assistant} \hfill {\em 2019}
+ \\ Erwin Schrödinger Institute, Vienna, Austria
+ \\ Course on Supergravity taught by {\bf Antoine Van Proeyen}.\vspace{7pt}
+ \\{\bf Teaching Assistant} \hfill {\em 2013}
+ \\ University of Vienna, Vienna, Austria
+ \\ Basics of Programming for physicists.
+ 
+ \end{rSection}
             
             %--------------------------------------------------------------------------------
             %    Publications
             %-----------------------------------------------------------------------------------------------
             \newpage
             \begin{rSection}{Publications}
-            
+               \vspace{7pt}
             {\bf Non-supersymmetric branes}
             \\\emph{with:} N. Cribiori, M. Tournoy, A. Van Proeyen and T. Wrase
              \\ JHEP 07 (2020) 189 \hfill arXiv:2004.13110\vspace{7pt}
@@ -3105,13 +3121,12 @@ Christoph.Roupec@gmail.com\\
             %----------------------------------------------------------------------------------------
             
             \begin{rSection}{Talks}
-            
+               \vspace{7pt}
             {\bf Non-Supersymmetric Branes}\hfill{\em 17.11.2020}
             \\ Seminar Series on String Phenomenology, Boston, USA (online)\vspace{7pt}
             \\{\bf Scaling Limits of dS Vacua}\hfill{\em 27.06.2019}
             \\ StringPheno 2019, CERN, Geneva, Switzerland\vspace{7pt}
-            \newpage
-            {\bf dS Vacua and Starobinsky Inflation in 4d N=1 Supergravity} \hfill {\em 27.06.2017}
+            \\{\bf dS Vacua and Starobinsky Inflation in 4d N=1 Supergravity} \hfill {\em 27.06.2017}
             \\ Seminar on Mathematical Physics, University of Vienna, Vienna, Austria
             
             \end{rSection}
@@ -3119,9 +3134,9 @@ Christoph.Roupec@gmail.com\\
             %----------------------------------------------------------------------------------------
             %	Conferences
             %----------------------------------------------------------------------------------------
-            
+            \newpage
             \begin{rSection}{Conferences and Schools}
-            
+               \vspace{7pt}
             {\bf StringPheno21}\hfill {\em 12.-16.7.2021}
             \\ Northeastern University, Boston, USA (online)\vspace{7pt}
             \\{\bf CERN Winterschool}\hfill {\em 01-05.2.2021}
@@ -3147,7 +3162,7 @@ Christoph.Roupec@gmail.com\\
             %	MISC
             %----------------------------------------------------------------------------------------
             \begin{rSection}{Grants}
-            
+               \vspace{7pt}
             {\bf Austrian Marshall Plan Fellowship}\hfill {\em 2019}
             \\ Travel grant to visit Stanford Institute for Theoretical Physics to collaborate with {\bf Renata Kallosh}.\vspace{7pt}
             \\ {\bf DKPI Associate} \hfill {\em 2019 - 2020}
@@ -3157,9 +3172,9 @@ Christoph.Roupec@gmail.com\\
             
             \end{rSection}
             
-            
+            \newpage
             \begin{rSection}{Additional Skills}
-            
+               \setlength\extrarowheight{3pt}
             \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
             Language\ & German (native), English (fluent) \\
             Type Setting \ & \LaTeX \\
