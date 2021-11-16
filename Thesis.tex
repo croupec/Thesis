@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,twoside,openright]{report}
+\documentclass[a4paper,twoside,openright,12pt]{report}%,twoside,openright
 \usepackage{jheppub}
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage{amsmath}
@@ -9,10 +9,12 @@
 \usepackage{setspace}
 \usepackage{pdfpages}
 \usepackage{emptypage}
-\usepackage{titlesec}
-\titlespacing*{\section}{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 1pt}
-\titlespacing*{\subsection}{0pt}{6pt plus 2pt minus 1pt}{2pt plus 1pt minus 1pt}
-\titlespacing*{\paragraph}{0pt}{6pt plus 0pt minus 0pt}{1ex plus 2pt minus 1pt}
+\usepackage[bottom]{footmisc}
+\raggedbottom
+%\usepackage{titlesec}
+%\titlespacing*{\section}{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 1pt}
+%\titlespacing*{\subsection}{0pt}{6pt plus 2pt minus 1pt}{2pt plus 1pt minus 1pt}
+%\titlespacing*{\paragraph}{0pt}{6pt plus 0pt minus 0pt}{1ex plus 2pt minus 1pt}
 
 
 \newcommand{\bC}{\mathbb{C}}
@@ -118,6 +120,7 @@
 
 
 
+
 \newcommand{\chr}[1]{\textbf{\textcolor{blue}{(#1 --CR)}}}
 \newcommand{\tw}[1]{\textbf{\textcolor{red}{(#1 --TW)}}}
 \newcommand{\nc}[1]{\textbf{\textcolor{green}{(#1 --NC)}}}
@@ -138,9 +141,12 @@ This thesis is based on the publications \cite{Roupec:2018mbn,Banlaki:2018ayh,An
 \begin{document}
 \pagestyle{myplain}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt plus 2pt minus 1pt}
-\setlength{\abovedisplayskip}{12pt plus 2pt minus 1pt}
-\setlength{\belowdisplayskip}{12pt plus 2pt minus 1pt}
+%\setlength{\parskip}{0pt plus 2pt minus 1pt}
+%\setlength{\abovedisplayskip}{12pt plus 2pt minus 1pt}
+%\setlength{\belowdisplayskip}{12pt plus 2pt minus 1pt}
+%\setlength{\textfloatsep}{6pt}
+%\setlength{\floatsep}{6pt}
+%\setlength{\intextsep}{6pt}
 \renewcommand{\arraystretch}{1.2} % Increases height of table rows. Otherwise fractions might touch lines.
 
 %\maketitle
@@ -218,9 +224,7 @@ At this point the reader might conclude that string theory allows for a realisti
 The goals of applying string theory to our physical world are roughly split into two categories. One half is trying to reproduce the Standard Model of particle physics, one of the most successful physical theories in history. The other, is concerned with gravity and the large scale universe. From cosmological observations we know that the universe is expanding in an accelerated manner \cite{Planck:2018jri}. The two most popular attempts to describe this behavior are that either the spacetime of our universe is de Sitter or that it is undergoing quintessence. In the context of low-energy effective theories obtained from string theory, both situations are described by a scalar field in a potential. For de Sitter, the scalar rests at a (meta-) stable minimum with positive vacuum energy. In the case of quintessence, the scalar rolls slowly on a flat slope such that the positive vacuum energy changes only by an amount that is unobservable on timescales below the cosmological. In both scenarios one needs to build low-energy effective models that are consistent with string theory. The framework of these models is supergravity. Unfortunately, supergravity does not sufficiently restrict models in order to ensure that they consistently lift to string theory. This is the concern of a field that has recently emerged under the name of the swampland program \cite{Brennan:2017rbf,Palti:2019pca,vanBeest:2021lhn}. While this program has yielded several so-called swampland conjectures, here we are mostly interested in the de Sitter swampland conjecture \cite{Obied:2018sgi}, that effectively forbids dS solutions to be consistent with string theory. In this thesis we will investigate several aspects related to the description of spacetime in string theory motivated models.\\
 In chapter \ref{sec:antiD3}, based on \cite{Cribiori:2019hod,Cribiori:2020bgt}, we consider important ingredients that are used in one of the the most successful classes of constructions of de Sitter spaces from string theory, namely the anti-branes of the Kachru-Kallosh-Linde-Trivedi (KKLT) model \cite{Kachru:2003aw}. First, we review, in detail, non-linear supergravity and how it can be used in order to incorporate different contributions into the supergravity potentials. For this constrained supermultiplets \cite{Rocek:1978nb,Lindstrom:1979kq,Samuel:1982uh,Komargodski:2009rz,DallAgata:2016syy,Ferrara:2016een} are used that allow us to write a situation that has broken supersymmetry in terms of a (seemingly) linear Lagrangian. In the second section of this chapter we show how any $Dp$-brane can be written using this formalism \cite{Cribiori:2020bgt} and we investigate general, supersymmetry-breaking branes \cite{Sugimoto:1999tx,Antoniadis:1999xk,Angelantonj:1999jh,Aldazabal:1999jr,Angelantonj:1999ms,Dudas:2000nv,Pradisi:2001yv}. The focus will be on intersecting $D6$-branes and we clear up a long-standing misconception about the description of such setups in the $4d$ effective theory \cite{Villadoro:2006ia,Blumenhagen:2002wn,Kachru:1999vj,Cvetic:2001nr}. In particular, we show that the description of a supersymmetric brane intersecting another brane that breaks supersymmetry is always non-supersymmetric. Following this, we give the complete description of the anti-$D3$-brane in the KKLT setup \cite{Cribiori:2019hod}, including all world volume fields \cite{GarciadelMoral:2017vnz}. This includes all bosonic and fermionic contributions and once again utilizes constrained multiplets.\\
 In the next chapter \ref{sec:kkltconstr}, following \cite{Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb}, we move on to construct de Sitter vacua of our own. After reviewing the basic KKL(MM)T model \cite{Kachru:2003aw,Kachru:2003sx} we  port it from type IIB to IIA in section \ref{sec:IIAuplift} \cite{Cribiori:2019bfx}. In type IIA we can only utilize anti-$D6$-branes in order to lift a stable anti-de Sitter solution to a positive vacuum energy. We work with the so-called STU-model in a particular setup with only $F_6$-flux. The superpotential incorporates non-perturbative corrections in all moduli directions, that are vital to the success of the setup. We argue that these corrections can appear, even for the volume modulus due to M-theory U-duality. The anti-brane is again introduced by the use of constrained superfields. We find explicit models where the masses of all moduli are positive and we are able to satisfy basic string theory consistency conditions such as a large internal volume and small coupling. In section \ref{sec:massprod} we expand upon a mechanism \cite{Cribiori:2019drf}, first discovered in \cite{Kallosh:2019zgd}, where, by going first to Minkowski space, it is possible to guarantee that the procedure yields a stable de Sitter solution after the uplift. This works as follows: One first constructs a Minkowski minimum with no flat directions. Then, a parametrically small downshift, included into the superpotential, will yield a stable AdS point. After this one can perform an uplift either via an anti-$D3$-brane in type IIB or an anti-$D6$-brane in IIA. For this procedure we utilize the Kallosh-Linde double exponent superpotential \cite{Kallosh:2004yh} for which we also proof that the resulting de Sitter point has positive masses if the Minkowski progenitor has no flat directions and the downshift is small. A further nice feature of the mass production procedure is that there is no need for an extreme fine-tuning of the uplift. Since we can vary the downshift, the uplift can be a lot larger then it would be if performed from Minkowski space directly. We also present several explicit examples, both in type IIA and IIB, based on different internal manifolds and show that the procedure works in each of them. In the second to last section \ref{sec:mtheory} of chapter \ref{sec:kkltconstr}, we consider more general, M-theory inspired models \cite{Cribiori:2019hrb}, based on compactifications on a generalized, twisted $7$-torus \cite{DallAgata:2005zlf,Duff:2010vy,Derendinger:2014wwa,Ferrara:2016fwe}. Interestingly, we find models that allow us to forego the racetrack potential by inclusion of tree-level flux terms. We investigate different kinds of models and their relation to type II supergravity compactifications. It is even possible to not include any non-perturbative contributions in certain directions, due to the included fluxes. A particular case relies on conjectured $S$-fluxes. Using these we are able to build a model in type IIB that does not require any sort of non-perturbative contributions. We also present explicit, numerical solutions for all of these models and show that the mass-production procedure works in each of them.\\
-In chapter \ref{sec:swamplandconjectures} we review the works \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav} and turn our interest to the de Sitter swampland conjecture \cite{Obied:2018sgi} and related issues. We first briefly review the general idea of the swampland program \cite{Brennan:2017rbf,Palti:2019pca,vanBeest:2021lhn} before turning our attention to the de Sitter conjecture \cite{Obied:2018sgi,Ooguri:2018wrx} and its implications. After earlier considerations along similar lines \cite{Danielsson:2018ztv}, the original de Sitter conjecture \cite{Obied:2018sgi} proposed a bound on the ratio of the first derivative of the scalar potential to the value of the potential that effectively forbids any extremum with positive vacuum energy. In section \ref{sec:scaling} we discuss scaling limits of a particularly simple compactification in type IIA \cite{Banlaki:2018ayh}, inspired by the AdS solutions of \cite{DeWolfe:2005uu}, where the $4$-flux is unconstrained. The goal is to find a limit where the solutions are trustworthy, with large internal volume and small string coupling. To that end, we review different ingredients that can appear in such compactifications and we also present an explicit example. Next, we show that the initial de Sitter swampland conjecture is too strict \cite{Roupec:2018mbn}, as it also forbids unstable extrema with positive vacuum energy. We highlight that such points have been found previously \cite{Caviezel:2008tf,Flauger:2008ad} and, in addition, present many new solutions that we obtained via a numerical search. Together with other issues of the original conjecture \cite{Denef:2018etk} this lead to a refinement in \cite{Ooguri:2018wrx}. Finally, in section \ref{sec:refconj} we present our own refinement of the de Sitter swampland conjecture \cite{Andriot:2018mav}. It is given as a single expression inequality on both the first and second derivative of the scalar potential which translates nicely into constraints on the slow-roll parameters of cosmology. We also show that our conjecture differs from the refined original one \cite{Ooguri:2018wrx} in some areas of parameter space. This has implications on the allowed cosmological models. In particular our conjecture does allow for slow roll inflation in certain cases and does restrict quintessence models.
-
-\vspace{12pt}
+In chapter \ref{sec:swamplandconjectures} we review the works \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav} and turn our interest to the de Sitter swampland conjecture \cite{Obied:2018sgi} and related issues. We first briefly review the general idea of the swampland program \cite{Brennan:2017rbf,Palti:2019pca,vanBeest:2021lhn} before turning our attention to the de Sitter conjecture \cite{Obied:2018sgi,Ooguri:2018wrx} and its implications. After earlier considerations along similar lines \cite{Danielsson:2018ztv}, the original de Sitter conjecture \cite{Obied:2018sgi} proposed a bound on the ratio of the first derivative of the scalar potential to the value of the potential that effectively forbids any extremum with positive vacuum energy. In section \ref{sec:scaling} we discuss scaling limits of a particularly simple compactification in type IIA \cite{Banlaki:2018ayh}, inspired by the AdS solutions of \cite{DeWolfe:2005uu}, where the $4$-flux is unconstrained. The goal is to find a limit where the solutions are trustworthy, with large internal volume and small string coupling. To that end, we review different ingredients that can appear in such compactifications and we also present an explicit example. Next, we show that the initial de Sitter swampland conjecture is too strict \cite{Roupec:2018mbn}, as it also forbids unstable extrema with positive vacuum energy. We highlight that such points have been found previously \cite{Caviezel:2008tf,Flauger:2008ad} and, in addition, present many new solutions that we obtained via a numerical search. Together with other issues of the original conjecture \cite{Denef:2018etk} this lead to a refinement in \cite{Ooguri:2018wrx}. Finally, in section \ref{sec:refconj} we present our own refinement of the de Sitter swampland conjecture \cite{Andriot:2018mav}. It is given as a single expression inequality on both the first and second derivative of the scalar potential which translates nicely into constraints on the slow-roll parameters of cosmology. We also show that our conjecture differs from the refined original one \cite{Ooguri:2018wrx} in some areas of parameter space. This has implications on the allowed cosmological models. In particular our conjecture does allow for slow roll inflation in certain cases and does restrict quintessence models.\vspace{12pt}\\
 The present thesis is based on the works \cite{Roupec:2018mbn,Banlaki:2018ayh,Andriot:2018mav,Cribiori:2019hod,Cribiori:2019bfx,Cribiori:2019drf,Cribiori:2019hrb,Cribiori:2020bgt} published during the course of my doctoral studies at TU Wien under the supervision of Timm Wrase.
 
 \chapter{D-Branes in 4d Supergravity}
@@ -431,7 +435,7 @@ and generalizations of the chiral projectors on superspace to the superconformal
 \eea
 that are chiral or anti-chiral. The action of the projectors on $\omega^2$ is:
 \be 
-\bar{\Sigma}(\omega^2)=\left(X^0\bar{X}^0\right)^{-2} \left(\frac{1}{2}F_{\mu\nu}F^{\mu\nu}+\frac{\rmi}{4}\frac{\epsilon^{\mu\nu\rho\sigma}}{\sqrt{-g_4}}F_{\mu\nu}F_{\rho\sigma}-D^2 + \ldots\right)\,
+\bar{\Sigma}(\omega^2)=\left(X^0\bar{X}^0\right)^{-2} \left(\frac{1}{2}F_{\mu\nu}F^{\mu\nu}+\frac{\rmi}{4}\frac{\epsilon^{\mu\nu\rho\sigma}}{\sqrt{-g_4}}F_{\mu\nu}F_{\rho\sigma}-D^2 + \ldots\right)\,,
 \ee
 where we have once again neglected fermionic contributions.\\
 The new $D$-term \eqref{eq:Dnew} has only $D$ as its pure bosonic sector. All further terms are required by the superconformal symmetry that our formalism employs. After going to Poincar\'{e} supergravity by fixing the compensator $X^0 = \kappa^{-1} \rme^{K/6}$, as discussed in section \ref{sec:couplinggravity}, the new $D$-term yields:
@@ -572,15 +576,13 @@ S_{Dp} = \underbrace{T_{Dp} \int_{M^{3,1}\times \Sigma} d^4x \,d^{p-3}y \rme^{-\
 \label{eq:Dpbraneact}
 \ee
 with the brane tension $T_{Dp}$, the dilaton $\phi$, the metric $g$ and the sum over all RR-fields $C$. Furthermore, $|_\Sigma$ denotes the pullback of the quantities onto the brane world volume. In the following all quantities will be understood as pulled back automatically. Considering branes on either CY3 or $SU(3)$ structure manifolds we note that these types of spaces do not have non-trivial $1$- or $5$- cycles, which rules out $D4$- and $D8$-branes. The manifolds are described by a Kähler $(1,1)$-form $J$ and a holomorphic $(3,0)$-form $\Omega$. We note that this is only strictly true in the Calabi-Yau (CY) case whereas in the case of $SU(3)$ structure manifolds one has a real $2$-form $J$ and a complex $3$-form $\Omega$ as such manifolds are not Kähler, see \cite{Grana:2005jc} for a detailed description. With these words of caution out of the way we will continue to slightly abuse these terms and treat both cases in the same way. In \cite{Blumenhagen:2006ci} it was show that one can write the DBI part of a supersymmetric $Dp$-brane action using the characteristic forms of the internal manifold:
-\begin{align}
-S_{DBI,5} &= T_{D5} \int_{M^{3,1}\times \Sigma_2} d^4x \, \rme^{-\phi} \,J\,,\label{eq:susypbranes1}\\
-S_{DBI,6} &= T_{D6} \int_{M^{3,1}\times \Sigma_3} d^4x \, \rme^{-\phi} \, \rmre(\Omega)\,,\label{eq:susypbranes2}
-\end{align}
-\begin{align}
-S_{DBI,7} &= T_{D7} \int_{M^{3,1}\times \Sigma_4} d^4x \, \rme^{-\phi} \,\frac{1}{2}\,\left(J\wedge J-B\wedge B \right)\,,\label{eq:susypbranes3}\\
-S_{DBI,9} &= T_{D9} \int_{M^{3,1}\times \Sigma_6} d^4x \, \rme^{-\phi}\, \left(\frac{1}{6} \, J \wedge J \wedge J - \frac{1}{2}\,J \wedge B \wedge B \right)\,,\label{eq:susypbranes4}
-\end{align}
-where $B$ is the Kalb-Ramond 2 form and we work in string frame with zero gauge flux $F$. These equations are called calibration conditions and readily generalize to non-vanishing gauge flux $F$ \cite{Martucci:2005ht,Martucci:2006ij,Martucci:2011dn}. For anti-$Dp$-branes similar calibration conditions hold where the main difference to the equations \eqref{eq:Dpbraneact} and \eqref{eq:susypbranes1,eq:susypbranes2,eq:susypbranes3,eq:susypbranes4} is a minus sign for the CS-part of the action \cite{Kallosh:2018nrk}.
+\bea
+S_{DBI,5} &= T_{D5} \int_{M^{3,1}\times \Sigma_2} d^4x \, \rme^{-\phi} \,J\,,\\
+S_{DBI,6} &= T_{D6} \int_{M^{3,1}\times \Sigma_3} d^4x \, \rme^{-\phi} \, \rmre(\Omega)\,,\\
+S_{DBI,7} &= T_{D7} \int_{M^{3,1}\times \Sigma_4} d^4x \, \rme^{-\phi} \,\frac{1}{2}\,\left(J\wedge J-B\wedge B \right)\,,\\
+S_{DBI,9} &= T_{D9} \int_{M^{3,1}\times \Sigma_6} d^4x \, \rme^{-\phi}\, \left(\frac{1}{6} \, J \wedge J \wedge J - \frac{1}{2}\,J \wedge B \wedge B \right)\,,\label{eq:susypbranes}
+\eea
+where $B$ is the Kalb-Ramond 2 form and we work in string frame with zero gauge flux $F$. These equations are called calibration conditions and readily generalize to non-vanishing gauge flux $F$ \cite{Martucci:2005ht,Martucci:2006ij,Martucci:2011dn}. For anti-$Dp$-branes similar calibration conditions hold where the main difference to the equations \eqref{eq:Dpbraneact} and \eqref{eq:susypbranes} is a minus sign for the CS-part of the action \cite{Kallosh:2018nrk}.
 \paragraph{The description of general non-supersymmetric branes} will require the tools of non-linear supergravity and we will show in the following how it is possible to correctly describe such branes in the low-energy effective SUGRA action. This generalizes the result of \cite{Kallosh:2018nrk}, where the same was done for anti-$Dp$-branes. One main ingredient for this procedure is the nilpotent chiral field $X$ that we already discussed in section \ref{sec:multiplets}. When supersymmetry is broken spontaneously, the transformation is still realized in a non-linear way but fields no longer sit in regular multiplets. Nevertheless, constrained multiplets can be used in order to describe fields in such a case. The nilpotent chiral field $X$ is able to correctly describe the Goldstino related to spontaneous supersymmetry breaking by the brane. This will be an important topic in the next section \ref{sec:D3barKKLT} where we discuss one particular setup in great detail. See the same section as well for a detailed discussion how the brane provides the Goldstino.\\
 To begin with, we consider the theory before the addition of the supersymmetry breaking brane. It is described by a Kähler potential $K_{b4}$ and a superpotential $W_{b4}$\footnote{Read $b4$ as ``before''.}. Additionally a gauge kinetic function and potential $D$-terms could be present in the theory but we will ignore these possibilities for now. The potentials are obtained by performing a string theory compactification and they depend on chiral multiplets $\Phi^a$. The goal now is to add a general brane to this setup and compute the backreaction onto the fields $\Phi^a$. This backreaction is given by the scalar potential $V_{Dp}(\Phi^a,\bar{\Phi}^a)$ that newly appears due to the inclusion of the brane. In the language of supergravity, this can be achieved by a modification of the Kähler- and superpotential:
 \bea
@@ -606,7 +608,8 @@ The main task in applying this process to new examples is finding the correct fo
 V^{\text{bulk}}_{\overline{D3}} &= \frac{\mu^4}{\left(-\rmi(T-\bar{T})\right)^3}\qquad \text{for the brane in the bulk,}\\
 V^{\text{throat}}_{\overline{D3}} &= \frac{\mu^4}{\left(-\rmi(T-\bar{T})\right)^2}\qquad \text{for the brane at the bottom of a warped throat.}
 \eea
-Here $T$ is the single Kähler modulus of the model and $\mu$ a parameter related to the number of branes and their tension. We will discuss the KKLT scenario in much more detail in the following sections of this thesis. Here, we focus on the description using \eqref{eq:newsugra}. The Kähler potentials for the two different cases are:
+Here $T$ is the single Kähler modulus of the model and $\mu$ a parameter related to the number of branes and their tension. We will discuss the KKLT scenario in much more detail in the following sections of this thesis. Here, we focus on the description using \eqref{eq:newsugra}. 
+\\\newpage The Kähler potentials for the two different cases are:
 \bea 
 K^{\text{bulk}} &= -3 \log \left[ -\rmi(T-\bar{T})\right] + \frac{X \bar{X}}{\mu^4}\,,\\
 K^{\text{throat}} &= -3 \log \left[-\rmi (T-\bar{T})\right] + \frac{X\bar{X}}{\mu^4\left(-\rmi (T-\bar{T})\right)} = - 3 \log \left[ \left(-\rmi (T-\bar{T})\right) - \frac{X\bar{X}}{3\mu^4} \right]\,,
@@ -624,11 +627,11 @@ and we find the scalar potential originating from the DBI action, as:
 V_{\text{DBI}} = T_{D6} \, \rme^{-2\phi} \, vol_6 \sqrt{\rmre (\Omega_\Sigma)^2 + \rmim (\Omega_\Sigma)^2}\,,
 \label{eq:D6DBIact}
 \ee
-with $vol_6$ the volume of the internal space. In the case that the brane is supersymmetric one finds that $\rmim (\Omega_\Sigma) = 0$ and the DBI part of the scalar potential reduces to $V_{\text{DBI}} =T_{D6} \rme^{-2\phi} vol_6 \rmre (\Omega_\Sigma)$, as $\rmre (\Omega) > 0$ for SUSY branes. This actually follows from the action of the $D6$-brane given in equation \eqref{eq:susypbranes1,eq:susypbranes2,eq:susypbranes3,eq:susypbranes4} when going to $4d$ Einstein frame. Changing to Einstein frame in four dimensions can be done by writing:
+with $vol_6$ the volume of the internal space. In the case that the brane is supersymmetric one finds that $\rmim (\Omega_\Sigma) = 0$ and the DBI part of the scalar potential reduces to $V_{\text{DBI}} =T_{D6} \rme^{-2\phi} vol_6 \rmre (\Omega_\Sigma)$, as $\rmre (\Omega) > 0$ for SUSY branes. This actually follows from the action of the $D6$-brane given in equation \eqref{eq:susypbranes} when going to $4d$ Einstein frame. Changing to Einstein frame in four dimensions can be done by writing:
 \be 
 \int d^{10}x \sqrt{-g^{\text{string}}_{10}} \rme^{-2\phi} R_{10} = \int d^4x \sqrt{-g_4^{\text{string}}} vol_6 R_4 + \ldots\,,
 \ee
-and then letting the metric $g^{\text{string}} \to \rme^{4 \phi} vol_6^{-2} g^{\text{Einstein}}$. In particular, this means that the actions in \eqref{eq:susypbranes1,eq:susypbranes2,eq:susypbranes3,eq:susypbranes4} only pick up a factor of $\rme^{4 \phi} vol_6^{-2}$ when changing frames. In \cite{Villadoro:2006ia} the authors followed \cite{Blumenhagen:2002wn} and re-wrote the scalar potential in the following way:
+and then letting the metric $g^{\text{string}} \to \rme^{4 \phi} vol_6^{-2} g^{\text{Einstein}}$. In particular, this means that the actions in \eqref{eq:susypbranes} only pick up a factor of $\rme^{4 \phi} vol_6^{-2}$ when changing frames. In \cite{Villadoro:2006ia} the authors followed \cite{Blumenhagen:2002wn} and re-wrote the scalar potential in the following way:
 \bea
 V_{\text{DBI}} &= V_F + V_D\,,\\
 V_F &= T_{D6} \rme^{4 \phi} vol_6^{-2} \rmre (\Omega)_\Sigma\,,\\
@@ -639,7 +642,7 @@ For supersymmetric branes this reduces correctly since then $V_D = 0$ which has 
 T_{D6} &= \rme^{-2\phi}vol_6 \mathcal{P}\,,\\
 \rmre(f) &= T_{D6} \sqrt{\rmre(\Omega)^2+\rmim(\Omega)^2} = T_{D6} \rmre(\Omega) + \mathcal{O} \left(\frac{\rmim(\Omega_\Sigma)}{\rmre(\Omega_\Sigma)}\right)\,,
 \eea
-where the first line describes the moment map $\mathcal{P}$.\\\newpage
+where the first line describes the moment map $\mathcal{P}$.\\
 We now neglect the higher order terms in the above expressions and use everything to write:
 \bea 
 V_D &= T_{D6} \, \rme^{4 \phi} \, vol_6^{-2} \frac{\;\rmim(\Omega_\Sigma)^2}{\rmre(\Omega_\Sigma)} \frac{1}{1+\sqrt{1+\left(\frac{\rmim(\Omega_\Sigma)}{\rmre(\Omega_\Sigma)}\right)^2}}\,\\
@@ -886,7 +889,7 @@ S_{\text{fermionic}}^{\overline{D3}} = 2 \int d^4x \sqrt{-g_4} \rme^{4\mathcal{A
 \label{eq:simpfermact}
 \eea
 where we wrote everything in terms of $4d$ spinors.
-\\\newpage As discussed, the masses depend on the the imaginary self dual 3-flux $G_3^{\text{ISD}}$. They are given as:
+\\As discussed, the masses depend on the the imaginary self dual 3-flux $G_3^{\text{ISD}}$. They are given as:
 \bea 
 m =&\, \rmi \,\frac{\sqrt{2}}{12}  \rme^{2\mathcal{A}-4 u}\, \rme^{\frac{\phi}{2}} \bar{\Omega}^{abc}\bar{G}_{abc}^{\text{ISD}}\,,\\
 m_i =& - \frac{\sqrt{2}}{4} \rme^{2\mathcal{A}-4 u}\, \rme^{\frac{\phi}{2}} e_i^a \bar{G}_{ab\bar{c}}^{\text{ISD}} J^{b\bar{c}}\,,\\
@@ -917,8 +920,7 @@ S^{\overline{D3}}
 
 \subsection[The $D3$-Brane Action and Supergravity]{The $\mathbf{D3}$-Brane Action and Supergravity}
 \label{sec:susyD3}
-Even though our goal is to describe the anti-$D3$-brane action in the KKLT background it will be useful to first have a look at the supersymmetric action of the normal $D3$-brane. The results of this section will proof useful  for the investigation of the anti-$D3$-brane case. In particular, we will match the action with the standard $\mathcal{N}=1$ supergravity action for a single vector multiplet and three chiral multiplets because for the $D3$-brane equation \eqref{eq:simpbosact} reduces exactly to that. First, the ``uplift" term of the bosonic action vanishes for the supersymmetric $D3$-brane as do the fermionic mass terms. Taking into account the sign flip in the RR-fields only one vector multiplet, containing $\lambda$ and $A_\mu$, and three chiral multiplets with $H^a$ and $\chi^a := e^a_i \chi^i$ remain.\\
-The $D3$-brane action is then given to be:
+Even though our goal is to describe the anti-$D3$-brane action in the KKLT background it will be useful to first have a look at the supersymmetric action of the normal $D3$-brane. The results of this section will proof useful  for the investigation of the anti-$D3$-brane case. In particular, we will match the action with the standard $\mathcal{N}=1$ supergravity action for a single vector multiplet and three chiral multiplets because for the $D3$-brane equation \eqref{eq:simpbosact} reduces exactly to that. First, the ``uplift" term of the bosonic action vanishes for the supersymmetric $D3$-brane as do the fermionic mass terms. Taking into account the sign flip in the RR-fields only one vector multiplet, containing $\lambda$ and $A_\mu$, and three chiral multiplets with $H^a$ and $\chi^a := e^a_i \chi^i$ remain. The $D3$-brane action is then given to be:
 \bea 
 S^{D3}
 =& S^{D3}_{\text{bosonic}} + S^{D3}_{\text{fermionic}}\\
@@ -998,7 +1000,8 @@ Finally, we can use this to write the relevant part of the spin connection using
 \omega_\mu^{i\ib} \delta_{i\ib} &= \delta_{i\ib} \left( e^{\bar{a}i} (\partial_{\bar{U}^A} e^{\ib}_{\bar{a}}) \partial_\mu \bar{U}^A - e^{a\ib} (\partial_{U^A} e^i_a )\partial_\mu U^A\right)\\
 &= \partial_{U^A} K^{(U)} \partial_\mu U^A - \partial_{\bar{U}^A} K^{(U)} \partial_\mu \bar{U}^A\,.
 \eea
-Before we can use this result to match the component action \eqref{eq:d3act} with a standard supergravity expression we need to propose a fitting Kähler potential. One might naively propose:
+Before we can use this result to match the component action \eqref{eq:d3act} with a standard supergravity expression we need to propose a fitting Kähler potential. 
+\\\newpage One might naively propose:
 \be
 K = - \log\left[-\rmi (\tau-\bar{\tau})\right] - \log\left[-\rmi \int \Omega \wedge \bar{\Omega}\right] - 3 \log \left[-\rmi(T-\bar{T})  + k(H,\bar{H})\right]\,,
 \ee
@@ -1036,12 +1039,11 @@ where we used $f\left(U^A,\bar{U}^A\right) = -\rmi \int \Omega \wedge \Omega$. F
 P_L \Omega = P_L \lambda + \ldots\,,
 \ee
 where the dots represent higher order terms.
-\item The couplings of the fermion triplet in $Y^i$ can be fixed by comparing with the kinetic terms of the massive spin-$1/2$ fields, as we did for the supersymmetric $D3$-brane in section \ref{sec:susyD3}. One finds that the $\Omega^i$ are related to the $\chi^i$ via the field redefinition:
+\item The couplings of the fermion triplet in $Y^i$ can be fixed by comparing with the kinetic terms of the massive spin-$1/2$ fields, as we did for the supersymmetric $D3$-brane in section \ref{sec:susyD3}. One finds that, suppressing higher order terms, the $\Omega^i$ are related to the $\chi^i$ via the field redefinition:
 \be 
-P_L \Omega^i = 2 \rmi \rme^{4\mathcal{A}-\frac{\phi}{2}} f\left(U^A ,\bar{U}^A\right)^{\frac{1}{6}} P_L \chi^i + \ldots\,,
+P_L \Omega^i = 2 \rmi \rme^{4\mathcal{A}-\frac{\phi}{2}} f\left(U^A ,\bar{U}^A\right)^{\frac{1}{6}} P_L \chi^i + \ldots\,.
 \ee
-with higher order terms suppressed.
-\end{itemize}\vspace{-9pt}
+\end{itemize}
 The superpotential of our model consists of the Gukov-Vafa-Witten flux-potential, non-perturbative contributions and an uplifting contribution that breaks supersymmetry:
 \be 
 W = W_{\text{GVW}} + W_{\text{np}} + M^2 X\,.
@@ -1063,12 +1065,9 @@ where $m_{ij}$ is the fermion mass matrix that we discussed above in equation \e
 -\rmi (T-\bar{T}) \,\to \, -\rmi(T-\bar{{T}}) + \frac{k(H^a,\bar{H}^a)}{f(U^A,\bar{U}^A)^{\frac{1}{3}}}=\rme^{4u}\,.
 \ee
 Putting this into the \eqref{eq:Kferm} we find the Kähler potential that now also correctly reproduces the kinetic behavior of the world-volume scalars:
-
-\[
-K = -\left[\left(-\rmi(\tau-\bar{\tau})\right)\right]-3 \log \left[\left(-\rmi(T-\bar{T})\right)\,f\left(U^A,\bar{U}^A\right)^{\frac{1}{3}}+k\left(H^a,\bar{H}^a\right)\right]
-\]
-\bea 
-\qquad&- 3 \log\Bigg[1-\frac{\rme^{-4\mathcal{A}(H^a,\bar{H}^a)-4u}}{3\left(-\rmi(\tau-\bar{t})\right)f\left(U^A,\bar{U}^A\right)}X\bar{X}\\
+\bea
+K = &-\left[\left(-\rmi(\tau-\bar{\tau})\right)\right]-3 \log \left[\left(-\rmi(T-\bar{T})\right)\,f\left(U^A,\bar{U}^A\right)^{\frac{1}{3}}+k\left(H^a,\bar{H}^a\right)\right]\\
+&- 3 \log\Bigg[1-\frac{\rme^{-4\mathcal{A}(H^a,\bar{H}^a)-4u}}{3\left(-\rmi(\tau-\bar{t})\right)f\left(U^A,\bar{U}^A\right)}X\bar{X}\\
 &\qquad\qquad\;\,-\frac{\rme^{-4\mathcal{A}(H^a,\bar{H}^a)-8u}}{3\left(-\rmi(\tau-\bar{t})\right)f\left(U^A,\bar{U}^A\right)^{\frac{1}{3}}}\delta_{i\jb}Y^i\bar{Y}^\jb\\
 &\qquad\qquad\;\,+\frac{\rme^{-8\mathcal{A}(H^a,\bar{H}^a)-6u}\left(m_{ij}\bar{X}Y^iY^j+\bar{m}_{\ib\jb}X \bar{Y}^\ib\bar{Y}^\jb\right)}{6 M^2 \left(-\rmi(\tau-\bar{t})\right)^{\frac{3}{2}}f\left(U^A,\bar{U}^A\right)^{\frac{5}{6}}}\Bigg]\,.
 \label{eq:KpotbarD3}
@@ -1076,7 +1075,8 @@ K = -\left[\left(-\rmi(\tau-\bar{\tau})\right)\right]-3 \log \left[\left(-\rmi(T
 The shift in $-\rmi (T-\bar{T})$ also leads to a dependence of the non-perturbative superpotential, $W_{\text{np}}$ on the scalars $H^a$. However, these corrections are highly suppressed compared to our leading order contributions as the non-perturbative corrections originate from gaugino condensation on a stack of $D7$-branes in the bulk, while we are considering an anti-$D3$-brane at the bottom of a warped throat. Due to this fact we choose to neglect the contributions to the superpotential \eqref{eq:D3barsup}.
 
 \paragraph{The vector field} in the $U(1)$ gauge sector of the anti-$D3$-brane action requires a kinetic term, coming from the DBI-part of the action, and contributions from the CS-part of the action. While the DBI part matches the considerations for the supersymmetric $D3$-brane exactly (see section \ref{sec:susyD3}) we have an issue with the CS action. There, a sign flip is present for the anti-$D3$-brane which is problematic since it would require an anti-holomorphic gauge kinetic function $f(\bar{\tau}) = \rmi \bar{\tau}$, which is forbidden, as discussed in section \ref{sec:D3barKKLT}. We will be able to correctly incorporate the CS action here because of the non-linear realization of supersymmetry and the utilization of constrained superfields and the new $D$-term of section \ref{sec:newD}.\\
-For this we package the $U(1)$ gauge vector into a chiral field strength multiplet $P_L\Lambda$ with the constraint $X P_L\Lambda = 0$, which removes the gaugino (see section \ref{sec:constmult}). The standard supergravity action for a vector multiplet, up to fermionic terms, is \cite{Freedman:2012zz}:
+For this we package the $U(1)$ gauge vector into a chiral field strength multiplet $P_L\Lambda$ with the constraint $X P_L\Lambda = 0$, which removes the gaugino (see section \ref{sec:constmult}). 
+\\\newpage The standard supergravity action for a vector multiplet, up to fermionic terms, is \cite{Freedman:2012zz}:
 \bea
 -\frac{1}{4} \left[f(\tau)\bar{\Lambda}P_L\Lambda\right]_F = \int d^4x \sqrt{-g_4}\bigg[&-\frac{\rmre(f)}{4} F_{\mu\nu}F^{\mu\nu}\\
 &+\frac{\rmim(f)}{8}\frac{\epsilon^{\mu\nu\rho\sigma}}{\sqrt{-g_4}}F_{\mu\nu}F_{\rho\sigma}+\frac{\rmre(f)}{2}D^2 + \dots \bigg]\,.
@@ -1178,7 +1178,8 @@ where we remind the reader that we are using the conventions of \cite{Freedman:2
 \be 
 \hat{f}_{\overline{D3}} = \Sigma\left( \frac{\bar{X}^0 \rme^{-\frac{K}{6}}\bar{X}\bar{f}(\bar{\tau})}{\Sigma \left( \bar{X}^0 \rme^{-\frac{K}{6}}\bar{X}\right)}\right)\,,
 \ee
-with $\bar{f}(\bar{\tau}) = \rmi \bar{\tau}$. The multiplets that contain the world-volume fields are constrained in the following way:
+with $\bar{f}(\bar{\tau}) = \rmi \bar{\tau}$. 
+\\\newpage The multiplets that contain the world-volume fields are constrained in the following way:
 \be
 \begin{pmatrix}
 X & \quad & X^2=0 & \quad & \text{Goldstino}\\
@@ -1253,7 +1254,7 @@ W &= W_{\text{flux}} + W_{\text{np}}\,.
 In the superpotential the first term comes from introducing $p$-form fluxes on the internal manifold and the second term from non-perturbative contributions. In the KKLT-scenario one follows a three-step process:
 \begin{enumerate}
 \item Use the flux superpotential in order to stabilize the axio-dilaton $S$ and the complex structure moduli $U$.
-\item Introduce a non-perturbative contribution of the form
+\item Introduce a non-perturbative contribution of the form:
 \begin{equation}
 W_{\text{np}} = A \rme^{\rmi a T}\,,
 \end{equation}
@@ -1261,15 +1262,17 @@ in order to stabilize the Kähler moduli and obtain a stable AdS space.
 \item Add an anti-$D3$-brane at the bottom of a warped throat, effectively giving a positive energy contribution to the scalar potential, in order to lift the minimum of the scalar potential to positive energy.
 \end{enumerate}
 In figure \ref{fig:KKLTscalpot} a rough example is given of how the stable AdS space from step 2, the contribution of the anti-$D3$-brane and the resulting meta-stable dS space are plotted.
-\begin{figure}[htp]
+\begin{figure}[H]
      \centering
      \includegraphics[trim=0 0 100 20,clip,width=0.8\textwidth]{kklt_example_3.pdf}
      \caption{Example depiction of the three scalar potentials in KKLT. The dash-dotted (blue) line is the stable AdS progenitor that gets uplifted by the dashed (green) positive energy contribution from the anti-$D3$-brane, in this example placed at the bottom of a warped throat. The result is a (meta-) stable de Sitter vacuum in the solid (red) line.}
      \label{fig:KKLTscalpot}
 \end{figure}
-The cosmological constant is given by the value of the scalar potential
+The cosmological constant is given by the value of the scalar potential:
 \bea
-V\; &= V_{0} + V_{\overline{D3}} \qquad \text{where:}\\
+V\; &= V_{0} + V_{\overline{D3}} \qquad \text{where:}
+\eea
+\bea
 V_{0}\, &= \rme^{-K} \left( K^{I\bar{J}} D_I W \overline{D_J W} - 3 |W|^2\right)\,,\\
 V_{\overline{D3}} &= \frac{\mu}{(T + \bar{T})^p} \quad \text{with} \quad p=2,3\,,
 \eea
@@ -1324,7 +1327,7 @@ The non-perturbative corrections in the superpotential \ref{eq:Wnonpert} can ari
 \ee
 An alternative explanation for the appearance of non-perturbative contributions in the superpotential would be Euclidean D2-branes wrapping 3-cycles of the internal manifold. Such branes would give rise to the wanted terms with $a_S =a_T= 2\pi$.\\
 Thus far the exponent for the volume modulus $U$ has not been motivated. Generally, such a non-perturbative correction is less established than the other two. Nevertheless, there are possibilities for this contribution to arise.\\
-Here we argue that string theory U-duality should exist. String theories exhibit $S$- and $T$-duality. In M-theory it is expected that the two combine into U-duality \cite{Hull:1994ys,Schwarz:1996bh}. The discrete U-duality  contains S- and T-duality as subgroups: $E_7(\mathbb{Z}) \supset SL(2,\mathbb{Z}) \times O(6,6;\mathbb{Z})$. This suggests that non-perturbative corrections in the $U$-direction can arise since they appear on equal footing in M-theory \cite{Acharya:2007rc}. One physical motivation for this claim comes from STU black holes, which exhibit a feature called string triality, see \cite{Behrndt:1996hu}. Still, the question remains which phenomenon in type IIA string theory can produce the required terms in the superpotential. One possible explanation would be open  string worldsheet instantons in $\mathcal{N} = 1$ orientifold compactifications \cite{Kachru:2000ih,Blumenhagen:2009qh}.\\
+Here we argue that string theory U-duality should exist. String theories exhibit $S$- and $T$-duality. In M-theory it is expected that the two combine into U-duality \cite{Hull:1994ys,Schwarz:1996bh}. The discrete U-duality  contains S- and T-duality as subgroups: $E_7(\mathbb{Z}) \supset SL(2,\mathbb{Z}) \times O(6,6;\mathbb{Z})$. This suggests that non-perturbative corrections in the $U$-direction can arise since they appear on equal footing in M-theory \cite{Acharya:2007rc}. One physical motivation for this claim comes from STU black holes, which exhibit a feature called string triality, see \cite{Behrndt:1996hu}. Still, the question remains which phenomenon in type IIA string theory can produce the required terms in the superpotential. One possible explanation would be open  string worldsheet instantons in $\mathcal{N} = 1$ orientifold compactifications \cite{Kachru:2000ih,Blumenhagen:2009qh}.
 
 \subsection[The uplifting Anti-$D6$-Brane]{The uplifting Anti-$\mathbf{D6}$-Brane}
 The final step in the procedure is the lift from anti-de Sitter space to de Sitter via the inclusion of anti-$D6$-branes. This corresponds to an additional term in the scalar potential of the following form:
@@ -1347,21 +1350,21 @@ Note that under the scaling symmetry that was discussed above, we need to let $ 
 
 \subsection{Explicit Models}
 \label{sec:uplfitbraneexamples}
-The first step in the procedure to find a de Sitter vacuum via an anti-$D6$-brane uplift in type IIA is to generate a stable anti-de Sitter minimum. For this we solve the equations
+The first step in the procedure to find a de Sitter vacuum via an anti-$D6$-brane uplift in type IIA is to generate a stable anti-de Sitter minimum. For this we solve the equations:
 \be 
 D_I W = 0 \qquad I = \{S,T,U\}\,.
 \ee
 and tune the free parameters such that all masses are positive. In principle, in anti-de Sitter, it would suffice to find masses above the Breitenlohner-Freedman bound, however, we choose to focus on strictly positive masses. Solving $D_I W = 0$ implies $\partial_I V=0$\footnote{Note that $\partial_I V=0$ does not imply $D_I W = 0$.}. One simplification we can make is to set the axions $\rmre(S)$, $\rmre(T)$ and $\rmre(U)$ to zero. This can consistently be done as long as all moduli masses are positive.\\
-We furthermore choose to fix the position of the minimum at $\rmim (S) = S_0$, $\rmim (T) = T_0$ and $\rmim (U) = U_0$. Then, we have to solve the equations $D_IW = 0$ with $W$, given in equation \eqref{eq:Wnonpert}, in terms of the parameters $A_I$ with $I = \{S,T,U\}$. Importantly, $f_6$ remains a free parameter, making flux quantization trivial. After a solution is found one needs to check the mass matrix
+We furthermore choose to fix the position of the minimum at $\rmim (S) = S_0$, $\rmim (T) = T_0$ and $\rmim (U) = U_0$. Then, we have to solve the equations $D_IW = 0$ with $W$, given in equation \eqref{eq:Wnonpert}, in terms of the parameters $A_I$ with $I = \{S,T,U\}$. Importantly, $f_6$ remains a free parameter, making flux quantization trivial. After a solution is found one needs to check the mass matrix:
 \be 
 m_J^I = \frac{1}{2} K^{J\bar{K}} \nabla_{\bar{K}} \partial_I V\,,
 \ee 
-to ensure that all eigenvalues are positive at the minimum\footnote{This expression has to be considered with the Kähler metric in real coordinates.}. The mass matrix now depends on several free parameters
+to ensure that all eigenvalues are positive at the minimum\footnote{This expression has to be considered with the Kähler metric in real coordinates.}. The mass matrix now depends on several free parameters:
 \be 
 m_{IJ} = m_{IJ}(f_6,a_S,a_T,a_U,S_0,T_0,U_0)\,,
 \ee
 that can be used to tune the values of the masses. One important restriction concerns the values of the $a_I$. Those have to be chosen in order to guarantee that $\rme^{-a_I \rmim (I)}$ is small, such that higher order corrections can safely be neglected. In particular, $\rme^{-a_I \rmim (I)} < \mathcal{O}(10^{-1})$ was chosen as a numerical bound. Another condition that has to be met is that, in order to trust the supergravity approximation, we need to have a large internal volume. For this, we choose the minimum of the volume modulus to be $U_0 \sim \mathcal{O}(10)$. Similarly, we require for the axio-dilaton $S_0 \sim \mathcal{O}(1)$, such that we can neglect string loop corrections.\\
-It is relatively easy to find solutions to $D_IW=0$, even with all conditions mentioned above. Here, two such solutions are presented. For both of them our choice for the minimum in moduli space is
+It is relatively easy to find solutions to $D_IW=0$, even with all conditions mentioned above. Here, two such solutions are presented. For both of them our choice for the minimum in moduli space is:
 \be 
 S_0 = T_0=1 \qquad \text{and}\qquad U_0=10\,.
 \ee
@@ -1518,7 +1521,6 @@ Rewriting the scalar potential $V=\rme^K \left(|DW|^2 - 3 |W|\right)$ with this 
 \be 
 V = m_a K^{a\bar{b}}\bar{m}_{\bar{b}} - 3 |m|^2 =: |m_a|^2 - 3 |m|^2\,,
 \ee
-
 where the Kähler metric is defined as $K_{a\bar{b}} = \partial_a \partial_{\bar{b}}K$. This scalar potential has an extremum for:
 \be 
 \partial_a V = -2 m_a \bar{m} + m_{ab} K^{b\bar{b}} \bar{m}_{\bar{b}}=0\,,
@@ -1563,7 +1565,8 @@ If this condition is satisfied we are certain to find a stable, supersymmetric a
 \be 
 V^{\text{dS}} = \rme^K \left(|D_IW|^2-3|W|^2\right) = |m_I|^2 - 3 |m|^2 >0\,.
 \ee
-All new contributions have been included by our change of the index. For a successful uplift the supersymmetry breaking terms in $|m_I|^2$ need to be larger than the gravitino mass. The holomorphic/anti-holomorphic part of the mass matrix now evaluates to \cite{Denef:2004ze,Kallosh:2014oja}:
+All new contributions have been included by our change of the index. For a successful uplift the supersymmetry breaking terms in $|m_I|^2$ need to be larger than the gravitino mass. 
+\\ The holomorphic/anti-holomorphic part of the mass matrix now evaluates to \cite{Denef:2004ze,Kallosh:2014oja}:
 \be 
 V_{a\bar{b}}^{\text{dS}}=m_{aI} K^{I\bar{J}} \bar{m}_{\bar{J}\bar{b}} - 2 K_{a\bar{b}}m_I \bar{m}^I - R_{a\bar{b}I\bar{I}} \bar{m}^I m^{\bar{I}} - m_a \bar{m}_{\bar{b}}\,.
 \label{eq:dSmassmatrix}
@@ -1885,7 +1888,7 @@ For brevity and because the values of the masses barely change at all, we will o
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.68]{quevedo_314_3D_large.pdf}
+\includegraphics[scale=0.75]{quevedo_314_3D_large.pdf}
 \end{figure}
 \begin{figure}[H]
 \centering
@@ -1907,7 +1910,6 @@ $m_4^{\,2}$ & $\; 1.38346 \cdot 10^{-5} \;$ & $\; 1.35926 \cdot 10^{-5} \;$\\\hl
 \caption{ The squared masses for the Minkowski and de Sitter case. Both the changes when going from Minkowski to de Sitter and the splitting of the degeneracy of scalars and axionic partners can be seen.}
 \label{tab:2modK3mass}
 \end{table}
-
 \paragraph{A K3 fibered Calabi-Yau model} can be used for so-called fibre inflation \cite{Cicoli:2008gp,Burgess:2016owb,Kallosh:2017wku}. For this example, we first consider a generalization of the 2 moduli K3 fibration we just discussed by including a blow-up mode $\tau_3$. This leads to an internal volume \cite{Cicoli:2008gp}:
 \be 
 \mathcal{V}_6 (\tau_i) = \alpha \left( \sqrt{\tau_1} (\tau_2 - \beta \tau_1 ) - \gamma \tau_3^{3/2} \right)\,.
@@ -1940,7 +1942,7 @@ $\alpha = 1$ & $\beta=0$ & $\gamma = \frac{1}{2} $ \\\hline
 \label{tab:fibrepara}
 \end{table}
 
-For the downshift and uplift parameters we choose values
+For the downshift and uplift parameters we choose values:
 \bea
 \Delta W_0 &= - 10^{-5}\\
 \mu^4_{\text{bulk}} &= 3.10079 \cdot 10^{-10}\,,
@@ -1992,22 +1994,32 @@ The mass production procedure continues as usual with:
 \Delta W &= - 5 \cdot 10^{-6}\\
 \mu^4_{\text{bulk}} &= 9.62862 \cdot 10^{-11}\,,
 \eea
-and the other parameters given in table \ref{tab:swisspara}.
-
-\begin{table}[htb]
-\centering
-\begin{tabular}{|c|c|c|}\hline
-$A_S = 1.1$ & $A_T = 1.2$ & $A_U =1.3$\\\hline
-$a_S = 2.1$ & $a_T = 2.2$ & $a_U = 2.3$\\\hline
-$b_S = 3.1$ & $b_T = 3.2$ & $b_U = 3.3$\\\hline
-$S_0 = 1$ & $T_0 = 1$ & $U_0 = 1$\\\hline
-\end{tabular}
-\caption{ Parameter choices for the model based on the Fano 3-fold $\mathcal{F}_{11}$.}
-\label{tab:swisspara}
+and the other parameters given in table \ref{tab:swisspara}. The masses obtained with these parameters are given in table \ref{tab:swissmass}. As before, we show 2d and 3d plot of the minimum in figures \ref{fig:swiss2d} and \ref{fig:swiss3d}.
+\begin{table}[H]
+          \centering
+          \begin{tabular}{|c|c|c|}\hline
+          $A_S = 1.1$ & $A_T = 1.2$ & $A_U =1.3$\\\hline
+          $a_S = 2.1$ & $a_T = 2.2$ & $a_U = 2.3$\\\hline
+          $b_S = 3.1$ & $b_T = 3.2$ & $b_U = 3.3$\\\hline
+          $S_0 = 1$ & $T_0 = 1$ & $U_0 = 1$\\\hline
+          \end{tabular}
+          \caption{ Parameter choices for the model based on the Fano 3-fold $\mathcal{F}_{11}$.}
+          \label{tab:swisspara}
 \end{table}
-
-As before we show 2d and 3d plot of the minimum in figures \ref{fig:swiss2d} and \ref{fig:swiss3d}. The masses obtained with these parameters are given in table \ref{tab:swissmass}.
-
+\begin{table}[H]
+     \centering
+     \begin{tabular}{|c|c|c|}\hline
+     &  Minkowski  & de Sitter \\\hline
+     $m_1^{\,2}$ & $\; 1.85578 \cdot 10^{-1} \;$ & $\; 1.85557 \cdot 10^{-1} \;$\\\hline
+     $m_2^{\,2}$ & $\; 1.85578 \cdot 10^{-1} \;$ & $\; 1.85557 \cdot 10^{-1} \;$\\\hline
+     $m_3^{\,2}$ & $\; 1.00760 \cdot 10^{-1} \;$ & $\; 1.00753 \cdot 10^{-1} \;$\\\hline
+     $m_4^{\,2}$ & $\; 1.00760 \cdot 10^{-1} \;$ & $\; 1.00753 \cdot 10^{-1} \;$\\\hline
+     $m_5^{\,2}$ & $\; 1.30646 \cdot 10^{-2} \;$ & $\; 1.30627 \cdot 10^{-2} \;$\\\hline
+     $m_6^{\,2}$ & $\; 1.30646 \cdot 10^{-2} \;$ & $\; 1.30626 \cdot 10^{-2} \;$\\\hline
+     \end{tabular}
+     \caption{Squared masses of the Fano three-fold model in Minkowski space and de Sitter.}
+     \label{tab:swissmass}
+\end{table}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.55]{quevedo_38_S_large.pdf}\qquad\includegraphics[scale=0.59]{quevedo_38_S_close.pdf}\\
@@ -2016,28 +2028,12 @@ As before we show 2d and 3d plot of the minimum in figures \ref{fig:swiss2d} and
 \caption{2d plots of the scalar potential in the Fano three-fold model. All 3 directions show a similar meta-stable behavior. The AdS potential (blue, dash-dotted) gets lifted to dS (red, solid) via the contribution of the ant-D3-brane (green, dotted).}
 \label{fig:swiss2d}
 \end{figure}
-
 \begin{figure}[H]
-\centering
-\includegraphics[scale=0.78]{quevedo_38_3D_large.pdf}
-\caption{3d plot of the $\rmim(T)$ and $\rmim(U)$ slice in the Fano three-fold model with the meta-stable minimum clearly visible.}
-\label{fig:swiss3d}
+     \centering
+     \includegraphics[scale=0.78]{quevedo_38_3D_large.pdf}
+     \caption{3d plot of the $\rmim(T)$ and $\rmim(U)$ slice in the Fano three-fold model with the meta-stable minimum clearly visible.}
+     \label{fig:swiss3d}
 \end{figure}
-
-\begin{table}[htb]
-\centering
-\begin{tabular}{|c|c|c|}\hline
-&  Minkowski  & de Sitter \\\hline
-$m_1^{\,2}$ & $\; 1.85578 \cdot 10^{-1} \;$ & $\; 1.85557 \cdot 10^{-1} \;$\\\hline
-$m_2^{\,2}$ & $\; 1.85578 \cdot 10^{-1} \;$ & $\; 1.85557 \cdot 10^{-1} \;$\\\hline
-$m_3^{\,2}$ & $\; 1.00760 \cdot 10^{-1} \;$ & $\; 1.00753 \cdot 10^{-1} \;$\\\hline
-$m_4^{\,2}$ & $\; 1.00760 \cdot 10^{-1} \;$ & $\; 1.00753 \cdot 10^{-1} \;$\\\hline
-$m_5^{\,2}$ & $\; 1.30646 \cdot 10^{-2} \;$ & $\; 1.30627 \cdot 10^{-2} \;$\\\hline
-$m_6^{\,2}$ & $\; 1.30646 \cdot 10^{-2} \;$ & $\; 1.30626 \cdot 10^{-2} \;$\\\hline
-\end{tabular}
-\caption{Squared masses of the Fano three-fold model in Minkowski space and de Sitter.}
-\label{tab:swissmass}
-\end{table}
 
 \FloatBarrier
 \subsection{Models with large Downshifts and Uplifts}
@@ -2278,7 +2274,6 @@ $\,b^{3}$ & $\, 0.65 \,$ & $\,C^{13}$ & $\, 0.13 \,$ & $\,C^{23}$ & $\, 0.23 \,$
 \caption{Parameter choices for the model without any exponents in IIB string theory/gauged supergravity.}
 \label{tab:noexppara}
 \end{table}
-
 \begin{table}[htb]
 \center
 \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
@@ -2286,7 +2281,7 @@ $\,b^{3}$ & $\, 0.65 \,$ & $\,C^{13}$ & $\, 0.13 \,$ & $\,C^{23}$ & $\, 0.23 \,$
 Mk & $\, 0.29074 \,$ & $\, 0.20712 \,$ & $\, 0.01075 \,$ & $\, 0.00383 \,$ & $\, 0.00287 \,$ & $\, 0.00057 \,$ & $\, 0.00016 \,$ \\\hline  
 dS & $\, 0.29063 \,$ & $\, 0.20721 \,$ & $\, 0.01073 \,$ & $\, 0.00382 \,$ & $\, 0.00287 \,$ & $\, 0.00057 \,$ & $\, 0.00016 \,$  \\\hline  
 \end{tabular}
-\caption{Eigenvalues of the mass matrix for the IIB model without non-perturbative corrections.}
+\caption{Mass eigenvalues for the IIB model without non-perturbative corrections.}
 \label{tab:noexpmass}
 \end{table}
 
@@ -2317,7 +2312,7 @@ In order to describe the late time accelerated expansion of our universe it is n
 \label{eq:dSconori}
 \ee
 with some $\mathcal{O}(1)$ number $c>0$. Since for dS $V>0$ and at a (meta-)stable minimum $|\nabla V| = 0$, we see that de Sitter vacua are not allowed. The original motivation for this conjecture were ``classical'' flux compactifications that do not rely on uplifting contributions from branes. In a sense these models are simpler than setups that produce de Sitter vacua via an anti-brane uplift. Later, in \cite{Ooguri:2018wrx} an argument, based on the entropy in de Sitter space was given in order to further motivate the conjecture.\\
-The conjecture \eqref{eq:dSconori} immediately has some problems. First off, it also forbids unstable maxima with positive values for the potential. Such points, however, can be abundantly found, as we showed in \cite{Roupec:2018mbn}. We will review our findings in section \ref{sec:dSextrema}. Another problem appears when considering a coupling of the effective theory to the Standard Model \cite{Denef:2018etk}. It was shown there that the bound is violated by $50$ orders of magnitude when considering the Higgs potential as a scalar potential in string theory. While the number $c$ is not very well defined and one might even consider values ranging from $0.01$ to $100$ as ``$\mathcal{O}(1)$'', this is certainly problematic. All of these findings lead to a refinement of the conjecture, presented in \cite{Ooguri:2018wrx}, which is of the form:
+The conjecture \eqref{eq:dSconori} immediately has some problems. First off, it also forbids unstable maxima with positive values for the potential. Such points, however, can be abundantly found, as we showed in \cite{Roupec:2018mbn}. We will review our findings in section \ref{sec:dSextrema}. Another problem appears when considering a coupling of the effective theory to the Standard Model \cite{Denef:2018etk}. It was shown there that the bound is violated by $50$ orders of magnitude when considering the Higgs potential as a scalar potential in string theory. While the number $c$ is not very well defined and one might even consider values ranging from $0.01$ to $100$ as ``$\mathcal{O}(1)$'', this is certainly problematic. All of these findings lead to a refinement of the conjecture, presented in \cite{Ooguri:2018wrx}, which takes the form of two conditions, combined with a logical ``or'':
 \be
 |\nabla V| \geq \frac{c}{M_P} V\quad \text{or} \quad \text{min}(\nabla_i \nabla_j V) \leq - \frac{c^\prime}{M_P^2} V\,.
 \label{eq:dScon}
@@ -2380,7 +2375,8 @@ at an extremum. In the case of manifolds with negative curvature ($A_{R_6} \prop
 \be 
 \frac{A_{R_6}}{\rho \tau^ 2} = - \frac{A_H}{\rho^ 3 \tau^2} - 2 \sum_{p=0,2,4,6} \frac{A_{F_p}}{\rho^ {p-3}\tau^ 4} - \frac{3}{2} \frac{|A_{\text{sources}}|}{\tau^ 3}\,,
 \ee
-where we not only rearranged the terms but also multiplied the whole expression with $\tau$. This expression can be plugged back into the scalar potential \eqref{eq:genscal} which yields that:
+where we not only rearranged the terms but also multiplied the whole expression with $\tau$. 
+\\\newpage This expression can be plugged back into the scalar potential \eqref{eq:genscal} which yields that:
 \be 
 V = -\sum_{p=0,2,4,6} \frac{A_{F_p}}{\rho^ {p-3}\tau^ 4} - \frac{1}{2} \frac{|A_{\text{sources}}|}{\tau^ 3} < 0\,.
 \ee
@@ -2476,7 +2472,7 @@ This can easily be solved and the relevant terms scale the same for:
 \be 
 c_\tau = c_\rho - c_{R_6} \qquad \text{and} \qquad c_\rho = -\frac{1}{2} \left( c_{F_0} + c_{R_6} \right)\,.
 \ee
-Unfortunately, this does not facilitate our goal of having parametrically large volume and small coupling. The reason for this is that all fluxes are bounded from below and the second condition then implies that $c_\rho$ must be negative. Which, in turn, immediately leads to a small volume in the $\lambda \to \infty$ limit since $vol_6 = \rho^ 3 \propto \lambda^ {3 c_\rho} = \lambda^ {-3 |c_\rho|}$.\\
+Unfortunately, this does not facilitate our goal of having parametrically large volume and small coupling. The reason for this is that all fluxes are bounded from below and the second condition then implies that $c_\rho$ must be negative. Which, in turn, immediately leads to a small volume in the $\lambda \to \infty$ limit since $vol_6 = \rho^ 3 \propto \lambda^ {3 c_\rho} = \lambda^ {-3 |c_\rho|}\,$.\\
 The conclusion of this investigation is that we are unable to establish parametrically controlled de Sitter solutions in the setup we discussed thus far. Nevertheless, there is still some hope left. If we can establish some hierarchies between the different contributions, represented by the $A$'s in \eqref{eq:genscal}, it could still be possible to arrive at a de Sitter point. In setups where only one $O6$-plane wraps each 3-cycle \cite{Danielsson:2011au} this seems, unfortunately, unlikely. Due to the limited amount of $O6$-planes, one has $F_0$ and $H$ fixed to a similarly small number as well. For example, let us consider a compactification on $T^ 6/(\mathbb{Z}_2 \times \mathbb{Z}_2)$ with an orientifold projection that flips the signs of the three circle directions. In this case one has $2^ 3 = 8$ $O6$-planes. However, due to the orbifold of $\mathbb{Z}_2 \times \mathbb{Z}_2$ plus an additional $\mathbb{Z}_2$ orientifolding leading us to an identification of $2^ 3 = 8$ fixed points. This leaves us with only one $O6$-plane in the end. Still, it is in principle possible to have complicated internal manifold with many fixed points under the orientifold projection and thus a larger number of $O$-planes. While we cannot present an explicit example here we will investigate the behavior of such models in general. To this end, we now allow the sources term to scale like $A_{\text{sources}} \propto \lambda^ {c_\text{s}}$, which means that we allow a large number $N_{O6}$ of $O6$-planes in our model. The terms $A_{\text{sources}}$, $A_{F_0}$, and $A_{R_6}$ then scale the same if we satisfy the conditions:
 \be 
 -3 c_\rho + 4 c_\tau -c_{F_0} = 3 c_\tau - c_{\text{s}} = c_\rho + 2 c_\tau -c_{R_6}\,.
@@ -2523,7 +2519,7 @@ For the $KK$-monopoles and $KKO$-planes the analysis is trivial since the corres
 \tilde{A}_{R_6} = A_{R_6} + A_{KK} - A_{KKO}\,.
 \ee
 Again, de Sitter solutions can only exist for as long as this effective curvature term is positive: $\tilde{A}_{R_6} >0$. De Sitter solutions, found in \cite{Blaback:2018hdo}, including $KK$-sources then suffer from the same lack of a controlled limit as discussed before.\\
-$NS5$-sources do introduce a new scaling behavior into $V$. The complete scalar potential, again broken down to it's scaling behavior, is:
+$NS5$-sources, on the other hand, do introduce a new scaling behavior into $V$. The complete scalar potential, again broken down to it's scaling behavior, is:
 \be 
 V(\rho,\tau) = \frac{A_H}{\rho^3 \tau^2} + \sum_{p=0,2,4,5} \frac{A_p}{\rho^ {p-3} \tau^4} - \frac{A_{\text{sources}}}{\tau^3} + \frac{\tilde{A}_{R_6}}{\rho\tau} + \frac{A_{NS5}}{\rho^ 2 \tau^ 2} - \frac{A_{NSO5}}{\rho^ 2 \tau^ 2}\,.
 \label{eq:genscalplus}
@@ -2567,7 +2563,7 @@ In the case of a different class of compactification manifold, other than an $SU
 V_{Dp/\overline{Dp}} = \frac{A_{Dp/\overline{Dp}}}{\rho^ {\frac{6-p}{2}} \tau^ 3} \qquad \text{and} \qquad V_{O_p} = - \frac{A_{O_p}}{\rho^ {\frac{6-p}{2}}\tau^ 3}\,.
 \ee
 \subsection{Isotropic Compactification of massive Type IIA}
-Up until this point our discussion has been fairly general. In this subsection, we want to give an explicit example of a compactification in order to complement the discussion. The isotropic compactification of massive type IIA on $S^ 3 \times S^ 3 /(\mathbb{Z}_2 \times \mathbb{Z}_2)$ is potentially the simplest model we could choose. It has been extensively studied in \cite{Roupec:2018mbn,Caviezel:2008tf,Flauger:2008ad,Danielsson:2009ff,Danielsson:2010bc,Danielsson:2012et,Junghans:2016uvg,Junghans:2016abx,Kallosh:2018nrk,Blaback:2018hdo,Villadoro:2005cu,Camara:2005dc,Aldazabal:2007sn,Blaback:2013fca} and admits dS critical points. This model might even be able to admit stable de Sitter points if one includes anti-$D6$-branes or $KK$-monopoles \cite{Kallosh:2018nrk,Blaback:2018hdo}. Often this particular setup is referred to as the STU model due to the fact that it has three complex moduli. This is because we identify the three 2-tori in the $T^ 6/(\mathbb{Z}_2 \times \mathbb{Z}_2)$ internal manifold. The inclusion of metric fluxes, that we set to one, effectively changes the internal manifold to $S^3\times S^ 3$. Furthermore, we include $H$-flux as well as $F_p$-fluxes with $p=0,\,2$ because the 4- and 6-flux can be set to zero here via a shift of the moduli. The real part of the Kähler modulus $T$ encodes the overall size of the compactification manifold. The dilaton is packaged together with the complex structure moduli into the two complex scalars $Z_1$ and $Z_2$. Relating these moduli back to what we had thus far in this section we find
+Up until this point our discussion has been fairly general. In this subsection, we want to give an explicit example of a compactification in order to complement the discussion. The isotropic compactification of massive type IIA on $S^ 3 \times S^ 3 /(\mathbb{Z}_2 \times \mathbb{Z}_2)$ is potentially the simplest model we could choose. It has been extensively studied in \cite{Roupec:2018mbn,Caviezel:2008tf,Flauger:2008ad,Danielsson:2009ff,Danielsson:2010bc,Danielsson:2012et,Junghans:2016uvg,Junghans:2016abx,Kallosh:2018nrk,Blaback:2018hdo,Villadoro:2005cu,Camara:2005dc,Aldazabal:2007sn,Blaback:2013fca} and admits dS critical points. This model might even be able to admit stable de Sitter points if one includes anti-$D6$-branes or $KK$-monopoles \cite{Kallosh:2018nrk,Blaback:2018hdo}. Often this particular setup is referred to as the STU model due to the fact that it has three complex moduli. This is because we identify the three 2-tori in the $T^ 6/(\mathbb{Z}_2 \times \mathbb{Z}_2)$ internal manifold. The inclusion of metric fluxes, that we set to one, effectively changes the internal manifold to $S^3\times S^ 3$. Furthermore, we include $H$-flux as well as $F_p$-fluxes with $p=0,\,2$ because the 4- and 6-flux can be set to zero here via a shift of the moduli. The real part of the Kähler modulus $T$ encodes the overall size of the compactification manifold. The dilaton is packaged together with the complex structure moduli into the two complex scalars $Z_1$ and $Z_2$. Relating these moduli back to what we had thus far in this section we find:
 \be 
 \rho = \rmre(T) \qquad \text{and} \qquad \tau^4 = \rmre(Z_1) \rmre(Z_2)^ 3\,.
 \ee
@@ -2577,7 +2573,7 @@ K =& -\log\left[(T+\bar{T})^ 3 - \frac{1}{2} \frac{X \bar{X}}{ N_{\overline{D6},
 &- \log\left[2^ {-4} (Z_1 + \bar{Z}_1)(Z_2 + \bar{Z}_2)^ 3\right]\,,\\
 W =& -3 f_2 T^ 2 + \rmi f_0 T^ 3 + (\rmi h - 3T) Z_1 - 3(\rmi h+T)Z_2 + X\,,
 \eea
-from which we can derive the scalar potential $V$ using the usual formula
+from which we can derive the scalar potential $V$ using the usual formula:
 \be 
 V = \rme^ K \left[D_I W K^ {I\bar{J}} \overline{D_J W} - 3 W \overline{W}\right]_{X\to 0\,,\bar{X} \to 0}\,,
 \ee
@@ -2705,7 +2701,6 @@ Written in terms of the slow-roll parameters this reads:
 \ee
 We will motivate this conjecture, consisting of the inequality \eqref{eq:ourdScon} and the bounds on the parameters further down below.\\
 Before we come to that, let us mention that the decoupling limit is trivially satisfied by first dividing by $M_P^q$. Then one recovers $(|\nabla V|/V)^q \geq 0$ which is always satisfied. When going to an extremum one finds, due to the positivity of the parameters in the conjecture, that $(\text{min}(\nabla^i \nabla_j V)/V)|_{\text{ext}}<0$ which means that only unstable de Sitter points are allowed because we have at least one tachyon. Our conjecture thus has the same basic features as the refined dS conjecture of \cite{Ooguri:2018wrx} but there are differences in the allowed values of $\epsilon$ and $\eta$. Both conjectures disallow small values of $\epsilon$ with positive $\eta$ but differ in certain regions of the $(\epsilon,\eta)$ parameter space. It is, however, not the case that one conjecture is strictly stronger than the other. This differences, depicted in figures \ref{fig:conjreg} and \ref{fig:conjreg2}, mean that the conjectures draw a different border of the swampland in the landscape and potentially allow or disallow certain models. For example, as we will discuss later on, single field slow-roll inflation is not impossible in our conjecture.
-
 \begin{figure}[htp]
      \centering
      \includegraphics[width=0.9 \textwidth]{conreg3_mod.pdf}
@@ -2714,13 +2709,13 @@ Before we come to that, let us mention that the decoupling limit is trivially sa
 \end{figure}
 \begin{figure}[htp]
      \centering
-     \includegraphics[scale=0.6]{conreg1_mod.pdf}
-     \includegraphics[scale=0.6]{conreg2_mod.pdf}
+     \includegraphics[width=0.45 \textwidth]{conreg1_mod.pdf}
+     \includegraphics[width=0.45 \textwidth]{conreg2_mod.pdf}
      \caption{For different values of the parameter $a$ the differences in allowed/excluded regions change as some regions merge or disappear compared to \ref{fig:conjreg}. On the left we have $a = 1$. Here the region below the curved line is only excluded by the conjecture \eqref{eq:dScon}. On the right we have $a=1/2$. There the conjectures agree for very small $\epsilon$. Again, the other parameters are $c=c^ \prime = 1$ and $q=4$}
      \label{fig:conjreg2}
 \end{figure}
-We now move on to motivate our conjecture \eqref{eq:ourdScon} by an argument based on the weak coupling regime similar to what was done in \cite{Ooguri:2018wrx}. The idea is that when going to large distances in field space, corresponding to weak coupling, one is in a controlled regime of string theory. This is usually the case when the string coupling is small, the dilaton is large and negative, $\alpha^ \prime$ corrections are negligible and the internal volume is large. When going to large distances in field space one also has to consider the swampland distance conjecture \cite{Baume:2016psm} for the case of a non-zero scalar potential \cite{Klaewer:2016kiy,Ooguri:2006in}. In short, the distance conjecture proposes that infinite towers of light modes appear when going to large distances in moduli space. Since more degrees of freedom enter the effective theory one can relate this to entropy. De Sitter space has a finite amount of entropy given by the Gibbons-Hawking entropy \cite{Gibbons:1977mu}. In the weak coupling limit, we assume that the Bousso bound \cite{Bousso:1999xy} is saturated. In order to apply these tools for our purpose in a universe that undergoes accelerated expansion we have to make sure that we remain within a semi-classical description. Concretely, this boils down to the fact that the second slow-roll parameter $\eta$ has to be below $-1$, which corresponds to the second condition in \eqref{eq:dSconMP}. The goal of the following derivation is to motivate the conjecture \eqref{eq:ourdScon} and the parameter ranges of $a$, $b$, and $q$.
-\paragraph{Let us start the motivation of our conjecture} by considering a single, canonically normalized scalar field $\phi$ with scalar potential $V$ in the low-energy effective theory. As is argued in \cite{Ooguri:2018wrx}, the scalar potential takes the form:
+\paragraph{We now move on to motivate our conjecture } \eqref{eq:ourdScon} by an argument based on the weak coupling regime similar to what was done in \cite{Ooguri:2018wrx}. The idea is that when going to large distances in field space, corresponding to weak coupling, one is in a controlled regime of string theory. This is usually the case when the string coupling is small, the dilaton is large and negative, $\alpha^ \prime$ corrections are negligible and the internal volume is large. When going to large distances in field space one also has to consider the swampland distance conjecture \cite{Baume:2016psm} for the case of a non-zero scalar potential \cite{Klaewer:2016kiy,Ooguri:2006in}. In short, the distance conjecture proposes that infinite towers of light modes appear when going to large distances in moduli space. Since more degrees of freedom enter the effective theory one can relate this to entropy. De Sitter space has a finite amount of entropy given by the Gibbons-Hawking entropy \cite{Gibbons:1977mu}. In the weak coupling limit, we assume that the Bousso bound \cite{Bousso:1999xy} is saturated. In order to apply these tools for our purpose in a universe that undergoes accelerated expansion we have to make sure that we remain within a semi-classical description. Concretely, this boils down to the fact that the second slow-roll parameter $\eta$ has to be below $-1$, which corresponds to the second condition in \eqref{eq:dSconMP}. The goal of the following derivation is to motivate the conjecture \eqref{eq:ourdScon} and the parameter ranges of $a$, $b$, and $q$.\\
+Let us start the motivation of our conjecture by considering a single, canonically normalized scalar field $\phi$ with scalar potential $V$ in the low-energy effective theory. As is argued in \cite{Ooguri:2018wrx}, the scalar potential takes the form:
 \be 
 V(\phi)=\left(n(\phi) \rme^ {d\phi}\right)^ {-k}\,,
 \label{eq:expdec}
@@ -2892,9 +2887,7 @@ Having a way to consistently and easily build de Sitter models is a great opport
 Finally, in chapter \ref{sec:swamplandconjectures} we discussed matters regarding the swampland program \cite{Brennan:2017rbf,Palti:2019pca,vanBeest:2021lhn}, focusing on the conjectures that restrict de Sitter constructions \cite{Danielsson:2018ztv,Obied:2018sgi,Ooguri:2018wrx,Andriot:2018mav}. In section \ref{sec:scaling} we reviewed simple, classical type IIA compactifications regarding the principle possibility for controlled de Sitter vacua. Inspired by the AdS solutions of \cite{DeWolfe:2005uu}, we looked at different scaling limits where we might obtain parametrically large volume and small coupling. The result of this investigation is that, even considering some more non-standard ingredients \cite{Caviezel:2008tf,Flauger:2008ad,Saltman:2004jh,Silverstein:2007ac,Haque:2008jz,Danielsson:2009ff,deCarlos:2009fq,deCarlos:2009qm,Caviezel:2009tu,Danielsson:2010bc,Dong:2010pm,Andriot:2010ju}, like $KK$- and $NSO$-sources, the only possible limit that allows for controlled vacua is the one of a large amount of $O6$-planes. This is particularly troublesome since the number of orientifold planes in a compactification is fixed by the geometry of the internal manifold. In typical, known examples this number is restricted to be of order one. We confirmed these findings with an explicit example and found that the proportionality constants between the number of $O6$-planes and the behavior of the volume of the compactification manifold and the coupling do not favor such a limit as well. While these constants were found in a particular setup, they still should give an idea of what kinds of manifolds we need to look for regarding the number of $O6$-planes if we hope to find de Sitter solutions.\\
 In section \ref{sec:dSextrema} we gave several counter examples to the original de Sitter conjecture \cite{Roupec:2018mbn} that also disallowed unstable de Sitter extrema. We performed a numerical search in type IIA compactifications and found many new such points, in addition to highlighting known ones from \cite{Caviezel:2008tf,Flauger:2008ad}, that explicitly violate the original conjecture that was formulated only giving a constraint on the first derivative on the scalar potential. Several features of the considered models were reviewed and we showed that they can be in controlled regions. Together with other criticisms this lead to a necessary refinement of the conjecture \cite{Ooguri:2018wrx} where a second condition on the Hessian of the mass matrix was added, thus allowing for unstable dS extrema.\\
 Our own refined de Sitter swampland conjecture \cite{Andriot:2018mav} was presented in section \ref{sec:refconj}. Motivated by a simple effective action of a scalar field we combined conditions on the first and second derivative of the scalar potential into one inequality. This, alternative, refined de Sitter conjecture differs from the one given in \cite{Ooguri:2018wrx} in physical ways but paints the same basic picture, stable de Sitter points are prohibited. The differences manifest in cosmological applications. Our conjecture allows for slow-roll inflation and favors concave potentials, a feature that aligns well with current cosmological observations \cite{Planck:2018jri}. Interestingly, the most simple quintessence models are not allowed by our version of the conjecture and a more complicated setup is required there as well.\\
-The question if de Sitter vacua from string theory are principally impossible deserves certainly more attention. The way to proceed is twofold. The conjectures are motivated by known examples but are not mathematically proven from string theory. Thus, if one finds an explicit solution that is in a controlled regime, satisfies quantization conditions and so on, the de Sitter swampland conjectures would need to be abandoned. The two ways are thus either proofing the conjecture, or at least, supplying more evidence or constructing an explicit solution. Both ways are worth pursuing and in the process it is clear that we will learn many things about the merits and limitations of string theory. The end result is not yet clear.
-
-\vspace{12pt}
+The question if de Sitter vacua from string theory are principally impossible deserves certainly more attention. The way to proceed is twofold. The conjectures are motivated by known examples but are not mathematically proven from string theory. Thus, if one finds an explicit solution that is in a controlled regime, satisfies quantization conditions and so on, the de Sitter swampland conjectures would need to be abandoned. The two ways are thus either proofing the conjecture, or at least, supplying more evidence or constructing an explicit solution. Both ways are worth pursuing and in the process it is clear that we will learn many things about the merits and limitations of string theory. The end result is not yet clear.\vspace{12pt}\\
 Unraveling the true nature of our universe is an ongoing and daunting task. However, it is full of excitement and wonder. With the onset of precision cosmology experiments we can hope to come closer to a true and fundamental understanding of nature. The author hopes that his work has made a contribution to these efforts, however small it may be.
 
 
@@ -3040,6 +3033,7 @@ which can be proven by using the definition of the generalized gauge kinetic fun
 %\bibliography{refs}
 %\includepdf[pages=-]{CV.pdf} %Should include CV but looks like hores crap.
 %\include{CV.tex} Should include the whole tex thingy but also does not work
+
 \newpage
 {\centering
 \section*{Christoph Oliver ROUPEC}
@@ -3197,4 +3191,5 @@ Wiedner Hauptstraße 8-10/136, A-1040 Vienna, Austria\\
             \end{tabular}
             
             \end{rSection}
+
 \end{document}
